@@ -1,4 +1,8 @@
-cpsc304
-=======
+# CPSC 304 Database Project
 
-CPSC 304 Database Project
+## Team members
+
+- Marvin Cadano
+- Jacob Lee
+- Daniel Tsang
+- Norman Sue
