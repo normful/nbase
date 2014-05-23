@@ -4,12 +4,13 @@
 
 ### Domain
 
-We will model the 2013-14 NBA league.
+We will model the 2013-2014 NBA league.
 
 ### Domain aspects modeled
 
 Aspects modeled:
 
+TODO: Describe aspects modeled from ER diagram
 
 ### System Functionality
 
@@ -21,7 +22,7 @@ MySQL and Java JDBC
 
 ## Entity-Relationship Diagram
 
-TODO: Add gliffy diagram URL and print it out for submission
+TODO: Add gliffy diagram URL
 
 ## Team members
 
