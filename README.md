@@ -12,7 +12,9 @@ We are modelling NBA players that play for Teams, along with NBA Staff that work
 
 User classes include NBA Staff and normal users. Only NBA Staff can modify database information. All other users can only view database information.
 
-### System Functionality
+### System functionality
+
+NBA Staff and normal users will be able to:
 
 - Look up NBA Player information.
 - Search for all NBA Players on a NBA Team.
@@ -23,6 +25,9 @@ User classes include NBA Staff and normal users. Only NBA Staff can modify datab
 - Search for all NBA Games refereed by a particular NBA Referee.
 - Search for all Sponsors for a particular NBA Team.
 - Be able to filter NBA Players that fit certain criteria (e.g. players who are at least 6'6" tall).
+
+Only NBA Staff will be able to:
+
 - Be able to delete NBA Player and NBA Staff when they are fired.
 
 ### Platforms
@@ -30,7 +35,7 @@ User classes include NBA Staff and normal users. Only NBA Staff can modify datab
 - Backend: MySQL (Hosted on UBC servers)
 - Frontend: PHP (Hosted on UBC servers)
 
-## Entity-Relationship Diagram
+## Entity-Relationship diagram
 
 Gliffy ER diagram http://www.gliffy.com/go/publish/5784240
 
