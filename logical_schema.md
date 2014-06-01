@@ -8,9 +8,14 @@
 
 ## Schemas
 
-### Initialization
+### Database Initialization
 
 ```mysql
+CREATE DATABASE IF NOT EXISTS `NBATest1`;
+USE `NBATest1`;
+
+SET FOREIGN_KEY_CHECKS = 0;
+
 DROP TABLE IF EXISTS `Division`;
 DROP TABLE IF EXISTS `Venue`;
 DROP TABLE IF EXISTS `NBATeam_BelongsTo`;
