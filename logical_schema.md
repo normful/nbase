@@ -68,7 +68,8 @@ CREATE TABLE `NBATeam_BelongsTo` (
 
 NBAPlayer_PlaysFor(**number**: INT, position: CHAR(2), firstName: VARCHAR(30), lastName: VARCHAR(30), height: INT, weight: INT, draftDate: DATE, ***team***: CHAR(3))
 
-- ***team*** `REFERENCES` NBATeam_BelongsTo(**abbreviation**)
+- ***team*** `NOT NULL`
+- ***team*** `REFERENCES` NBATeam_BelongsTo(**abbreviation**) `ON DELETE CASCADE`
 - height in inches
 - weight in pounds
 
@@ -81,9 +82,10 @@ CREATE TABLE `NBAPlayer_PlaysFor` (
     `height` INT,
     `weight` INT,
     `draftDate` DATE,
-    `team` CHAR(3),
+    `team` CHAR(3) NOT NULL,
     PRIMARY KEY (`number`, `team`),
     FOREIGN KEY (`team`) REFERENCES `NBATeam_BelongsTo` (`abbreviation`)
+        ON DELETE CASCADE
 );
 ```
 
@@ -91,16 +93,18 @@ CREATE TABLE `NBAPlayer_PlaysFor` (
 
 NBAStaff_WorksFor(**firstName**: VARCHAR(30), **lastName**: VARCHAR(30), job: VARCHAR(30), ***team***: CHAR(3))
 
-- ***team*** `REFERENCES` NBATeam_BelongsTo(**abbreviation**)
+- ***team*** `NOT NULL`
+- ***team*** `REFERENCES` NBATeam_BelongsTo(**abbreviation**) `ON DELETE CASCADE`
 
 ```mysql
 CREATE TABLE `NBAStaff_WorksFor` (
     `firstName` VARCHAR(30),
     `lastName` VARCHAR(30),
     `job` VARCHAR(30),
-    `team` CHAR(3),
+    `team` CHAR(3) NOT NULL,
     PRIMARY KEY (`firstname`, `lastname`, `team`),
     FOREIGN KEY (`team`) REFERENCES `NBATeam_BelongsTo` (`abbreviation`)
+        ON DELETE CASCADE
 );
 ```
 
@@ -108,14 +112,16 @@ CREATE TABLE `NBAStaff_WorksFor` (
 
 Sponsor_Endorses(**company**: VARCHAR(30), ***team***: CHAR(3))
 
-- ***team*** `REFERENCES` NBATeam_BelongsTo(**abbreviation**)
+- ***team*** `NOT NULL`
+- ***team*** `REFERENCES` NBATeam_BelongsTo(**abbreviation**) `ON DELETE CASCADE`
 
 ```mysql
 CREATE TABLE `Sponsor_Endorses` (
     `company` VARCHAR(30),
-    `team` CHAR(3),
+    `team` CHAR(3) NOT NULL,
     PRIMARY KEY (`company`, `team`),
     FOREIGN KEY (`team`) REFERENCES `NBATeam_BelongsTo` (`abbreviation`)
+        ON DELETE CASCADE
 );
 ```
 
@@ -123,10 +129,12 @@ CREATE TABLE `Sponsor_Endorses` (
 
 NBAGame_Plays_PlayedAt(**gameDate**: DATE, homeScore: INT, awayScore: INT, ***homeTeam***: CHAR(3), ***awayTeam***: CHAR(3), *venueName*: VARCHAR(30), *city*: VARCHAR(30))
 
+- ***homeTeam*** `NOT NULL`
+- ***awayTeam*** `NOT NULL`
 - *venueName* `NOT NULL`
 - *city* `NOT NULL`
-- ***homeTeam*** `REFERENCES` NBATeam_BelongsTo(**abbreviation**)
-- ***awayTeam*** `REFERENCES` NBATeam_BelongsTo(**abbreviation**)
+- ***homeTeam*** `REFERENCES` NBATeam_BelongsTo(**abbreviation**) `ON DELETE CASCADE`
+- ***awayTeam*** `REFERENCES` NBATeam_BelongsTo(**abbreviation**) `ON DELETE CASCADE`
 - *venueName* `REFERENCES` Venue
 - *city* `REFERENCES` Venue
 
@@ -135,13 +143,15 @@ CREATE TABLE `NBAGame_PlaysAt` (
     `gameDate` DATE,
     `homeScore` INT,
     `awayScore` INT,
-    `homeTeam` CHAR(3),
-    `awayTeam` CHAR(3),
+    `homeTeam` CHAR(3) NOT NULL,
+    `awayTeam` CHAR(3) NOT NULL,
     `venueName` VARCHAR(30) NOT NULL,
     `city` VARCHAR(30) NOT NULL,
     PRIMARY KEY (`gameDate`, `homeTeam`, `awayTeam`),
-    FOREIGN KEY (`homeTeam`) REFERENCES `NBATeam_BelongsTo` (`abbreviation`),
-    FOREIGN KEY (`awayTeam`) REFERENCES `NBATeam_BelongsTo` (`abbreviation`),
+    FOREIGN KEY (`homeTeam`) REFERENCES `NBATeam_BelongsTo` (`abbreviation`)
+        ON DELETE CASCADE,
+    FOREIGN KEY (`awayTeam`) REFERENCES `NBATeam_BelongsTo` (`abbreviation`)
+        ON DELETE CASCADE,
     FOREIGN KEY (`venueName`, `city`) REFERENCES `Venue` (`venueName`,`city`)
 );
 ```
