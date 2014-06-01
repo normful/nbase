@@ -73,7 +73,7 @@ NBAPlayer_PlaysFor(**number**: INT, position: CHAR(2), firstName: VARCHAR(30), l
 - weight in pounds
 
 ```mysql
-CREATE TABLE NBAPlayer_PlaysFor (
+CREATE TABLE `NBAPlayer_PlaysFor` (
     `number` INT,
     `position` CHAR(2),
     `firstName` VARCHAR(30),
@@ -94,7 +94,7 @@ NBAStaff_WorksFor(**firstName**: VARCHAR(30), **lastName**: VARCHAR(30), job: VA
 - ***team*** `REFERENCES` NBATeam_BelongsTo(**abbreviation**)
 
 ```mysql
-CREATE TABLE NBAStaff_WorksFor (
+CREATE TABLE `NBAStaff_WorksFor` (
     `firstName` VARCHAR(30),
     `lastName` VARCHAR(30),
     `job` VARCHAR(30),
@@ -111,7 +111,7 @@ Sponsor_Endorses(**company**: VARCHAR(30), ***team***: CHAR(3))
 - ***team*** `REFERENCES` NBATeam_BelongsTo(**abbreviation**)
 
 ```mysql
-CREATE TABLE Sponsor_Endorses (
+CREATE TABLE `Sponsor_Endorses` (
     `company` VARCHAR(30),
     `team` CHAR(3),
     PRIMARY KEY (`company`, `team`),
@@ -131,7 +131,7 @@ NBAGame_Plays_PlayedAt(**gameDate**: DATE, homeScore: INT, awayScore: INT, ***ho
 - *city* `REFERENCES` Venue
 
 ```mysql
-CREATE TABLE NBAGame_PlaysAt (
+CREATE TABLE `NBAGame_PlaysAt` (
     `gameDate` DATE,
     `homeScore` INT,
     `awayScore` INT,
@@ -151,7 +151,7 @@ CREATE TABLE NBAGame_PlaysAt (
 NBAReferee(**number**: INT, firstName: VARCHAR(30), lastName: VARCHAR(30))
 
 ```mysql
-CREATE TABLE NBAReferee (
+CREATE TABLE `NBAReferee` (
     `number` INT,
     `firstName` VARCHAR(30),
     `lastName` VARCHAR(30),
@@ -169,7 +169,7 @@ Referees(***refNumber***: INT, **gameDate**: DATE, **homeTeam**: CHAR(3), **away
 - **awayTeam** `REFERENCES` NBAGame_Plays_PlayedAt(***awayTeam***)
 
 ```mysql
-CREATE TABLE Referees (
+CREATE TABLE `Referees` (
     `refNumber` INT,
     `gameDate` DATE,
     `homeTeam` CHAR(3),
