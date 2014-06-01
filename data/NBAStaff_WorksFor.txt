@@ -1,0 +1,6 @@
+firstName	lastName	job	team
+Rick	Carlisle	Head Coach	DAL
+Alvin 	Gentry	Assistant Coach	LAC
+Scott	Brooks	Head Coach	OKC
+Jay	Triano	Assistant Coach	POR
+Gregg	Popovich	Head Coach	SAS

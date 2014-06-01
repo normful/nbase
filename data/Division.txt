@@ -1,0 +1,7 @@
+divisionName
+Northwest
+Pacific
+Southwest
+Atlantic
+Central
+Southeast

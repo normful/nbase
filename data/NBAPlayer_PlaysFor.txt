@@ -1,0 +1,6 @@
+number	position	firstName	lastName	height	weight	draftDate	team
+41	PF	Dirk	Nowitzki	84	237	1998	DAL
+22	SF	Matt	Barnes	79	226	2012	LAC
+12	C	Steven	Adams	84	255	2013	OKC
+12	PF	LaMarcus	Aldridge	83	240	2009	POR
+21	PF	Tim	Duncan	83	250	1997	SAS

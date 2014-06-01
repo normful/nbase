@@ -1,0 +1,6 @@
+abbreviation	city	teamName	divisionName
+DAL	Dallas, TX	Mavericks	Southwest
+LAC	Los Angeles, CA	Clippers	Pacific
+OKC	Oklahoma City, OK	Thunder	Northwest
+POR	Portland, OR	Blazers	Northwest
+SAS	San Antonio, TX	Spurs	Southwest

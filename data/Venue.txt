@@ -1,0 +1,6 @@
+venueName	city	address
+American Airlines Center	Dallas	2500 Victory Avenue
+Staples Center	Los Angeles	1111 S. Figueroa Street
+Chesapeake Energy Arena	Oklahoma City	100 West Reno Avenue
+Moda Center	Portland	1 Center Court
+AT&T Center	San Antonio	1 AT&T Center Parkway
