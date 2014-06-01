@@ -30,10 +30,12 @@ Only NBA Staff will be able to:
 
 - Be able to delete NBA Player and NBA Staff when they are fired.
 
-### Platforms
+### Platform
 
-- Backend: MySQL (Hosted on UBC servers)
-- Frontend: PHP (Hosted on UBC servers)
+- Amazon EC2 virtual server running Ubuntu 12.04.4 LTS
+- Apache 2.4
+- MySQL 5.5.36
+- PHP 5.4.26 (with the PDO extension)
 
 ## Entity-Relationship diagram
 
