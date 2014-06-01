@@ -176,12 +176,10 @@ CREATE TABLE `NBAReferee` (
 
 ### Referees
 
-Referees(***refNumber***: INT, **gameDate**: DATE, **homeTeam**: CHAR(3), **awayTeam**: CHAR(3))
+Referees(***refNumber***: INT, ***gameDate***: DATE, ***homeTeam***: CHAR(3), ***awayTeam***: CHAR(3))
 
 - ***refNumber*** `REFERENCES` NBAReferee(**number**)
-- **gameDate** `REFERENCES` NBAGame_Plays_PlayedAt(**gameDate**)
-- **homeTeam** `REFERENCES` NBAGame_Plays_PlayedAt(***homeTeam***)
-- **awayTeam** `REFERENCES` NBAGame_Plays_PlayedAt(***awayTeam***)
+- ***gameDate***, ***homeTeam***, ***awayTeam*** `REFERENCES` NBAGame_Plays_PlayedAt(**gameDate**, ***homeTeam***, ***awayTeam***)
 
 ```mysql
 CREATE TABLE `Referees` (
