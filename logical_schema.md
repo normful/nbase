@@ -175,7 +175,7 @@ CREATE TABLE `Referees` (
     `homeTeam` CHAR(3),
     `awayTeam` CHAR(3),
     PRIMARY KEY (`refNumber`, `gameDate`, `homeTeam`, `awayTeam`),
-    FOREIGN KEY (`refNumber) REFERENCES `NBAReferee` (`number`),
+    FOREIGN KEY (`refNumber`) REFERENCES `NBAReferee` (`number`),
     FOREIGN KEY (`gameDate`) REFERENCES `NBAGame_Plays_PlayedAt` (`gameDate`),
     FOREIGN KEY (`homeTeam`) REFERENCES `NBAGame_Plays_PlayedAt` (`abbreviation`),
     FOREIGN KEY (`awayTeam`) REFERENCES `NBAGame_Plays_PlayedAt` (`abbreviation`)
