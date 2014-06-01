@@ -42,7 +42,7 @@ CREATE TABLE `Venue` (
     `venueName` VARCHAR(30),
     `city` VARCHAR(30),
     `address` VARCHAR(50),
-    PRIMARY KEY (`venueName`,`city`)
+    PRIMARY KEY (`venueName`, `city`)
 );
 ```
 
@@ -82,7 +82,7 @@ CREATE TABLE `NBAPlayer_PlaysFor` (
     `weight` INT,
     `draftDate` DATE,
     `team` CHAR(3),
-    PRIMARY KEY (`number`,`team`),
+    PRIMARY KEY (`number`, `team`),
     FOREIGN KEY (`team`) REFERENCES `NBATeam_BelongsTo` (`abbreviation`)
 );
 ```
@@ -99,7 +99,7 @@ CREATE TABLE `NBAStaff_WorksFor` (
     `lastName` VARCHAR(30),
     `job` VARCHAR(30),
     `team` CHAR(3),
-    PRIMARY KEY (`firstname`,`lastname`,`team`),
+    PRIMARY KEY (`firstname`, `lastname`, `team`),
     FOREIGN KEY (`team`) REFERENCES `NBATeam_BelongsTo` (`abbreviation`)
 );
 ```
@@ -139,7 +139,7 @@ CREATE TABLE `NBAGame_PlaysAt` (
     `awayTeam` CHAR(3),
     `venueName` VARCHAR(30) NOT NULL,
     `city` VARCHAR(30) NOT NULL,
-    PRIMARY KEY (`gameDate`,`homeTeam`,`awayTeam`),
+    PRIMARY KEY (`gameDate`, `homeTeam`, `awayTeam`),
     FOREIGN KEY (`homeTeam`) REFERENCES `NBATeam_BelongsTo` (`abbreviation`),
     FOREIGN KEY (`awayTeam`) REFERENCES `NBATeam_BelongsTo` (`abbreviation`),
     FOREIGN KEY (`venueName`, `city`) REFERENCES `Venue` (`venueName`,`city`)
