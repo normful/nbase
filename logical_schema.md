@@ -10,7 +10,7 @@
 
 ### Initialization
 
-```mysql
+```sqlmysql
 DROP TABLE IF EXISTS `Division`;
 DROP TABLE IF EXISTS `Venue`;
 DROP TABLE IF EXISTS `NBATeam_BelongsTo`;
@@ -26,7 +26,7 @@ DROP TABLE IF EXISTS `Referees`;
 
 Division(**divisionName**: VARCHAR(10))
 
-```mysql
+```sqlmysql
 CREATE TABLE `Division` (
     `divisionName` VARCHAR(10),
     PRIMARY KEY (`divisionName`)
@@ -37,7 +37,7 @@ CREATE TABLE `Division` (
 
 Venue(**venueName**: VARCHAR(30), **city**: VARCHAR(30), address: VARCHAR(50))
 
-```mysql
+```sqlmysql
 CREATE TABLE `Venue` (
     `venueName` VARCHAR(30),
     `city` VARCHAR(30),
@@ -53,7 +53,7 @@ NBATeam_BelongsTo(**abbreviation**: CHAR(3), city: VARCHAR(30), teamName: VARCHA
 - *divisionName* `NOT NULL`
 - *divisionName* `REFERENCES` Division
 
-```mysql
+```sqlmysql
 CREATE TABLE `NBATeam_BelongsTo` (
     `abbreviation` CHAR(3),
     `city` VARCHAR(30),
@@ -72,7 +72,7 @@ NBAPlayer_PlaysFor(**number**: INT, position: CHAR(2), firstName: VARCHAR(30), l
 - height in inches
 - weight in pounds
 
-```mysql
+```sqlmysql
 CREATE TABLE NBAPlayer_PlaysFor (
     `number` INT,
     `position` CHAR(2),
@@ -93,7 +93,7 @@ NBAStaff_WorksFor(**firstName**: VARCHAR(30), **lastName**: VARCHAR(30), job: VA
 
 - ***team*** `REFERENCES` NBATeam_BelongsTo(**abbreviation**)
 
-```mysql
+```sqlmysql
 CREATE TABLE NBAStaff_WorksFor (
     `firstName` VARCHAR(30),
     `lastName` VARCHAR(30),
@@ -110,7 +110,7 @@ Sponsor_Endorses(**company**: VARCHAR(30), ***team***: CHAR(3))
 
 - ***team*** `REFERENCES` NBATeam_BelongsTo(**abbreviation**)
 
-```mysql
+```sqlmysql
 CREATE TABLE Sponsor_Endorses (
     `company` VARCHAR(30),
     `team` CHAR(3),
@@ -130,7 +130,7 @@ NBAGame_Plays_PlayedAt(**gameDate**: DATE, homeScore: INT, awayScore: INT, ***ho
 - *venueName* `REFERENCES` Venue
 - *city* `REFERENCES` Venue
 
-```mysql
+```sqlmysql
 CREATE TABLE NBAGame_PlaysAt (
     `gameDate` DATE,
     `homeScore` INT,
@@ -150,7 +150,7 @@ CREATE TABLE NBAGame_PlaysAt (
 
 NBAReferee(**number**: INT, firstName: VARCHAR(30), lastName: VARCHAR(30))
 
-```mysql
+```sqlmysql
 CREATE TABLE NBAReferee (
     `number` INT,
     `firstName` VARCHAR(30),
@@ -168,7 +168,7 @@ Referees(***refNumber***: INT, **gameDate**: DATE, **homeTeam**: CHAR(3), **away
 - **homeTeam** `REFERENCES` NBAGame_Plays_PlayedAt(***homeTeam***)
 - **awayTeam** `REFERENCES` NBAGame_Plays_PlayedAt(***awayTeam***)
 
-```mysql
+```sqlmysql
 CREATE TABLE Referees (
     `refNumber` INT,
     `gameDate` DATE,
