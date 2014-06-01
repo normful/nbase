@@ -139,7 +139,7 @@ NBAGame_Plays_PlayedAt(**gameDate**: DATE, homeScore: INT, awayScore: INT, ***ho
 - *city* `REFERENCES` Venue
 
 ```mysql
-CREATE TABLE `NBAGame_PlaysAt` (
+CREATE TABLE `NBAGame_Plays_PlayedAt` (
     `gameDate` DATE,
     `homeScore` INT,
     `awayScore` INT,
@@ -186,8 +186,7 @@ CREATE TABLE `Referees` (
     `awayTeam` CHAR(3),
     PRIMARY KEY (`refNumber`, `gameDate`, `homeTeam`, `awayTeam`),
     FOREIGN KEY (`refNumber`) REFERENCES `NBAReferee` (`number`),
-    FOREIGN KEY (`gameDate`) REFERENCES `NBAGame_Plays_PlayedAt` (`gameDate`),
-    FOREIGN KEY (`homeTeam`) REFERENCES `NBAGame_Plays_PlayedAt` (`abbreviation`),
-    FOREIGN KEY (`awayTeam`) REFERENCES `NBAGame_Plays_PlayedAt` (`abbreviation`)
+    FOREIGN KEY (`gameDate`, `homeTeam`, `awayTeam`) 
+		REFERENCES `NBAGame_Plays_PlayedAt` (`gameDate`, `homeTeam`, `awayTeam`)
 );
 ```
