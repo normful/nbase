@@ -1,33 +1,14 @@
 # Database Logical Schema Translated From ER Diagram
 
-## Legend
+# Legend
 
 - `PRIMARY KEY` = **Bold**
 - `FOREIGN KEY` = *Italics*
 - `PRIMARY KEY` and `FOREIGN KEY` = ***Bold Italics***
 
-## Schemas
+# Schemas
 
-### Database Initialization
-
-```sqlmysql
-CREATE DATABASE IF NOT EXISTS `NBA`;
-USE `NBA`;
-
-SET FOREIGN_KEY_CHECKS = 0;
-
-DROP TABLE IF EXISTS `Division`;
-DROP TABLE IF EXISTS `Venue`;
-DROP TABLE IF EXISTS `NBATeam_BelongsTo`;
-DROP TABLE IF EXISTS `NBAPlayer_PlaysFor`;
-DROP TABLE IF EXISTS `NBAStaff_WorksFor`;
-DROP TABLE IF EXISTS `Sponsor_Endorses`;
-DROP TABLE IF EXISTS `NBAGame_Plays_PlayedAt`;
-DROP TABLE IF EXISTS `NBAReferee`;
-DROP TABLE IF EXISTS `Referees`;
-```
-
-### Division
+## Division
 
 Division(**divisionName**: VARCHAR(10))
 
@@ -38,7 +19,7 @@ CREATE TABLE `Division` (
 );
 ```
 
-### Venue
+## Venue
 
 Venue(**venueName**: VARCHAR(30), **city**: VARCHAR(30), address: VARCHAR(50))
 
@@ -51,7 +32,7 @@ CREATE TABLE `Venue` (
 );
 ```
 
-### NBATeam_BelongsTo
+## NBATeam_BelongsTo
 
 NBATeam_BelongsTo(**abbreviation**: CHAR(3), city: VARCHAR(30), teamName: VARCHAR(30), *divisionName*: VARCHAR(10))
 
@@ -69,7 +50,7 @@ CREATE TABLE `NBATeam_BelongsTo` (
 );
 ```
 
-### NBAPlayer_PlaysFor
+## NBAPlayer_PlaysFor
 
 NBAPlayer_PlaysFor(**number**: INT, position: CHAR(2), firstName: VARCHAR(30), lastName: VARCHAR(30), height: INT, weight: INT, draftYear: YEAR(4), ***team***: CHAR(3))
 
@@ -94,7 +75,7 @@ CREATE TABLE `NBAPlayer_PlaysFor` (
 );
 ```
 
-### NBAStaff_WorksFor
+## NBAStaff_WorksFor
 
 NBAStaff_WorksFor(**firstName**: VARCHAR(30), **lastName**: VARCHAR(30), job: VARCHAR(30), ***team***: CHAR(3))
 
@@ -113,7 +94,7 @@ CREATE TABLE `NBAStaff_WorksFor` (
 );
 ```
 
-### Sponsor_Endorses
+## Sponsor_Endorses
 
 Sponsor_Endorses(**company**: VARCHAR(30), ***team***: CHAR(3))
 
@@ -130,7 +111,7 @@ CREATE TABLE `Sponsor_Endorses` (
 );
 ```
 
-### NBAGame_Plays_PlayedAt
+## NBAGame_Plays_PlayedAt
 
 NBAGame_Plays_PlayedAt(**gameDate**: DATE, homeScore: INT, awayScore: INT, ***homeTeam***: CHAR(3), ***awayTeam***: CHAR(3), *venueName*: VARCHAR(30), *city*: VARCHAR(30))
 
@@ -161,7 +142,7 @@ CREATE TABLE `NBAGame_Plays_PlayedAt` (
 );
 ```
 
-### NBAReferee
+## NBAReferee
 
 NBAReferee(**number**: INT, firstName: VARCHAR(30), lastName: VARCHAR(30))
 
@@ -174,7 +155,7 @@ CREATE TABLE `NBAReferee` (
 );
 ```
 
-### Referees
+## Referees
 
 Referees(***refNumber***: INT, ***gameDate***: DATE, ***homeTeam***: CHAR(3), ***awayTeam***: CHAR(3))
 
