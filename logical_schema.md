@@ -71,7 +71,7 @@ CREATE TABLE `NBATeam_BelongsTo` (
 
 ### NBAPlayer_PlaysFor
 
-NBAPlayer_PlaysFor(**number**: INT, position: CHAR(2), firstName: VARCHAR(30), lastName: VARCHAR(30), height: INT, weight: INT, draftDate: DATE, ***team***: CHAR(3))
+NBAPlayer_PlaysFor(**number**: INT, position: CHAR(2), firstName: VARCHAR(30), lastName: VARCHAR(30), height: INT, weight: INT, draftYear: YEAR, ***team***: CHAR(3))
 
 - ***team*** `NOT NULL`
 - ***team*** `REFERENCES` NBATeam_BelongsTo(**abbreviation**) `ON DELETE CASCADE`
@@ -86,7 +86,7 @@ CREATE TABLE `NBAPlayer_PlaysFor` (
     `lastName` VARCHAR(30),
     `height` INT,
     `weight` INT,
-    `draftDate` DATE,
+    `draftYear` YEAR,
     `team` CHAR(3) NOT NULL,
     PRIMARY KEY (`number`, `team`),
     FOREIGN KEY (`team`) REFERENCES `NBATeam_BelongsTo` (`abbreviation`)

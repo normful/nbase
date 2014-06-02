@@ -41,7 +41,7 @@ CREATE TABLE `NBAPlayer_PlaysFor` (
     `lastName` VARCHAR(30),
     `height` INT,
     `weight` INT,
-    `draftDate` DATE,
+    `draftYear` YEAR,
     `team` CHAR(3) NOT NULL,
     PRIMARY KEY (`number`, `team`),
     FOREIGN KEY (`team`) REFERENCES `NBATeam_BelongsTo` (`abbreviation`)
