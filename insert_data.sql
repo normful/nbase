@@ -1,9 +1,9 @@
-LOAD DATA INFILE'/opt/bitnami/apache2/cpsc304/dataDivision.txt' INTO TABLE nbatest1.division;
-LOAD DATA INFILE'/opt/bitnami/apache2/cpsc304/dataNBAGame_Plays_PlayedAt.txt' INTO TABLE nbatest1.nbagame_plays_playedat;
-LOAD DATA INFILE'/opt/bitnami/apache2/cpsc304/dataNBAPlayer_PlaysFor.txt' INTO TABLE nbatest1.nbaplayer_playsfor;
-LOAD DATA INFILE'/opt/bitnami/apache2/cpsc304/dataNBAReferee.txt' INTO TABLE nbatest1.nbareferee;
-LOAD DATA INFILE'/opt/bitnami/apache2/cpsc304/dataNBAStaff_WorksFor.txt' INTO TABLE nbatest1.nbastaff_worksfor;
-LOAD DATA INFILE'/opt/bitnami/apache2/cpsc304/dataNBATeam_BelongsTo.txt' INTO TABLE nbatest1.nbateam_belongsto;
-LOAD DATA INFILE'/opt/bitnami/apache2/cpsc304/dataReferees.txt' INTO TABLE nbatest1.referees;
-LOAD DATA INFILE'/opt/bitnami/apache2/cpsc304/dataSponsor_Endorses.txt' INTO TABLE nbatest1.sponsor_endorses;
-LOAD DATA INFILE'/opt/bitnami/apache2/cpsc304/dataVenue.txt' INTO TABLE nbatest1.venue;
+LOAD DATA INFILE '/opt/bitnami/apache2/cpsc304/data/Division.txt' INTO TABLE nbatest1.division;
+LOAD DATA INFILE '/opt/bitnami/apache2/cpsc304/data/NBAGame_Plays_PlayedAt.txt' INTO TABLE nbatest1.nbagame_plays_playedat;
+LOAD DATA INFILE '/opt/bitnami/apache2/cpsc304/data/NBAPlayer_PlaysFor.txt' INTO TABLE nbatest1.nbaplayer_playsfor;
+LOAD DATA INFILE '/opt/bitnami/apache2/cpsc304/data/NBAReferee.txt' INTO TABLE nbatest1.nbareferee;
+LOAD DATA INFILE '/opt/bitnami/apache2/cpsc304/data/NBAStaff_WorksFor.txt' INTO TABLE nbatest1.nbastaff_worksfor;
+LOAD DATA INFILE '/opt/bitnami/apache2/cpsc304/data/NBATeam_BelongsTo.txt' INTO TABLE nbatest1.nbateam_belongsto;
+LOAD DATA INFILE '/opt/bitnami/apache2/cpsc304/data/Referees.txt' INTO TABLE nbatest1.referees;
+LOAD DATA INFILE '/opt/bitnami/apache2/cpsc304/data/Sponsor_Endorses.txt' INTO TABLE nbatest1.sponsor_endorses;
+LOAD DATA INFILE '/opt/bitnami/apache2/cpsc304/data/Venue.txt' INTO TABLE nbatest1.venue;
