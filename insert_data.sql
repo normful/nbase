@@ -1,4 +1,9 @@
-test deploy script 3
-test deploy script 2
-test deploy script
-test
+LOAD DATA INFILE 'Division.txt' INTO TABLE nbatest1.division;
+LOAD DATA INFILE 'NBAGame_Plays_PlayedAt.txt' INTO TABLE nbatest1.nbagame_plays_playedat;
+LOAD DATA INFILE 'NBAPlayer_PlaysFor.txt' INTO TABLE nbatest1.nbaplayer_playsfor;
+LOAD DATA INFILE 'NBAReferee.txt' INTO TABLE nbatest1.nbareferee;
+LOAD DATA INFILE 'NBAStaff_WorksFor.txt' INTO TABLE nbatest1.nbastaff_worksfor;
+LOAD DATA INFILE 'NBATeam_BelongsTo.txt' INTO TABLE nbatest1.nbateam_belongsto;
+LOAD DATA INFILE 'Referees.txt' INTO TABLE nbatest1.referees;
+LOAD DATA INFILE 'Sponsor_Endorses.txt' INTO TABLE nbatest1.sponsor_endorses;
+LOAD DATA INFILE 'Venue.txt' INTO TABLE nbatest1.venue;
