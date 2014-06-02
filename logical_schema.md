@@ -11,8 +11,8 @@
 ### Database Initialization
 
 ```sqlmysql
-CREATE DATABASE IF NOT EXISTS `NBATest1`;
-USE `NBATest1`;
+CREATE DATABASE IF NOT EXISTS `NBA`;
+USE `NBA`;
 
 SET FOREIGN_KEY_CHECKS = 0;
 
