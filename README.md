@@ -20,6 +20,7 @@ An updated copy of our [ER diagram](http://www.gliffy.com/go/publish/5784240) is
 - Apache 2.4
 - MySQL 5.5.36
 - PHP 5.4.26 (with the PDO extension)
+- AngularJS (potentially; still not confirmed)
 
 ## System functionality
 
