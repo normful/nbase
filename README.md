@@ -14,6 +14,11 @@ User classes include NBA Staff and normal users. Only NBA Staff can modify datab
 
 An updated copy of our [ER diagram](http://www.gliffy.com/go/publish/5784240) is attached, which incorporates all TA feedback from the first submission, and includes various minor modifications.
 
+## Translation from ER diagram to SQL tables
+
+TODO: Add note on whether your tables fully capture your ER diagram
+TODO: Make tables in BCNF
+
 ## Platform
 
 - Amazon EC2 virtual server running Ubuntu 12.04.4 LTS
@@ -102,3 +107,4 @@ In addition to the above, the interface for NBA Staff will also provide the abil
     - Query the database for a list of all Venues.
     - Delete NBA Player and NBA Staff when they are fired.
     - Click on a Venue from a list of Venues and receive a list of all NBA Games played at that Venue.
+
