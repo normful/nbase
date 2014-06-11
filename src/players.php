@@ -112,7 +112,7 @@ $result->setFetchMode(PDO::FETCH_ASSOC);
 			<div class="panel-heading">
 				<h4 class="panel-title">
 					<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-						Display Attributes
+					Display Attributes
 					</a>
 				</h4>
 			</div>
