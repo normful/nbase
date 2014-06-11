@@ -21,12 +21,34 @@ For more information, look up prepared statements or how to escape inputs with P
 This is more of a concern for real world projects (so you should know it anyway), but I'm not sure if the TAs will care.
 */
 
+$select = "";
+    if (isset($_GET['sel_lname'])) $select .= ",lastName";
+    if (isset($_GET['sel_fname'])) $select .= ",firstName";
+    if (isset($_GET['sel_pos'])) $select .= ",position";
+    if (isset($_GET['sel_height'])) $select .= ",height";
+    if (isset($_GET['sel_weight'])) $select .= ",weight";
+    if (isset($_GET['sel_year'])) $select .= ",draftYear";
+    if (isset($_GET['sel_num'])) $select .= ",number";
+    if (isset($_GET['sel_team'])) $select .= ",team";
+    $select = substr($select,1);
+    
+    if ($select == "") $select = "*";
+
+$where = "";
+    if (isset($_GET['filter']) && isset($_GET['
+
+    
+    
+
 // WRITE YOUR SQL QUERIES HERE
 $query = <<<SQL
 SELECT attribute(s)
 FROM table(s)
 WHERE condition(s)
-SQL;
+    SQL;
+    
+    
+    
 
 // Uncomment the following two lines after you've written your SQL queries
 // $result = $dbh->query($query);
