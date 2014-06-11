@@ -69,7 +69,7 @@ else if ($currentPage == $base."stats.php") $statsClass = 'class="active"';
 						<li <?php echo $rostersClass; ?>><a href="rosters.php"><span class="glyphicon glyphicon-list"> Rosters</span></a></li>
 						<li <?php echo $gamesClass; ?>><a href="games.php"><span class="glyphicon glyphicon-bullhorn"> Games</span></a></li>
 						<li <?php echo $venuesClass; ?>><a href="venues.php"><span class="glyphicon glyphicon-map-marker"> Venues</span></a></li>
-						<li <?php echo $statsClass; ?>><a href="stats.php"><span class="glyphicon glyphicon-map-stats"> Stats</span></a></li>
+						<li <?php echo $statsClass; ?>><a href="stats.php"><span class="glyphicon glyphicon-stats"> Stats</span></a></li>
 					</ul>
 				</div>
 <!-- END LEFT NAV -->

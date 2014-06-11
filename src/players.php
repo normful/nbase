@@ -151,11 +151,9 @@ $result->setFetchMode(PDO::FETCH_ASSOC);
 						<td><?php echo $row['draftYear']?></td>
 						<td><?php echo $row['team']; ?></td>
 						<td>
-							<div class="delete">
-								<a href="delete.php?number=<?php echo $row['number']; ?>&team=<?php echo $row['team']; ?>">
+							<a href="delete_player.php?number=<?php echo $row['number']; ?>&team=<?php echo $row['team']; ?>">
 								<span class="glyphicon glyphicon-remove"></span>
-								</a>
-							</div>
+							</a>
 						</td>
 					</tr>
 				<?php endwhile; ?>
