@@ -55,6 +55,7 @@ else if ($currentPage == $base."rosters.php") $rostersClass = 'class="active"';
 else if ($currentPage == $base."games.php") $gamesClass = 'class="active"';
 else if ($currentPage == $base."venues.php") $venuesClass = 'class="active"';
 else if ($currentPage == $base."stats.php") $statsClass = 'class="active"';
+else if ($currentPage == $base."update.php") $updateClass = 'class="active"';
 
 ?>
 
@@ -70,6 +71,7 @@ else if ($currentPage == $base."stats.php") $statsClass = 'class="active"';
 						<li <?php echo $gamesClass; ?>><a href="games.php"><span class="glyphicon glyphicon-bullhorn"> Games</span></a></li>
 						<li <?php echo $venuesClass; ?>><a href="venues.php"><span class="glyphicon glyphicon-map-marker"> Venues</span></a></li>
 						<li <?php echo $statsClass; ?>><a href="stats.php"><span class="glyphicon glyphicon-stats"> Stats</span></a></li>
+						<li <?php echo $statsClass; ?>><a href="update.php"><span class="glyphicon glyphicon-edit"> Edit</span></a></li>
 					</ul>
 				</div>
 <!-- END LEFT NAV -->
