@@ -16,8 +16,9 @@ An updated copy of our [ER diagram](http://www.gliffy.com/go/publish/5784240) is
 
 ## Translation from ER diagram to SQL tables
 
+All tables are in BCNF because there are no functional dependencies in our SQL tables.
+
 TODO: Add note on whether your tables fully capture your ER diagram
-TODO: Make tables in BCNF
 
 ## Platform
 
@@ -25,9 +26,69 @@ TODO: Make tables in BCNF
 - Apache 2.4
 - MySQL 5.5.36
 - PHP 5.4.26 (with the PDO extension)
-- AngularJS (potentially; still not confirmed)
+
+## How we are meeting the marking requirements
+
+### Selection and projection query
+
+`players.php` allows a selection constant to be chosen when searching for players.
+
+### Join query
+
+`games.php` joins the `NBAGame_Plays_PlayedAt`, `NBAReferee`, `Referees`, and `Venue` tables.
+
+### Division query
+
+Potential options:
+
+1. Find teams who have played against all other teams.
+2. Find teams who have played at all venues.
+
+TODO: Jacob will think about this later.
+
+### Aggregation query
+
+`stats.php`
+
+### Nested aggregation with group-by
+
+For each team sponsored by a particular company (selected from a dropdown box with all possible sponsoring companies), list the AGGOP=(MAX | MIN | AVG) attribute=(height | weight) of the players on that team.
+
+```sql
+SELECT team, AGGOP(attribute)
+FROM Players, Team
+WHERE team IN (SELECT team
+               FROM Sponsor_Endorses
+               WHERE company = 'selectedDropdownBox')
+GROUP BY team
+```
+
+### Delete operation
+
+Requirements from checklist:
+
+1. deletion causing cascades
+2. deletion without cascades
+
+### Update operation
+
+
+### Graphical user interface
+
+
+### Extra features
+
+?
+
+
+
+
+
+
 
 ## System functionality
+
+TODO: Revise this entire section to match what we actually implement.
 
 We will create two different user interfaces: one for normal users; one for NBA Staff. However, we will not be spending time implementing access control and user accounts. Instead, all users will be able to access both interfaces.
 
