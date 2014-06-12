@@ -139,7 +139,7 @@ $result->setFetchMode(PDO::FETCH_ASSOC);
 						<td><?php echo $row['city']?></td>
 						<td><?php echo $row['refNumber']; ?></td>
 					</tr>
-					<?php endfor; ?>
+					<?php } ?>
 			</tbody>
 		</table>
 	</div>
