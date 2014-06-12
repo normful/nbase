@@ -23,14 +23,13 @@ This is more of a concern for real world projects (so you should know it anyway)
 
 // WRITE YOUR SQL QUERIES HERE
 $query = <<<SQL
-SELECT attribute(s)
-FROM table(s)
-WHERE condition(s)
+SELECT city, abbreviation, teamName, divisionName
+FROM NBATeam_BelongsTo
 SQL;
 
 // Uncomment the following two lines after you've written your SQL queries
-// $result = $dbh->query($query);
-// $result->setFetchMode(PDO::FETCH_ASSOC);
+ $result = $dbh->query($query);
+$result->setFetchMode(PDO::FETCH_ASSOC);
 
 ?>
 
@@ -38,8 +37,35 @@ SQL;
 <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 	<h1 class="page-header">Teams</h1>
 	<!-- All your html code you be AFTER this line -->
+	<div class="table-responsive">
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th>City</th>
+					<th>Abbreviation</th>
+					<th>Team Name</th>
+					<th>Division</th>					
+					<th></th> <!-- this is for the delete -->
+				</tr>
+			</thead>
+			<tbody>
+				<?php while ($row = $result->fetch()): ?>
+					<tr>
+						<td><?php echo $row['city']?></td>
+						<td><?php echo $row['abbreviation']; ?></td>
+						<td><?php echo $row['teamName']; ?></td>
+						<td><?php echo $row['divisionName']?></td>						
+						<td>
+							<a href="delete_teams.php?abbreviation=<?php echo $row['abbreviation']; ?>">
+								<span class="glyphicon glyphicon-remove"></span>
+							</a>
+						</td>
+					</tr>
+				<?php endwhile; ?>
+			</tbody>
+		</table>
+	</div>
 
-	<!-- Look in player.php for how to iterate over the rows of your query -->
 
 	<!-- All your html code you be BEFORE this line -->
 </div>         
