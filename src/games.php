@@ -96,10 +96,10 @@ $result->setFetchMode(PDO::FETCH_ASSOC);
 <!-- Find games in between a certain date range -->
 
 	<div class ="data-responsive">
-		<link rel="stylesheet" type="text/css" href="tcal.css" /> 
-		<!-- Need tcal css file -->
-		<script type="text/javascript" src="tcal.js"></script> 
-		<!-- Need tcal js file as well -->
+		<!-- Calendar css -->
+		<link rel="stylesheet" type="text/css" href="css/tcal.css" />
+		<!-- Calendar jss --> 
+		<script type="text/javascript" src="js/tcal.js"></script> 
 		<form action="games.php" method="get">
 			From : <input type="text" name="gDate1" class="tcal" value=""><br>
 			To: <input type="text" name="gDate2" class="tcal" value=""><br> 
