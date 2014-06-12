@@ -43,7 +43,7 @@
 				</div>
 			</div>
 		</div>
-		
+				
 <?php
 
 $currentPage = explode('?', $_SERVER['REQUEST_URI'], 2)[0];

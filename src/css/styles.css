@@ -1,0 +1,48 @@
+.hoverTable tr:hover {
+	cursor: pointer;
+}
+
+.roundrect {
+	border-radius: 5px;
+	box-shadow: 3px 3px 0px rgba(0,0,0,0.1);
+}
+
+.playernews {
+	padding-left: 10px;
+}
+
+.playerstat {
+	font-weight: bold;
+}
+
+.gallery {
+	line-height:200%;
+}
+
+.newsarticle {
+    font-size:14px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.newsarticle div {
+    font-size:14px;
+}
+
+.newsarticle h5 {
+    margin:0;
+    font-weight: 400;
+    color:#888888;
+}
+
+a.rmorelink, a.rmorelink:visited {
+    font-size:12px;
+    color: #555555;
+    text-decoration:none;
+    float:right;
+    text-transform:uppercase;
+}
+
+a.rmorelink:hover {
+    color: #000000;    
+}

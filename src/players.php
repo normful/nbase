@@ -125,7 +125,7 @@ $result->setFetchMode(PDO::FETCH_ASSOC);
 	</div>
                     
 	<div class="table-responsive">
-		<table class="table table-striped">
+		<table class="table table-striped table-hover hoverTable">
 			<thead>
 				<tr>
 					<th>Last Name</th>
@@ -141,7 +141,8 @@ $result->setFetchMode(PDO::FETCH_ASSOC);
 			</thead>
 			<tbody>
 				<?php while ($row = $result->fetch()): ?>
-					<tr>
+					<?php $playerKey = "number={$row['number']}&team={$row['team']}"; ?>
+					<tr onclick="document.location = 'profiles.php?<?php echo $playerKey; ?>';">
 						<td><?php echo $row['lastName']?></td>
 						<td><?php echo $row['firstName']; ?></td>
 						<td><?php echo $row['position']; ?></td>
@@ -151,8 +152,8 @@ $result->setFetchMode(PDO::FETCH_ASSOC);
 						<td><?php echo $row['draftYear']?></td>
 						<td><?php echo $row['team']; ?></td>
 						<td>
-							<a href="delete_player.php?number=<?php echo $row['number']; ?>&team=<?php echo $row['team']; ?>">
-								<span class="glyphicon glyphicon-remove"></span>
+							<a href="delete_player.php?<?php echo $playerKey; ?>">
+								<span class="glyphicon glyphicon-remove" ></span>
 							</a>
 						</td>
 					</tr>
