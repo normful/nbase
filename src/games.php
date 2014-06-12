@@ -20,17 +20,35 @@ If you allow user input into the database, make sure you sanitize your inputs be
 For more information, look up prepared statements or how to escape inputs with PDO (the quote() function is OK but not ideal).
 This is more of a concern for real world projects (so you should know it anyway), but I'm not sure if the TAs will care.
 */
+$select = "";
+if (isset($_GET['sel_gDate'])) $select .= ",gameDate";
+if (isset($_GET['sel_hScore'])) $select .= ",homeScore";
+if (isset($_GET['sel_aScore'])) $select .= ",awayScore";
+if (isset($_GET['sel_hteam'])) $select .= ",homeTeam";
+if (isset($_GET['sel_ateam'])) $select .= ",awayTeam";
+if (isset($_GET['sel_vName'])) $select .= ",venueName";
+if (isset($_GET['sel_city'])) $select .= ",city";
+if (isset($_GET['sel_rNumber'])) $select .= ",refNumber";
+$select = substr($select,1);
+
+if ($select == "") $select = "*";
 
 // WRITE YOUR SQL QUERIES HERE
 $query = <<<SQL
-SELECT attribute(s)
-FROM table(s)
-WHERE condition(s)
+SELECT {$select}
+FROM nbagame_plays_playedat npp, nbareferee nr, referees r, venue v
+WHERE 
+npp.venueName = v.venueName and 
+npp.city = v.city and 
+nr.number = r.refNumber and 
+r.gameDate = npp.gameDate and 
+r.homeTeam = npp.homeTeam and 
+r.awayTeam = npp.awayTeam 
 SQL;
 
 // Uncomment the following two lines after you've written your SQL queries
-// $result = $dbh->query($query);
-// $result->setFetchMode(PDO::FETCH_ASSOC);
+$result = $dbh->query($query);
+$result->setFetchMode(PDO::FETCH_ASSOC);
 
 ?>
 
@@ -38,11 +56,95 @@ SQL;
 <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 	<h1 class="page-header">Games</h1>
 	<!-- All your html code you be AFTER this line -->
+	<div class="table-responsive">
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th>Game Date</th>
+					<th>Home Team</th>
+					<th>Away Team</th>
+					<th>Home Score</th>
+					<th>Away Score</th>
+					<th>Venue</th>
+					<th>City</th>
+					<th>Referee</th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody>
+				<?php while ($row = $result->fetch()): ?>
+					<tr>
+						<td><?php echo $row['gameDate']?></td>
+						<td><?php echo $row['homeTeam']?></td>
+						<td><?php echo $row['awayTeam']; ?></td>
+						<td><?php echo $row['homeScore']; ?></td>
+						<td><?php echo $row['awayScore']; ?></td>
+						<td><?php echo $row['venueName']; ?></td>
+						<td><?php echo $row['city']?></td>
+						<td><?php echo $row['refNumber']; ?></td>
+						<td>
+							<!-- <a href="delete_player.php?number=<?php echo $row['number']; ?>&team=<?php echo $row['team']; ?>">
+								<span class="glyphicon glyphicon-remove"></span>
+							</a> -->
+						</td>
+					</tr>
+				<?php endwhile; ?>
+			</tbody>
+		</table>
+	</div>
 
-	<!-- Look in player.php for how to iterate over the rows of your query -->
+<!-- Find games in between a certain date range -->
 
-	<!-- All your html code you be BEFORE this line -->
-</div>         
+	<div class ="data-responsive">
+		<link rel="stylesheet" type="text/css" href="tcal.css" /> 
+		<!-- Need tcal css file -->
+		<script type="text/javascript" src="tcal.js"></script> 
+		<!-- Need tcal js file as well -->
+		<form action="games.php" method="get">
+			From : <input type="text" name="gDate1" class="tcal" value=""><br>
+			To: <input type="text" name="gDate2" class="tcal" value=""><br> 
+				<input type="submit" value="Search">
+		</form>
+		<table id="resultTable" data-responsive="table" style="text-align: left; width: 400px;" border="1" cellspacing="0" cellpadding="4">
+			<thead>
+				<tr>
+					<th>Game Date</th>
+					<th>Home Team</th>
+					<th>Away Team</th>
+					<th>Home Score</th>
+					<th>Away Score</th>
+					<th>Venue</th>
+					<th>City</th>
+					<th>Referee</th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody>
+				<?php
+				if (isset($_GET["gDate1"])) { $gDate1 = $_GET["gDate1"]; } else { $gDate1="0000-00-00"; };
+				if (isset($_GET["gDate2"])) { $gDate2 = $_GET["gDate2"]; } else { $gDate2="0000-00-00"; };
+				$result = $db->prepare("SELECT * FROM nbagame_plays_playedat WHERE date BETWEEN :a AND :b");
+				$result->bindParam(':a', $gDate1);
+				$result->bindParam(':b', $gDate2);
+				$result->execute();
+				for($i=0; $row = $result->fetch(); $i++){
+					?>
+					<tr>
+						<td><?php echo $row['gameDate']?></td>
+						<td><?php echo $row['homeTeam']?></td>
+						<td><?php echo $row['awayTeam']; ?></td>
+						<td><?php echo $row['homeScore']; ?></td>
+						<td><?php echo $row['awayScore']; ?></td>
+						<td><?php echo $row['venueName']; ?></td>
+						<td><?php echo $row['city']?></td>
+						<td><?php echo $row['refNumber']; ?></td>
+					</tr>
+					<?php endfor; ?>
+			</tbody>
+		</table>
+	</div>
+</div>
+	<!-- All your html code you be BEFORE this line -->    
 <!-- END CONTENT -->
 
 <?php require "footer.php"; ?>
