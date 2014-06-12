@@ -45,7 +45,7 @@ $query = <<<SQL
 SELECT attribute(s)
 FROM table(s)
 WHERE condition(s)
-    SQL;
+SQL;
     
     
     
