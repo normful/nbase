@@ -105,7 +105,7 @@ $result->setFetchMode(PDO::FETCH_ASSOC);
 			To: <input type="text" name="gDate2" class="tcal" value=""><br> 
 				<input type="submit" value="Search">
 		</form>
-		<table id="resultTable" data-responsive="table" style="text-align: left; width: 400px;" border="1" cellspacing="0" cellpadding="4">
+		<table id="resultTable" data-responsive="table" style="text-align: left; width: 550px;" border="1" cellspacing="0" cellpadding="4">
 			<thead>
 				<tr>
 					<th>Game Date</th>
@@ -123,7 +123,7 @@ $result->setFetchMode(PDO::FETCH_ASSOC);
 				<?php
 				if (isset($_GET["gDate1"])) { $gDate1 = $_GET["gDate1"]; } else { $gDate1="0000-00-00"; };
 				if (isset($_GET["gDate2"])) { $gDate2 = $_GET["gDate2"]; } else { $gDate2="0000-00-00"; };
-				$result = $db->prepare("SELECT * FROM nbagame_plays_playedat WHERE date BETWEEN :a AND :b");
+				$result = $dbh->prepare("SELECT * FROM nbagame_plays_playedat WHERE date BETWEEN :a AND :b");
 				$result->bindParam(':a', $gDate1);
 				$result->bindParam(':b', $gDate2);
 				$result->execute();
