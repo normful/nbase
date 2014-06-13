@@ -22,14 +22,21 @@ This is more of a concern for real world projects (so you should know it anyway)
 */
 
 // WRITE YOUR SQL QUERIES HERE
-$query = <<<SQL
+$venuesQuery = <<<SQL
 SELECT venueName, city, address
-FROM venue
+FROM Venue
 SQL;
 
-// Uncomment the following two lines after you've written your SQL queries
-$result = $dbh->query($query);
-$result->setFetchMode(PDO::FETCH_ASSOC);
+$teamsQuery = <<<SQL
+SELECT abbreviation, city, teamName, divisionName
+FROM NBATeam_BelongsTo
+SQL;
+
+$venuesResult = $dbh->query($venuesQuery);
+$venuesResult->setFetchMode(PDO::FETCH_ASSOC);
+
+$teamsResult = $dbh->query($teamsResult);
+$teamsResult->setFetchMode(PDO::FETCH_ASSOC);
 
 ?>
 
@@ -47,7 +54,7 @@ $result->setFetchMode(PDO::FETCH_ASSOC);
 				</tr>
 			</thead>
 			<tbody>
-				<?php while ($row = $result->fetch()): ?>
+				<?php while ($row = $venuesResult->fetch()): ?>
 					<tr>
 						<td><?php echo $row['venueName']?></td>
 						<td><?php echo $row['city']; ?></td>
@@ -57,6 +64,44 @@ $result->setFetchMode(PDO::FETCH_ASSOC);
 			</tbody>
 		</table>
 	</div>
+
+	<div class="panel-group" id="accordion">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+					Teams that have played at all venues
+					</a>
+				</h4>
+			</div>
+			<div id="collapseOne" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div class="table-responsive">
+                        <table class="table table-striped table-hover hoverTable">
+                            <thead>
+                                <tr>
+                                    <th>Team</th>
+                                    <th>City</th>
+                                    <th>Division</th>
+                                    <th>Abbreviation</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php while ($row = $teamsResult->fetch()): ?>
+                                    <tr>
+                                        <td><?php echo $row['teamName']?></td>
+                                        <td><?php echo $row['city']?></td>
+                                        <td><?php echo $row['divisionName']?></td>
+                                        <td><?php echo $row['abbreviation']?></td>
+                                    </tr>
+                                <?php endwhile; ?>
+                            </tbody>
+                        </table>
+                    </div>
+				</div>
+			</div>
+		</div>
+    </div>
 
 </div>
 <!-- END CONTENT -->
