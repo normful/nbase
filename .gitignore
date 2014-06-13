@@ -3,3 +3,7 @@ pandoc-all-md-in-this-folder.sh
 
 # cover page
 coverpage.docx
+
+# tags file and associated .srclist
+.srclist
+tags
