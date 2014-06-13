@@ -121,13 +121,13 @@ $result->setFetchMode(PDO::FETCH_ASSOC);
 			</thead>
 			<tbody>
 				<?php
-				if (isset($_GET['gDate1'])) { $gDate1 = $_GET['gDate1']; } else { $gDate1="0000-00-00"; };
-				if (isset($_GET['gDate2'])) { $gDate2 = $_GET['gDate2']; } else { $gDate2="0000-00-00"; };
-				$result = $dbh->prepare("SELECT * FROM nbagame_plays_playedat WHERE nbagame_plays_playedat.gameDate BETWEEN :a AND :b");
-				$result->bindValue(':a', $gDate1);
-				$result->bindValue(':b', $gDate2);
+				if (isset($_GET["gDate1"])) { $gDate1 = $_GET["gDate1"]; } else { $gDate1="0000-00-00"; };
+				if (isset($_GET["gDate2"])) { $gDate2 = $_GET["gDate2"]; } else { $gDate2="0000-00-00"; };
+				$result = $dbh->prepare("SELECT * FROM nbagame_plays_playedat WHERE date BETWEEN .a AND .b");
+				$result->bindParam('.a', $gDate1);
+				$result->bindParam('.b', $gDate2);
 				$result->execute();
-				for($i=0; $row = $result->fetch(); $i++){
+				while ($row = $result->fetch()) {
 					?>
 					<tr>
 						<td><?php echo $row['gameDate']?></td>
@@ -139,7 +139,7 @@ $result->setFetchMode(PDO::FETCH_ASSOC);
 						<td><?php echo $row['city']?></td>
 						<td><?php echo $row['refNumber']; ?></td>
 					</tr>
-					<?php } ?>
+					<?php endwhile ?>
 			</tbody>
 		</table>
 	</div>
