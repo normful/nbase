@@ -5,7 +5,6 @@ require "header.php";
 require "functions.php";
 	
 try {
-	# MySQL with PDO_MYSQL
   	$dbh = new PDO("mysql:host=54.86.9.29;dbname=nba", 'jacob', 'jacob');
 } catch(PDOException $e) {
 	error($e->getMessage());

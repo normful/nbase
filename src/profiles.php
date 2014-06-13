@@ -1,8 +1,6 @@
 <?php
 
 require "header.php"; 
-
-// any functions you write should go in functions.php unless they are highly specific to what you're doing in this file
 require "functions.php";
 
 if (isset($_POST['params'])) {
@@ -16,17 +14,9 @@ try {
 	// connect to the Amazon EC2 MySQL database with PDO
   	$dbh = new PDO("mysql:host=54.86.9.29;dbname=nba", 'jacob', 'jacob');
 } catch(PDOException $e) {
-	// use the error() function I wrote whenever you want to signal that an error has occured
 	error($e->getMessage());
 	exit();
 }
-
-/*
-IMPORTANT:
-If you allow user input into the database, make sure you sanitize your inputs before inserting them into the query.
-For more information, look up prepared statements or how to escape inputs with PDO (the quote() function is OK but not ideal).
-This is more of a concern for real world projects (so you should know it anyway), but I'm not sure if the TAs will care.
-*/
 
 // Build where clause from http get parameters
 $where = "";
@@ -49,7 +39,6 @@ if (isset($_GET['number']) && isset($_GET['team'])) {
     $displayPlayer = TRUE;
 }
 
-// WRITE YOUR SQL QUERIES HERE
 $allPlayers = <<<SQL
 SELECT firstName, lastName, number, team
 FROM nbaplayer_playsfor;

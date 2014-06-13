@@ -47,7 +47,7 @@
 <?php
 
 $currentPage = explode('?', $_SERVER['REQUEST_URI'], 2)[0];
-$base="/nbase/";
+$base="";
 if ($currentPage == $base."players.php") $playersClass = 'class="active"';
 else if ($currentPage == $base."profiles.php") $profilesClass = 'class="active"';
 else if ($currentPage == $base."teams.php") $teamsClass = 'class="active"';
