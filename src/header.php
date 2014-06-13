@@ -46,16 +46,15 @@
 				
 <?php
 
-$currentPage = explode('?', $_SERVER['REQUEST_URI'], 2)[0];
-$base="";
-if ($currentPage == $base."players.php") $playersClass = 'class="active"';
-else if ($currentPage == $base."profiles.php") $profilesClass = 'class="active"';
-else if ($currentPage == $base."teams.php") $teamsClass = 'class="active"';
-else if ($currentPage == $base."rosters.php") $rostersClass = 'class="active"';
-else if ($currentPage == $base."games.php") $gamesClass = 'class="active"';
-else if ($currentPage == $base."venues.php") $venuesClass = 'class="active"';
-else if ($currentPage == $base."stats.php") $statsClass = 'class="active"';
-else if ($currentPage == $base."update.php") $updateClass = 'class="active"';
+$currentPage = array_pop(explode("/", $_SERVER['PHP_SELF']));
+if ($currentPage == "players.php") $playersClass = 'class="active"';
+else if ($currentPage == "profiles.php") $profilesClass = 'class="active"';
+else if ($currentPage == "teams.php") $teamsClass = 'class="active"';
+else if ($currentPage == "rosters.php") $rostersClass = 'class="active"';
+else if ($currentPage == "games.php") $gamesClass = 'class="active"';
+else if ($currentPage == "venues.php") $venuesClass = 'class="active"';
+else if ($currentPage == "stats.php") $statsClass = 'class="active"';
+else if ($currentPage == "update.php") $updateClass = 'class="active"';
 
 ?>
 
