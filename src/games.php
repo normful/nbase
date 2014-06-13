@@ -95,53 +95,6 @@ $result->setFetchMode(PDO::FETCH_ASSOC);
 	</div>
 
 <!-- Find games in between a certain date range -->
-
-<<<<<<< HEAD
-<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-	<!-- Calendar css -->
-	<link rel="stylesheet" type="text/css" href="css/tcal.css" />
-	<!-- Calendar js --> 
-	<script type="text/javascript" src="js/tcal.js"></script> 
-	<form action="games.php" method="GET">
-		From : <input type="text" name="gDate1" class="tcal" value=""><br>
-		To: <input type="text" name="gDate2" class="tcal" value=""><br> 
-		<input type="submit" value="Search">
-	</form>
-	<?php
-	$x = DATE($_GET['gDate1']);
-	$y = DATE($_GET['gDate2']);
-	$result = $dbh->prepare("SELECT * FROM nbagame_plays_playedat WHERE gameDate BETWEEN '$x' AND '$y'");
-	?>
-	<div class="table-responsive">
-		<table></table> class="table table-striped">
-		<thead>
-			<tr>
-				<th>Game Date</th>
-				<th>Home Team</th>
-				<th>Away Team</th>
-				<th>Home Score</th>
-				<th>Away Score</th>
-				<th>Venue</th>
-				<th>City</th>
-				<th>Referee</th>
-				<th></th>
-			</tr>
-		</thead>
-		<?php
-		while ($row = $result->fetch()) {
-			?>
-			<tr>
-				<td><?php echo $row['gameDate']?></td>
-				<td><?php echo $row['homeTeam']?></td>
-				<td><?php echo $row['awayTeam']; ?></td>
-				<td><?php echo $row['homeScore']; ?></td>
-				<td><?php echo $row['awayScore']; ?></td>
-				<td><?php echo $row['venueName']; ?></td>
-				<td><?php echo $row['city']?></td>
-				<td><?php echo $row['refNumber']; ?></td>
-			</tr>
-			<?php } ?>
-=======
 	<div class ="data-responsive">
 		<!-- Calendar css -->
 		<link rel="stylesheet" type="text/css" href="css/tcal.css" />
@@ -168,11 +121,14 @@ $result->setFetchMode(PDO::FETCH_ASSOC);
 			</thead>
 			<tbody>
 				<?php
-				if (isset($_GET["gDate1"])) { $gDate1 = $_GET["gDate1"]; } else { $gDate1="0000-00-00"; };
-				if (isset($_GET["gDate2"])) { $gDate2 = $_GET["gDate2"]; } else { $gDate2="0000-00-00"; };
-				$result = $dbh->prepare("SELECT * FROM nbagame_plays_playedat WHERE date BETWEEN .a AND .b");
-				$result->bindParam('.a', $gDate1);
-				$result->bindParam('.b', $gDate2);
+				$start_date = date("Y-m-d")
+				if (isset($_POST["gDate1"])) { $gDate1 = $_POST["gDate1"]; } else { $gDate1="0000-00-00"; };
+				if (isset($_POST["gDate2"])) { $gDate2 = $_POST["gDate2"]; } else { $gDate2="0000-00-00"; };
+				$date1 = new DateTime($gDate1);
+				$date2 = new DateTime($gDate2);
+				$result = $dbh->prepare("SELECT * FROM nbagame_plays_playedat WHERE gameDate BETWEEN :a AND :b");
+				$result->bindParam(':a', $date1->format('m/d/Y'));
+				$result->bindParam(':b', $date2->format('m/d/Y'));
 				$result->execute();
 				while ($row = $result->fetch()) {
 					?>
@@ -188,7 +144,6 @@ $result->setFetchMode(PDO::FETCH_ASSOC);
 					</tr>
 					<?php endwhile ?>
 			</tbody>
->>>>>>> parent of 4acfd7e... while loop causing infinite loop
 		</table>
 	</div>
 </div>
