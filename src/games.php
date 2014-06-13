@@ -56,6 +56,15 @@ $result->setFetchMode(PDO::FETCH_ASSOC);
 <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 	<h1 class="page-header">Games</h1>
 	<!-- All your html code you be AFTER this line -->
+	<!-- Calendar css -->
+		<link rel="stylesheet" type="text/css" href="css/tcal.css" />
+	<!-- Calendar js --> 
+		<script type="text/javascript" src="js/tcal.js"></script> 
+		<form action="games.php" method="get">
+			From : <input type="text" name="gDate1" class="tcal" value=""><br>
+			To: <input type="text" name="gDate2" class="tcal" value=""><br> 
+				<input type="submit" value="Search">
+		</form>
 	<div class="table-responsive">
 		<table class="table table-striped">
 			<thead>
@@ -72,7 +81,14 @@ $result->setFetchMode(PDO::FETCH_ASSOC);
 				</tr>
 			</thead>
 			<tbody>
-				<?php while ($row = $result->fetch()): ?>
+				<?php
+				if (isset($_GET["gDate1"])) { $gDate1 = $_GET["gDate1"]; } else { $gDate1="0000-00-00"; };
+				if (isset($_GET["gDate2"])) { $gDate2 = $_GET["gDate2"]; } else { $gDate2="0000-00-00"; };
+				$result = $dbh->prepare("SELECT * FROM nbagame_plays_playedat WHERE date BETWEEN .a AND .b");
+				$result->bindParam('.a', $gDate1);
+				$result->bindParam('.b', $gDate2);
+				$result->execute(); 
+				while ($row = $result->fetch()): ?>
 					<tr>
 						<td><?php echo $row['gameDate']?></td>
 						<td><?php echo $row['homeTeam']?></td>
