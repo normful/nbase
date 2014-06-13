@@ -36,13 +36,29 @@ SQL;
 
 <!-- CONTENT -->
 <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-	<h1 class="page-header">Venues</h1>
-	<!-- All your html code you be AFTER this line -->
-	Testing 12345678.
+    <h1 class="page-header">Venues</h1>
 
-	<!-- Look in player.php for how to iterate over the rows of your query -->
+	<div class="table-responsive">
+		<table class="table table-striped table-hover hoverTable">
+			<thead>
+				<tr>
+					<th>Venue Name</th>
+					<th>City</th>
+					<th>Address</th>
+				</tr>
+			</thead>
+			<tbody>
+				<?php while ($row = $result->fetch()): ?>
+					<tr>
+						<td><?php echo $row['venueName']?></td>
+						<td><?php echo $row['city']; ?></td>
+						<td><?php echo $row['address']; ?></td>
+					</tr>
+				<?php endwhile; ?>
+			</tbody>
+		</table>
+	</div>
 
-	<!-- All your html code you be BEFORE this line -->
 </div>
 <!-- END CONTENT -->
 
