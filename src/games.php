@@ -83,9 +83,6 @@ $result->setFetchMode(PDO::FETCH_ASSOC);
 						<td><?php echo $row['city']?></td>
 						<td><?php echo $row['refNumber']; ?></td>
 						<td>
-							<!-- <a href="delete_player.php?number=<?php echo $row['number']; ?>&team=<?php echo $row['team']; ?>">
-								<span class="glyphicon glyphicon-remove"></span>
-							</a> -->
 						</td>
 					</tr>
 				<?php endwhile; ?>
@@ -127,7 +124,7 @@ $result->setFetchMode(PDO::FETCH_ASSOC);
 				$result->bindParam('.a', $gDate1);
 				$result->bindParam('.b', $gDate2);
 				$result->execute();
-				while ($row = $result->fetch()) {
+				for ($i=0; $row = $result->fetch(); $i++) {
 					?>
 					<tr>
 						<td><?php echo $row['gameDate']?></td>
@@ -139,7 +136,7 @@ $result->setFetchMode(PDO::FETCH_ASSOC);
 						<td><?php echo $row['city']?></td>
 						<td><?php echo $row['refNumber']; ?></td>
 					</tr>
-					<?php endwhile ?>
+					<?php } ?>
 			</tbody>
 		</table>
 	</div>
