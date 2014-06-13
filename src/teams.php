@@ -56,7 +56,7 @@ $result->setFetchMode(PDO::FETCH_ASSOC);
 						<td><?php echo $row['teamName']; ?></td>
 						<td><?php echo $row['divisionName']?></td>						
 						<td>
-							<a href="delete_teams.php?abbreviation=<?php echo $row['abbreviation']; ?>">
+							<a href="delete_team.php?team=<?php echo $row['abbreviation']; ?>">
 								<span class="glyphicon glyphicon-remove"></span>
 							</a>
 						</td>

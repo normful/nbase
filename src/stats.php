@@ -14,23 +14,31 @@ try {
 	exit();
 }
 
-/*
-IMPORTANT:
-If you allow user input into the database, make sure you sanitize your inputs before inserting them into the query.
-For more information, look up prepared statements or how to escape inputs with PDO (the quote() function is OK but not ideal).
-This is more of a concern for real world projects (so you should know it anyway), but I'm not sure if the TAs will care.
-*/
-
-// WRITE YOUR SQL QUERIES HERE
-$query = <<<SQL
-SELECT attribute(s)
-FROM table(s)
-WHERE condition(s)
+if (isset($_POST['mode'])) {
+	$operator = trim($dbh->quote($_POST['operator']), "'");
+	$attribute = trim($dbh->quote($_POST['attribute']), "'");
+	if ($_POST['mode'] == "team") {
+		$sponsor = $dbh->quote($_POST['sponsor']);
+		$select = " team, " . $operator . "(" . $attribute . ") as result";
+		$from = " nbaplayer_playsfor";
+		$where = " WHERE team IN (SELECT abbreviation FROM nbateam_belongsto n, sponsor_endorses s WHERE n.abbreviation = s.team AND s.company = {$sponsor})";
+		$groupby = " GROUP BY team";
+	}  else {
+		$select = $operator . "(" . $attribute . ") as result";
+		$from = " nbaplayer_playsfor";
+		$where = "";
+		$groupby = "";
+	}
+		$query = <<<SQL
+SELECT {$select}
+FROM nbaplayer_playsfor
+{$where}
+{$groupby};
 SQL;
 
-// Uncomment the following two lines after you've written your SQL queries
-// $result = $dbh->query($query);
-// $result->setFetchMode(PDO::FETCH_ASSOC);
+	$result = $dbh->query($query);
+	$result->setFetchMode(PDO::FETCH_ASSOC);
+}
 
 ?>
 
@@ -39,9 +47,62 @@ SQL;
 	<h1 class="page-header">Statistics</h1>
 	<!-- All your html code you be AFTER this line -->
 
-	<!-- Look in player.php for how to iterate over the rows of your query -->
+		<div class="panel-group" id="accordion">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+					League-Wide
+					</a>
+				</h4>
+			</div>
+			<div id="collapseOne" class="panel-collapse collapse">
+				<div class="panel-body">
+					<?php require "forms/stats_all.php" ?>
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+					Team-Wide
+					</a>
+				</h4>
+			</div>
+			<div id="collapseTwo" class="panel-collapse collapse">
+				<div class="panel-body">
+					<?php require "forms/stats_team.php"; ?>
+				</div>
+			</div>
+		</div>
+	</div>
+	<?php $attribute = strtolower(trim(preg_replace('/(?<=\\w)(?=[A-Z])/'," $1", $attribute))); ?>
+	<?php if ($_POST['mode'] == "all"): ?>
+		<?php $row = $result->fetch() ?>
+		<h3>The <?php echo $operator . " " . $attribute; ?> for all players is <strong><?php echo round($row['result'], 0); ?></strong></h3>
+	<?php elseif ($_POST['mode'] == "team"): ?>
+		<h3>Showing the <?php echo $operator . " " . $attribute ?> for each team that is sponsored by <?php echo $sponsor ?></h3>
+		<div class="table-responsive">
+			<table class="table table-striped table-hover hoverTable">
+				<thead>
+					<tr>
+						<th>Team</th>
+						<th><?php echo ucwords($operator . " " . $attribute) ?></th>
+					</tr>
+				</thead>
+				<tbody>
+					<?php while ($row = $result->fetch()): ?>
+					<tr>
+						<td><?php echo $row['team'] ?></td>
+						<td><?php echo round($row['result'], 0) ?></td>
+					<tr>
+					<?php endwhile; ?>
+				</tbody>
+			</table>
+		</div>
+	<?php endif; ?>
 
-	<!-- All your html code you be BEFORE this line -->
 </div>         
 <!-- END CONTENT -->
 

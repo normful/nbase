@@ -5,6 +5,11 @@ function error($errorStr) {
 	echo '<script>alert("' .  $errorStr . '")</script>';
 }
 
+// Generate a pop up alert
+function alert($alertStr) {
+	echo '<script>alert("' .  $alertStr . '")</script>';
+}
+
 // Generate current url keeping only parameters specified in array $names
 function generateURL($names) {
 	$url = "";
