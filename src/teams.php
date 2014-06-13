@@ -38,7 +38,7 @@ $result->setFetchMode(PDO::FETCH_ASSOC);
 	<h1 class="page-header">Teams</h1>
 	<!-- All your html code you be AFTER this line -->
 	<div class="table-responsive">
-		<table class="table table-striped">
+		<table class="table table-striped table-hover hoverTable">
 			<thead>
 				<tr>
 					<th>City</th>
@@ -50,7 +50,7 @@ $result->setFetchMode(PDO::FETCH_ASSOC);
 			</thead>
 			<tbody>
 				<?php while ($row = $result->fetch()): ?>
-					<tr>
+					<tr onclick="document.location = 'rosters.php?<?php echo $row['abbreviation']; ?>';">
 						<td><?php echo $row['city']?></td>
 						<td><?php echo $row['abbreviation']; ?></td>
 						<td><?php echo $row['teamName']; ?></td>
