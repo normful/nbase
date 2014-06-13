@@ -1,6 +1,6 @@
 <?php
 
-require "header.php"; 
+require "header.php";
 
 // any functions you write should go in functions.php unless they are highly specific to what you're doing in this file
 require "functions.php";
@@ -38,12 +38,12 @@ SQL;
 <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 	<h1 class="page-header">Venues</h1>
 	<!-- All your html code you be AFTER this line -->
-	Testing 123.
+	Testing 123456
 
 	<!-- Look in player.php for how to iterate over the rows of your query -->
 
 	<!-- All your html code you be BEFORE this line -->
-</div>         
+</div>
 <!-- END CONTENT -->
 
 <?php require "footer.php"; ?>
