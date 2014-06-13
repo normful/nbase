@@ -23,14 +23,13 @@ This is more of a concern for real world projects (so you should know it anyway)
 
 // WRITE YOUR SQL QUERIES HERE
 $query = <<<SQL
-SELECT attribute(s)
-FROM table(s)
-WHERE condition(s)
+SELECT venueName, city, address
+FROM venues
 SQL;
 
 // Uncomment the following two lines after you've written your SQL queries
-// $result = $dbh->query($query);
-// $result->setFetchMode(PDO::FETCH_ASSOC);
+$result = $dbh->query($query);
+$result->setFetchMode(PDO::FETCH_ASSOC);
 
 ?>
 
