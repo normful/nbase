@@ -24,7 +24,7 @@ This is more of a concern for real world projects (so you should know it anyway)
 // WRITE YOUR SQL QUERIES HERE
 $query = <<<SQL
 SELECT venueName, city, address
-FROM venues
+FROM venue
 SQL;
 
 // Uncomment the following two lines after you've written your SQL queries
