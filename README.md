@@ -23,7 +23,7 @@ TODO: Add note on whether your tables fully capture your ER diagram
 ## Platform
 
 - Amazon EC2 virtual server running Ubuntu 12.04.4 LTS
-- Apache 2.4
+- Apache HTTP Server 2.4
 - MySQL 5.5.36
 - PHP 5.4.26 (with the PDO extension)
 
