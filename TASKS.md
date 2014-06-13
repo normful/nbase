@@ -20,7 +20,7 @@
 - Marvin: include the delete column (like in players.php) - Jacob will implement delete_teams.php
 - Relevant parts of project: 2, 6
 
-## rosters.php (Unassigned)
+## rosters.php (Jacob)
 
 - Display a table of players on a team including information about each player
 - Display a table of staff on a team including information about each staff member

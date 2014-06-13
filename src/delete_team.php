@@ -38,7 +38,7 @@ SQL;
 	?>
 <?php elseif (isset($_GET['team'])): ?>
 	<?php $team = $dbh->quote($_GET['team']); ?>
-	<p>Warning! You are about to delete team <strong><?php echo strtoupper(trim($team, "'")); ?></strong>. This action cannot be undone. Are you sure you want to continue?</p>
+	<p>Warning! You are about to delete team <strong><?php echo strtoupper(trim($team, "'")); ?></strong>. This will also delete all players associated with this team. This action cannot be undone. Are you sure you want to continue?</p>
 	<form method="GET">
 		<input type="hidden" name="confirm" value="yes">
 		<input type="hidden" name="team" value="<?php echo trim($team, "'"); ?>">

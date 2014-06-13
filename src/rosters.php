@@ -14,34 +14,82 @@ try {
 	exit();
 }
 
-/*
-IMPORTANT:
-If you allow user input into the database, make sure you sanitize your inputs before inserting them into the query.
-For more information, look up prepared statements or how to escape inputs with PDO (the quote() function is OK but not ideal).
-This is more of a concern for real world projects (so you should know it anyway), but I'm not sure if the TAs will care.
-*/
+$displayRoster = false;
 
-// WRITE YOUR SQL QUERIES HERE
-$query = <<<SQL
-SELECT attribute(s)
-FROM table(s)
-WHERE condition(s)
+if (isset($_GET['team']) && preg_match("/^[a-z]{3}$/", strtolower($_GET['team']))) {
+	$displayRoster = true;
+	$team = $dbh->quote($_GET['team']);
+	$query = <<<SQL
+SELECT *
+FROM nbaplayer_playsfor
+WHERE team = {$team}
 SQL;
-
-// Uncomment the following two lines after you've written your SQL queries
-// $result = $dbh->query($query);
-// $result->setFetchMode(PDO::FETCH_ASSOC);
+	$result = $dbh->query($query);
+	$result->setFetchMode(PDO::FETCH_ASSOC);
+}
 
 ?>
 
 <!-- CONTENT -->
 <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 	<h1 class="page-header">Rosters</h1>
-	<!-- All your html code you be AFTER this line -->
 
-	<!-- Look in player.php for how to iterate over the rows of your query -->
+	<div class="panel-group" id="accordion">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+					Select a team
+					</a>
+				</h4>
+			</div>
+			<div id="collapseOne" class="panel-collapse collapse">
+				<div class="panel-body">
+					<?php require "forms/rosters_select.php" ?>
+				</div>
+			</div>
+		</div>
+	</div>
 
-	<!-- All your html code you be BEFORE this line -->
+
+	<?php if ($displayRoster): ?>
+		<h2 class="sub-header">Players on team <strong><?php echo strtoupper(trim($team, "'")); ?></strong></h2>
+		<div class="table-responsive">
+			<table class="table table-striped table-hover hoverTable">
+				<thead>
+					<tr>
+						<th>Last Name</th>
+						<th>First Name</th>
+						<th>Position</th>
+						<th>Number</th>
+						<th>Height (in)</th>
+						<th>Weight (lbs)</th>
+						<th>Draft Year</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					<?php while ($row = $result->fetch()): ?>
+						<?php $playerKey = "number={$row['number']}&team={$row['team']}"; ?>
+						<tr onclick="document.location = 'profiles.php?<?php echo $playerKey; ?>';">
+							<td><?php echo $row['lastName']?></td>
+							<td><?php echo $row['firstName']; ?></td>
+							<td><?php echo $row['position']; ?></td>
+							<td><?php echo $row['number']?></td>
+							<td><?php echo $row['height']; ?></td>
+							<td><?php echo $row['weight']; ?></td>
+							<td><?php echo $row['draftYear']?></td>
+							<td>
+								<a href="delete_player.php?<?php echo $playerKey; ?>">
+									<span class="glyphicon glyphicon-remove" ></span>
+								</a>
+							</td>
+						</tr>
+					<?php endwhile; ?>
+				</tbody>
+			</table>
+		</div>
+	<?php endif; ?>
 </div>         
 <!-- END CONTENT -->
 
