@@ -26,6 +26,13 @@ WHERE team = {$team}
 SQL;
 	$result = $dbh->query($query);
 	$result->setFetchMode(PDO::FETCH_ASSOC);
+	$sponsorsQuery = <<<SQL
+SELECT company
+FROM nbateam_belongsto n, sponsor_endorses s 
+WHERE n.abbreviation = s.team AND team = {$team}
+SQL;
+	$sponsorsResult = $dbh->query($sponsorsQuery);
+	$sponsorsResult->setFetchMode(PDO::FETCH_ASSOC);
 }
 
 ?>
@@ -54,6 +61,7 @@ SQL;
 
 	<?php if ($displayRoster): ?>
 		<h2 class="sub-header">Players on team <strong><?php echo strtoupper(trim($team, "'")); ?></strong></h2>
+		<!-- Players -->
 		<div class="table-responsive">
 			<table class="table table-striped table-hover hoverTable">
 				<thead>
@@ -89,6 +97,13 @@ SQL;
 				</tbody>
 			</table>
 		</div>
+		<!-- Sponsors -->
+		<h2 class="sub-header">Sponsors of team <strong><?php echo strtoupper(trim($team, "'")); ?></strong></h2>
+		<ul>
+		<?php while ($row = $sponsorsResult->fetch()): ?>
+			<li><?php echo ucwords(strtolower($row['company'])); ?></li>
+		<?php endwhile; ?>
+		</ul>
 	<?php endif; ?>
 </div>         
 <!-- END CONTENT -->
