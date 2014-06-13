@@ -50,7 +50,7 @@ $result->setFetchMode(PDO::FETCH_ASSOC);
 			</thead>
 			<tbody>
 				<?php while ($row = $result->fetch()): ?>
-					<tr onclick="document.location = 'rosters.php?<?php echo $row['abbreviation']; ?>';">
+					<tr onclick="document.location = 'rosters.php?team=<?php echo $row['abbreviation']; ?>';">
 						<td><?php echo $row['city']?></td>
 						<td><?php echo $row['abbreviation']; ?></td>
 						<td><?php echo $row['teamName']; ?></td>
