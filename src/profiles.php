@@ -80,7 +80,7 @@ SQL;
                             <option value="" selected disabled>Select a Player</option>
                         <?php while ($row = $allPlayersResult->fetch()): ?>
                             <option value="<?php echo $row['team'] . "," . $row['number']; ?>">
-                                <?php echo $row['firstName'] . " " . $row['lastName']; ?>
+                                <?php echo $row['firstName'] . " " . $row['lastName'] . " (" . $row['team'] . ")"; ?>
                             </option>
                         <?php endwhile; ?>
                         </select>

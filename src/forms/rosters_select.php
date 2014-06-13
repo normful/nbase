@@ -14,7 +14,7 @@ $teamResults->setFetchMode(PDO::FETCH_ASSOC);
 	<select name="team" onchange="this.form.submit()">
 		<option value="" disabled selected>Select a team</option>
 		<?php while ($row = $teamResults->fetch()): ?>
-		<option value="<?php echo $row['abbreviation']; ?>"><?php echo explode(",", $row['city'])[0] . " " . $row['teamName']; ?></option>
+		<option value="<?php echo $row['abbreviation']; ?>"><?php echo explode(",", $row['city'])[0] . " " . $row['teamName'] . " (" . $row['abbreviation'] . ")"; ?></option>
 		<?php endwhile; ?>
 	<select>
 </form>
