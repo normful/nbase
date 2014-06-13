@@ -21,19 +21,18 @@ For more information, look up prepared statements or how to escape inputs with P
 This is more of a concern for real world projects (so you should know it anyway), but I'm not sure if the TAs will care.
 */
 
-// WRITE YOUR SQL QUERIES HERE
 $venuesQuery = <<<SQL
 SELECT venueName, city, address
-FROM Venue
-SQL;
-
-$teamsQuery = <<<SQL
-SELECT abbreviation, city, teamName, divisionName
-FROM NBATeam_BelongsTo
+FROM venue
 SQL;
 
 $venuesResult = $dbh->query($venuesQuery);
 $venuesResult->setFetchMode(PDO::FETCH_ASSOC);
+
+$teamsQuery = <<<SQL
+SELECT abbreviation, city, teamName, divisionName
+FROM nbateam_belongsto
+SQL;
 
 $teamsResult = $dbh->query($teamsResult);
 $teamsResult->setFetchMode(PDO::FETCH_ASSOC);
