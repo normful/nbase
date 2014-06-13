@@ -38,7 +38,7 @@ SQL;
 <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 	<h1 class="page-header">Venues</h1>
 	<!-- All your html code you be AFTER this line -->
-	Testing 123456
+	Testing 12345678.
 
 	<!-- Look in player.php for how to iterate over the rows of your query -->
 
