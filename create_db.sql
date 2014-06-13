@@ -99,3 +99,5 @@ CREATE TABLE `Referees` (
     FOREIGN KEY (`gameDate`, `homeTeam`, `awayTeam`)
         REFERENCES `NBAGame_Plays_PlayedAt` (`gameDate`, `homeTeam`, `awayTeam`)
 );
+
+SET FOREIGN_KEY_CHECKS = 1;
