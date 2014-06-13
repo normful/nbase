@@ -6,12 +6,12 @@ require "header.php";
 require "functions.php";
 
 try {
-	// connect to the Amazon EC2 MySQL database with PDO
-  	$dbh = new PDO("mysql:host=54.86.9.29;dbname=nba", 'jacob', 'jacob');
+    // connect to the Amazon EC2 MySQL database with PDO
+    $dbh = new PDO("mysql:host=54.86.9.29;dbname=nba", 'jacob', 'jacob');
 } catch(PDOException $e) {
-	// use the error() function I wrote whenever you want to signal that an error has occured
-	error($e->getMessage());
-	exit();
+    // use the error() function I wrote whenever you want to signal that an error has occured
+    error($e->getMessage());
+    exit();
 }
 
 /*
@@ -43,63 +43,50 @@ $teamsResult->setFetchMode(PDO::FETCH_ASSOC);
 <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
     <h1 class="page-header">Venues</h1>
 
-	<div class="table-responsive">
-		<table class="table table-striped table-hover hoverTable">
-			<thead>
-				<tr>
-					<th>Venue Name</th>
-					<th>City</th>
-					<th>Address</th>
-				</tr>
-			</thead>
-			<tbody>
-				<?php while ($row = $venuesResult->fetch()): ?>
-					<tr>
-						<td><?php echo $row['venueName']?></td>
-						<td><?php echo $row['city']; ?></td>
-						<td><?php echo $row['address']; ?></td>
-					</tr>
-				<?php endwhile; ?>
-			</tbody>
-		</table>
-	</div>
+    <div class="table-responsive">
+        <table class="table table-striped table-hover hoverTable">
+            <thead>
+                <tr>
+                    <th>Venue Name</th>
+                    <th>City</th>
+                    <th>Address</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php while ($row = $venuesResult->fetch()): ?>
+                    <tr>
+                        <td><?php echo $row['venueName']?></td>
+                        <td><?php echo $row['city']; ?></td>
+                        <td><?php echo $row['address']; ?></td>
+                    </tr>
+                <?php endwhile; ?>
+            </tbody>
+        </table>
+    </div>
 
-	<div class="panel-group" id="accordion">
-		<div class="panel panel-default">
-			<div class="panel-heading">
-				<h4 class="panel-title">
-					<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-					Teams that have played at all venues
-					</a>
-				</h4>
-			</div>
-			<div id="collapseOne" class="panel-collapse collapse">
-                <div class="panel-body">
-                    <div class="table-responsive">
-                        <table class="table table-striped table-hover hoverTable">
-                            <thead>
-                                <tr>
-                                    <th>Team</th>
-                                    <th>City</th>
-                                    <th>Division</th>
-                                    <th>Abbreviation</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <?php while ($row = $teamsResult->fetch()): ?>
-                                    <tr>
-                                        <td><?php echo $row['teamName']?></td>
-                                        <td><?php echo $row['city']?></td>
-                                        <td><?php echo $row['divisionName']?></td>
-                                        <td><?php echo $row['abbreviation']?></td>
-                                    </tr>
-                                <?php endwhile; ?>
-                            </tbody>
-                        </table>
-                    </div>
-				</div>
-			</div>
-		</div>
+    <h4>Teams that have played at all venues </h4>
+
+    <div class="table-responsive">
+        <table class="table table-striped table-hover hoverTable">
+            <thead>
+                <tr>
+                    <th>Team</th>
+                    <th>City</th>
+                    <th>Division</th>
+                    <th>Abbreviation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php while ($row = $teamsResult->fetch()): ?>
+                    <tr>
+                        <td><?php echo $row['teamName']?></td>
+                        <td><?php echo $row['city']?></td>
+                        <td><?php echo $row['divisionName']?></td>
+                        <td><?php echo $row['abbreviation']?></td>
+                    </tr>
+                <?php endwhile; ?>
+            </tbody>
+        </table>
     </div>
 
 </div>
