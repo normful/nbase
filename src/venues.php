@@ -21,6 +21,7 @@ For more information, look up prepared statements or how to escape inputs with P
 This is more of a concern for real world projects (so you should know it anyway), but I'm not sure if the TAs will care.
 */
 
+// Find all venues
 $venuesQuery = <<<SQL
 SELECT venueName, city, address
 FROM venue
@@ -29,16 +30,18 @@ SQL;
 $venuesResult = $dbh->query($venuesQuery);
 $venuesResult->setFetchMode(PDO::FETCH_ASSOC);
 
+// Find all teams that have played at all venues
 $teamsQuery = <<<SQL
-SELECT abbreviation, city, teamName, divisionName
+SELECT *
 FROM nbateam_belongsto T
-WHERE NOT EXISTS (SELECT venueName
-                  FROM venue V
-                  WHERE NOT EXISTS (SELECT venueName
-                                    FROM nbagame_plays_playedat G
-                                    WHERE G.venueName = V.venueName AND
-                                          (G.homeTeam = T.abbreviation OR
-                                           G.awayTeam = T.abbreviation)))
+WHERE NOT EXISTS
+(SELECT V.venueName
+		FROM venue V
+        WHERE NOT EXISTS
+(SELECT DISTINCT G.venueName
+FROM nbagame_plays_playedat G
+WHERE V.venueName = G.venueName AND
+      (G.homeTeam = T.abbreviation OR G.awayTeam = T.abbreviation)))
 SQL;
 
 $teamsResult = $dbh->query($teamsQuery);
