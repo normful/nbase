@@ -3,6 +3,7 @@ gameDate	homeScore	awayScore	homeTeam	awayTeam	venueName	City
 2014-05-06	116	92	SAS	POR	AT&T Center	San Antonio, TX
 2014-05-10	103	118	POR	SAS	Moda Center	Portland, OR
 2014-05-07	105	122	OKC	LAC	Cheasapeake Energy Arena	Oklahoma City, OK
+2014-05-17	105	122	LAC OKC	Cheasapeake Energy Arena	Oklahoma City, OK
 2014-05-11	104	105	LAC	OKC	American Airlines Center	Dallas, TX
 2014-05-12	104	105	LAC	OKC	Moda Center	Portland, OR	1 Center Court
 2014-05-13	104	105	LAC	OKC	AT&T Center	San Antonio, TX	1 AT&T Center Parkway
