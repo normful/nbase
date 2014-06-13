@@ -124,7 +124,7 @@ $result->setFetchMode(PDO::FETCH_ASSOC);
 			</tr>
 		</thead>
 		<?php
-		while ($row = $result->fetch(); $i++) {
+		while ($row = $result->fetch()) {
 			?>
 			<tr>
 				<td><?php echo $row['gameDate']?></td>
