@@ -98,7 +98,7 @@ $result->setFetchMode(PDO::FETCH_ASSOC);
 	<div class ="data-responsive">
 		<!-- Calendar css -->
 		<link rel="stylesheet" type="text/css" href="css/tcal.css" />
-		<!-- Calendar jss --> 
+		<!-- Calendar js --> 
 		<script type="text/javascript" src="js/tcal.js"></script> 
 		<form action="games.php" method="get">
 			From : <input type="text" name="gDate1" class="tcal" value=""><br>
@@ -123,9 +123,9 @@ $result->setFetchMode(PDO::FETCH_ASSOC);
 				<?php
 				if (isset($_GET["gDate1"])) { $gDate1 = $_GET["gDate1"]; } else { $gDate1="0000-00-00"; };
 				if (isset($_GET["gDate2"])) { $gDate2 = $_GET["gDate2"]; } else { $gDate2="0000-00-00"; };
-				$result = $dbh->prepare("SELECT * FROM nbagame_plays_playedat WHERE date BETWEEN :a AND :b");
-				$result->bindParam(':a', $gDate1);
-				$result->bindParam(':b', $gDate2);
+				$result = $dbh->prepare("SELECT * FROM nbagame_plays_playedat WHERE nbagame_plays_playedat.gameDate BETWEEN :a AND :b");
+				$result->bindValue(':a', $gDate1);
+				$result->bindValue(':b', $gDate2);
 				$result->execute();
 				for($i=0; $row = $result->fetch(); $i++){
 					?>
