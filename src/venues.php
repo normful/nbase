@@ -31,10 +31,17 @@ $venuesResult->setFetchMode(PDO::FETCH_ASSOC);
 
 $teamsQuery = <<<SQL
 SELECT abbreviation, city, teamName, divisionName
-FROM nbateam_belongsto
+FROM nbateam_belongsto T
+WHERE NOT EXISTS (SELECT venueName
+                  FROM venue V
+                  WHERE NOT EXISTS (SELECT venueName
+                                    FROM nbagame_plays_playedat G
+                                    WHERE G.venueName = V.venueName AND
+                                          (G.homeTeam = T.abbreviation OR
+                                           G.awayTeam = T.abbreviation)))
 SQL;
 
-$teamsResult = $dbh->query($teamsResult);
+$teamsResult = $dbh->query($teamsQuery);
 $teamsResult->setFetchMode(PDO::FETCH_ASSOC);
 
 ?>
@@ -64,7 +71,7 @@ $teamsResult->setFetchMode(PDO::FETCH_ASSOC);
         </table>
     </div>
 
-    <h4>Teams that have played at all venues </h4>
+    <h2>Teams that have played at all venues</h2>
 
     <div class="table-responsive">
         <table class="table table-striped table-hover hoverTable">
