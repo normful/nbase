@@ -19,6 +19,7 @@ $displayRoster = false;
 if (isset($_GET['team']) && preg_match("/^[a-z]{3}$/", strtolower($_GET['team']))) {
 	$displayRoster = true;
 	$team = $dbh->quote($_GET['team']);
+
 	$query = <<<SQL
 SELECT *
 FROM nbaplayer_playsfor
@@ -26,6 +27,15 @@ WHERE team = {$team}
 SQL;
 	$result = $dbh->query($query);
 	$result->setFetchMode(PDO::FETCH_ASSOC);
+
+	$staffQuery = <<<SQL
+SELECT *
+FROM nbastaff_worksfor
+WHERE team = {$team}
+SQL;
+	$staffResult = $dbh->query($staffQuery);
+	$staffResult->setFetchMode(PDO::FETCH_ASSOC);
+
 	$sponsorsQuery = <<<SQL
 SELECT company
 FROM nbateam_belongsto n, sponsor_endorses s 
@@ -61,6 +71,7 @@ SQL;
 
 	<?php if ($displayRoster): ?>
 		<h2 class="sub-header">Players on team <strong><?php echo strtoupper(trim($team, "'")); ?></strong></h2>
+		
 		<!-- Players -->
 		<div class="table-responsive">
 			<table class="table table-striped table-hover hoverTable">
@@ -97,6 +108,30 @@ SQL;
 				</tbody>
 			</table>
 		</div>
+
+		<!-- Staff -->
+		<h2 class="sub-header">Staff on team <strong><?php echo strtoupper(trim($team, "'")); ?></strong></h2>
+		<div class="table-responsive">
+			<table class="table table-striped table-hover hoverTable">
+				<thead>
+					<tr>
+						<th>Last Name</th>
+						<th>First Name</th>
+						<th>Job</th>
+					</tr>
+				</thead>
+				<tbody>
+					<?php while ($row = $staffResult->fetch()): ?>
+						<tr>
+							<td><?php echo $row['lastName']?></td>
+							<td><?php echo $row['firstName']; ?></td>
+							<td><?php echo $row['job']; ?></td>
+						</tr>
+					<?php endwhile; ?>
+				</tbody>
+			</table>
+		</div>
+
 		<!-- Sponsors -->
 		<h2 class="sub-header">Sponsors of team <strong><?php echo strtoupper(trim($team, "'")); ?></strong></h2>
 		<ul>
