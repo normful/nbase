@@ -53,6 +53,28 @@ $teamsResult->setFetchMode(PDO::FETCH_ASSOC);
 <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
     <h1 class="page-header">Venues</h1>
 
+    <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                    Add a Venue
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <form method="POST" action="add_venue.php">
+                        Venue Name: <input type="text" name="venue" maxlength="30" required>
+                        Venue City: <input type="text" name="city" maxlength="30" required>
+                        Venue Address: <input type="text" name="address" maxlength="50" required>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="table-responsive">
         <table class="table table-striped table-hover hoverTable">
             <thead>
