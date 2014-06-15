@@ -93,7 +93,7 @@ SQL;
                 <div class="panel-body">
                     <form method="POST" action="update.php">
                         <select name="params" onchange="this.form.submit()">
-                            <option value="" selected disabled>Select a Player to Edit</option>
+                            <option value="" selected disabled>Players</option>
                         <?php while ($row = $allPlayersResult->fetch()): ?>
                             <option value="<?php echo $row['team'] . "," . $row['number']; ?>">
                                 <?php echo $row['firstName'] . " " . $row['lastName'] . " (" . $row['team'] . ")"; ?>
