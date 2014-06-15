@@ -36,7 +36,7 @@
         <div class="form-group">
             <label class="control-label col-xs-2">Number</label>
             <div class="col-xs-5">
-                <input type="number" class="form-control" name="newNumber" placeholder="<?php echo $oldNumber;?>" min="1" max="99">
+                <input type="number" class="form-control" name="newNumber" placeholder="<?php echo $oldNumber;?>" min="0" max="99">
             </div>
         </div>
 
