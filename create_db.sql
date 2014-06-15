@@ -45,7 +45,10 @@ CREATE TABLE `NBAPlayer_PlaysFor` (
     `team` CHAR(3) NOT NULL,
     PRIMARY KEY (`number`, `team`),
     FOREIGN KEY (`team`) REFERENCES `NBATeam_BelongsTo` (`abbreviation`)
-        ON DELETE CASCADE
+        ON DELETE CASCADE,
+    CHECK (`draftYear` >= 1946 AND `draftYear` <= YEAR(CURDATE()) AND
+        `number` >= 0 AND `number` <= 99 AND
+        `height` >= 0 AND `weight` >= 0)
 );
 
 CREATE TABLE `NBAStaff_WorksFor` (
@@ -79,14 +82,17 @@ CREATE TABLE `NBAGame_Plays_PlayedAt` (
         ON DELETE CASCADE,
     FOREIGN KEY (`awayTeam`) REFERENCES `NBATeam_BelongsTo` (`abbreviation`)
         ON DELETE CASCADE,
-    FOREIGN KEY (`venueName`, `city`) REFERENCES `Venue` (`venueName`,`city`)
+    FOREIGN KEY (`venueName`, `city`) REFERENCES `Venue` (`venueName`,`city`),
+    CHECK (`gameDate` >= '1946-01-11' AND `gameDate` <= CURDATE() AND
+        `homeScore` >= 0 AND `awayScore`)
 );
 
 CREATE TABLE `NBAReferee` (
     `number` INT,
     `firstName` VARCHAR(30),
     `lastName` VARCHAR(30),
-    PRIMARY KEY (`number`)
+    PRIMARY KEY (`number`),
+    CHECK (`number` >= 0 AND `number` <= 99)
 );
 
 CREATE TABLE `Referees` (
