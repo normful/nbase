@@ -79,7 +79,7 @@
   4. Show additional type checking for the update form
     * First and Last names must have only alphabet characters and have length >= 1
     * Position is selected from dropdown menu
-    * Number must be numeric and have value: 1 <= value <= 99
+    * Number must be numeric and have value: 0 <= value <= 99
       * Note: Could also attempt to update player number to a number that already exists on that team (violates primary key constraint)
     * Height must be numeric with value >= 0
     * Weight must be numeric with value >= 0
