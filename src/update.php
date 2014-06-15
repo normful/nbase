@@ -167,8 +167,6 @@ draftYear = {$newDraftYear}
 WHERE team = {$oldTeam} AND number = {$oldNumber};
 SQL;
 
-    echo $updateQuery;
-
     $updateResult = $dbh->query($updateQuery);
 
     $oldTeam = trim($oldTeam, "'");
