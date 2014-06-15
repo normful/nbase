@@ -71,7 +71,7 @@ SQL;
             <div class="panel-heading">
                 <h4 class="panel-title">
                     <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                    Select a Player
+                    Select a Player to Edit
                     </a>
                 </h4>
             </div>
@@ -79,7 +79,7 @@ SQL;
                 <div class="panel-body">
                     <form method="POST" action="update.php">
                         <select name="params" onchange="this.form.submit()">
-                            <option value="" selected disabled>Select a Player</option>
+                            <option value="" selected disabled>Select a Player to Edit</option>
                         <?php while ($row = $allPlayersResult->fetch()): ?>
                             <option value="<?php echo $row['team'] . "," . $row['number']; ?>">
                                 <?php echo $row['firstName'] . " " . $row['lastName'] . " (" . $row['team'] . ")"; ?>
@@ -107,6 +107,7 @@ SQL;
                 }
             }
         ?>
+
         <h2 class="sub-header"><?php echo $name ?></h2>
         <table>
             <tr>
@@ -114,6 +115,7 @@ SQL;
                     <img src="<?php echo $imgurl; ?>" class="roundrect" width="300"><p>
                     <table class="table table-striped">
                         <tr>
+
                             <td><?php echo '<span class="playerstat">Current Team</span>'; ?></td>
                             <td><?php echo $row['team']; ?></td>
                         </tr>
@@ -121,21 +123,18 @@ SQL;
                             <td><?php echo '<span class="playerstat">Number</span>'; ?></td>
                             <td><?php echo $row['number']; ?></td>
                         </tr>
-                        <tr>
-                            <td><?php echo '<span class="playerstat">Position</span>'; ?></td>
-                            <td><?php echo $row['position']; ?></td>
-                        </tr>
-                        <tr>
-                            <td><?php echo '<span class="playerstat">Height (in)</span>'; ?></td>
-                            <td><?php echo $row['height']; ?></td>
-                        </tr>
-                        <tr>
-                            <td><?php echo '<span class="playerstat">Weight (lbs)</span>'; ?></td>
-                            <td><?php echo $row['number']; ?></td>
-                        </tr>
-                        <tr>
-                            <td><?php echo '<span class="playerstat">Year Drafted</span>'; ?></td>
-                            <td><?php echo $row['draftYear']; ?></td>
+
+                            $row['firstName']
+                            $row['lastName']
+
+                            $row['team']
+                            $row['number']
+
+                            $row['position']
+                            $row['height']
+                            $row['weight']
+                            $row['draftYear']
+
                         </tr>
                     </table></p>
                 </td>
