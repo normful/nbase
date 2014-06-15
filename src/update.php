@@ -64,6 +64,14 @@ FROM nbaplayer_playsfor
 SQL;
     $currPlayerResult = $dbh->query($currPlayer);
     $currPlayerResult->setFetchMode(PDO::FETCH_ASSOC);
+
+    $currTeam = <<<SQL
+SELECT teamName, abbreviation
+FROM nbateam_belongsto
+WHERE abbreviation = '{$_GET['team']}'
+SQL;
+    $currTeamResult = $dbh->query($currTeam);
+    $currTeamResult->setFetchMode(PDO::FETCH_ASSOC);
 }
 
 ?>
@@ -102,6 +110,7 @@ SQL;
     <?php
     if ($displayUpdateForm):
         $player = $currPlayerResult->fetch();
+        $team = $currTeamResult->fetch();
 
         $oldFirstName = $player['firstName'];
         $oldLastName = $player['lastName'];
@@ -111,6 +120,9 @@ SQL;
         $oldWeight =  $player['weight'];
         $oldHeight = $player['height'];
         $oldDraftYear =  $player['draftYear'];
+
+        $oldTeamName = $team['teamName'];
+        $oldAbbreviation = $team['abbreviation'];
 
         require "forms/update_player.php";
     endif;

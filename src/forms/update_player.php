@@ -19,11 +19,16 @@
             <label class="control-label col-xs-2">Team</label>
             <div class="col-xs-5">
                 <select name="newTeam" class="form-control">
-                    <?php while ($row = $allTeamsResult->fetch()): ?>
-                    <option value="<?php echo $row['abbreviation']; ?>">
-                        <?php echo $row['teamName'] . " (" . $row['abbreviation'] . ")"; ?>
+                    <option value="<?php echo $oldAbbreviation; ?>">
+                        <?php echo $oldTeamName . " (" . $oldAbbreviation . ")"; ?>
                     </option>
-                    <?php endwhile; ?>
+                    <?php while ($row = $allTeamsResult->fetch()):
+                        if (strcmp($row['teamName'], $oldTeamName) != 0): ?>
+                            <option value="<?php echo $row['abbreviation']; ?>">
+                                <?php echo $row['teamName'] . " (" . $row['abbreviation'] . ")"; ?>
+                            </option>
+                    <?php endif;
+                          endwhile; ?>
                 <select>
             </div>
         </div>
