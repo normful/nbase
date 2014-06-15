@@ -41,7 +41,8 @@ if (isset($_GET['number']) && isset($_GET['team'])) {
 
 $allPlayers = <<<SQL
 SELECT firstName, lastName, number, team
-FROM nbaplayer_playsfor;
+FROM nbaplayer_playsfor
+ORDER BY firstName, lastName
 SQL;
 
 $allPlayersResult = $dbh->query($allPlayers);
