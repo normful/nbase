@@ -71,7 +71,7 @@ $result->setFetchMode(PDO::FETCH_ASSOC);
     <!-- Date Range Message -->
     <?php
     if ($fromValid && $toValid) {
-		echo "<p>Showing games between {trim($from,'\'')} and {trim($to,'\'')}</p>";
+		echo "<p>Showing games between {$from} and {$to}</p>";
 	} else {
 		echo "<p>Showing all games</p>";
 	}
