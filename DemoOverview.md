@@ -83,7 +83,7 @@
       * Note: Could also attempt to update player number to a number that already exists on that team (violates primary key constraint)
     * Height must be numeric with value >= 0
     * Weight must be numeric with value >= 0
-    * Draft year must be numeric with value >= 1946
+    * Draft year must be numeric with 1946 <= value <= currentYear
     * Team is selected from dropdown
 
 ### Extra Features (2 minutes)
