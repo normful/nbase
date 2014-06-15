@@ -3,6 +3,13 @@
 require "header.php";
 require "functions.php";
 
+if (isset($_POST['params'])) {
+    $params = explode(",", $_POST['params']);
+    $team = $params[0];
+    $number = $params[1];
+    echo "<meta http-equiv=\"refresh\" content=\"0;?team={$team}&number={$number}\">";
+}
+
 try {
 	// connect to the Amazon EC2 MySQL database with PDO
   	$dbh = new PDO("mysql:host=54.86.9.29;dbname=nba", 'jacob', 'jacob');
@@ -12,14 +19,7 @@ try {
 	exit();
 }
 
-/*
-IMPORTANT:
-If you allow user input into the database, make sure you sanitize your inputs before inserting them into the query.
-For more information, look up prepared statements or how to escape inputs with PDO (the quote() function is OK but not ideal).
-This is more of a concern for real world projects (so you should know it anyway), but I'm not sure if the TAs will care.
-*/
-
-// WRITE YOUR SQL QUERIES HERE
+// Get all players
 $allPlayers = <<<SQL
 SELECT firstName, lastName, number, team
 FROM nbaplayer_playsfor;
@@ -27,6 +27,38 @@ SQL;
 
 $allPlayersResult = $dbh->query($allPlayers);
 $allPlayersResult->setFetchMode(PDO::FETCH_ASSOC);
+
+// Build where clause from http get parameters
+$where = "";
+$displayPlayer = FALSE;
+if (isset($_GET['number']) && isset($_GET['team'])) {
+    $where .= "WHERE";
+    if (is_numeric($_GET['number'])) {
+        $where .= " number = {$_GET['number']}";
+    } else {
+        error("Invalid player number");
+        exit();
+    }
+
+    if (preg_match("/^[a-z]{3}$/", strtolower($_GET['team']))) {
+        $where .= " AND team = '{$_GET['team']}'";
+    } else {
+        error("Invalid team");
+        exit();
+    }
+    $displayPlayer = TRUE;
+}
+
+if ($displayPlayer) {
+    $currPlayer = <<<SQL
+SELECT *
+FROM nbaplayer_playsfor
+{$where};
+SQL;
+
+    $currPlayerResult = $dbh->query($currPlayer);
+    $currPlayerResult->setFetchMode(PDO::FETCH_ASSOC);
+}
 
 ?>
 
@@ -45,7 +77,7 @@ $allPlayersResult->setFetchMode(PDO::FETCH_ASSOC);
             </div>
             <div id="collapseOne" class="panel-collapse collapse">
                 <div class="panel-body">
-                    <form method="POST" action="profiles.php">
+                    <form method="POST" action="update.php">
                         <select name="params" onchange="this.form.submit()">
                             <option value="" selected disabled>Select a Player</option>
                         <?php while ($row = $allPlayersResult->fetch()): ?>
@@ -59,6 +91,57 @@ $allPlayersResult->setFetchMode(PDO::FETCH_ASSOC);
             </div>
         </div>
     </div>
+
+    <!-- Display player profile -->
+    <?php if ($displayPlayer): ?>
+        <?php
+            $row = $currPlayerResult->fetch();
+            $namequery = $row['firstName'] . "+" . $row['lastName'];
+            $name = $row['firstName'] . " " . $row['lastName'];
+            $json = get_url_contents("http://ajax.googleapis.com/ajax/services/search/images?v=1.0&q={$namequery}");
+            $data = json_decode($json);
+            foreach ($data->responseData->results as $result) {
+                if (@getimagesize($result->url) !== false) {
+                    $imgurl = $result->url;
+                    break;
+                }
+            }
+        ?>
+        <h2 class="sub-header"><?php echo $name ?></h2>
+        <table>
+            <tr>
+                <td width="300px" style="vertical-align:top;">
+                    <img src="<?php echo $imgurl; ?>" class="roundrect" width="300"><p>
+                    <table class="table table-striped">
+                        <tr>
+                            <td><?php echo '<span class="playerstat">Current Team</span>'; ?></td>
+                            <td><?php echo $row['team']; ?></td>
+                        </tr>
+                        <tr>
+                            <td><?php echo '<span class="playerstat">Number</span>'; ?></td>
+                            <td><?php echo $row['number']; ?></td>
+                        </tr>
+                        <tr>
+                            <td><?php echo '<span class="playerstat">Position</span>'; ?></td>
+                            <td><?php echo $row['position']; ?></td>
+                        </tr>
+                        <tr>
+                            <td><?php echo '<span class="playerstat">Height (in)</span>'; ?></td>
+                            <td><?php echo $row['height']; ?></td>
+                        </tr>
+                        <tr>
+                            <td><?php echo '<span class="playerstat">Weight (lbs)</span>'; ?></td>
+                            <td><?php echo $row['number']; ?></td>
+                        </tr>
+                        <tr>
+                            <td><?php echo '<span class="playerstat">Year Drafted</span>'; ?></td>
+                            <td><?php echo $row['draftYear']; ?></td>
+                        </tr>
+                    </table></p>
+                </td>
+            </tr>
+        </table>
+    <?php endif; ?>
 
 
 </div>
