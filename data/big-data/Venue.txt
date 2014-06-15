@@ -1,30 +1,30 @@
-city	venueName	address
-Atlanta	Philips Arena	1 Philips Dr
-Boston	TD Garden	100 Legends Way
-Brooklyn	Barclays Center	620 Atlantic Avenue
-Charlotte	Time Warner Cable Arena	333 E Trade St
-Chicago	United Center	1901 W Madison St
-Cleveland	Quicken Loans Arena	1 Center Ct
-Dallas	American Airlines Center	2500 Victory Ave
-Denver	Pepsi Center	1000 Chopper Cir
-Detroit	The Palace of Auburn Hills	6 Championship Dr
-Houston	Toyota Center	1510 Polk St
-Indianapolis	Bankers Life Fieldhouse	125 S Pennsylvania St
-Los Angeles	Staples Center	1111 S Figueroa St
-Memphis	FedExForum	191 Beale St
-Miami	American Airlines Arena	601 Biscayne Blvd
-Milwaukee	BMO Harris Bradley Center	1001 N 4th St
-Minneapolis	Target Center	600 First Avenue North
-New Orleans	Smoothie King Center	1501 Dave Dixon Dr
-New York City	Madison Square Garden	4 Pennsylvania Plaza
-Oakland	Oracle Arena	7000 Coliseum Way
-Oklahoma City	Chesapeake Energy Arena	100 W Reno Ave
-Orlando	Amway Center	400 West Church St
-Philadelphia	Wells Fargo Center	3601 S Broad St
-Phoenix	US Airways Center	201 E Jefferson St
-Portland	Moda Center	1 N Center Ct St
-Sacramento	Sleep Train Arena	One Sports Parkway
-Salt Lake City	EnergySolutions Arena	301 W South Temple
-San Antonio	AT&T Center	1 AT&T Center Pkwy
-Toronto	Air Canada Centre	40 Bay St
-Washington D.C.	Verizon Center	601 F St NW
+venueName	city	address
+Philips Arena	Atlanta	1 Philips Dr
+TD Garden	Boston	100 Legends Way
+Barclays Center	Brooklyn	620 Atlantic Avenue
+Time Warner Cable Arena	Charlotte	333 E Trade St
+United Center	Chicago	1901 W Madison St
+Quicken Loans Arena	Cleveland	1 Center Ct
+American Airlines Center	Dallas	2500 Victory Ave
+Pepsi Center	Denver	1000 Chopper Cir
+The Palace of Auburn Hills	Detroit	6 Championship Dr
+Toyota Center	Houston	1510 Polk St
+Bankers Life Fieldhouse	Indianapolis	125 S Pennsylvania St
+Staples Center	Los Angeles	1111 S Figueroa St
+FedExForum	Memphis	191 Beale St
+American Airlines Arena	Miami	601 Biscayne Blvd
+BMO Harris Bradley Center	Milwaukee	1001 N 4th St
+Target Center	Minneapolis	600 First Avenue North
+Smoothie King Center	New Orleans	1501 Dave Dixon Dr
+Madison Square Garden	New York City	4 Pennsylvania Plaza
+Oracle Arena	Oakland	7000 Coliseum Way
+Chesapeake Energy Arena	Oklahoma City	100 W Reno Ave
+Amway Center	Orlando	400 West Church St
+Wells Fargo Center	Philadelphia	3601 S Broad St
+US Airways Center	Phoenix	201 E Jefferson St
+Moda Center	Portland	1 N Center Ct St
+Sleep Train Arena	Sacramento	One Sports Parkway
+EnergySolutions Arena	Salt Lake City	301 W South Temple
+AT&T Center	San Antonio	1 AT&T Center Pkwy
+Air Canada Centre	Toronto	40 Bay St
+Verizon Center	Washington D.C.	601 F St NW
