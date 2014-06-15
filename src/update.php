@@ -108,7 +108,7 @@ SQL;
             }
         ?>
         <img src="<?php echo $imgurl; ?>" class="roundrect" width="300"><br />
-        <?php require "forms/update_input.php"; ?>
+        <?php require "forms/update_player.php"; ?>
     <?php endif; ?>
 
 </div>
