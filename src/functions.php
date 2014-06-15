@@ -94,4 +94,13 @@ function printImageGallery($searchQuery, $max) {
             }
 }
 
+function printScore($t1, $s1, $t2, $s2) {
+	if (intval($s1) > intval($s2)) {
+		echo "<strong>" . $t1 . ": " . $s1 . "</strong>&nbsp";
+		echo '<span class="glyphicon glyphicon-ok"></span>';
+	} else {
+		echo $t1 . ": " . $s1;
+	}
+}
+
 ?>
