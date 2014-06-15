@@ -1,0 +1,30 @@
+city	venueName	address
+Atlanta	Philips Arena	1 Philips Dr
+Boston	TD Garden	100 Legends Way
+Charlotte	Time Warner Cable Arena	333 E Trade St
+Chicago	United Center	1901 W Madison St
+Cleveland	Quicken Loans Arena	1 Center Ct
+Dallas	American Airlines Center	2500 Victory Ave
+Denver	Pepsi Center	1000 Chopper Cir
+Detroit	The Palace of Auburn Hills	6 Championship Dr
+Houston	Toyota Center	1510 Polk St
+Indianapolis	Bankers Life Fieldhouse	125 S Pennsylvania St
+Los Angeles	Staples Center	1111 S Figueroa St
+Memphis	FedExForum	191 Beale St
+Miami	American Airlines Arena	601 Biscayne Blvd
+Milwaukee	BMO Harris Bradley Center	1001 N 4th St
+Minneapolis	Target Center	600 First Avenue North
+New Orleans	Smoothie King Center	1501 Dave Dixon Dr
+New York City	Madison Square Garden	4 Pennsylvania Plaza
+Oakland	Oracle Arena	7000 Coliseum Way
+Oklahoma City	Chesapeake Energy Arena	100 W Reno Ave
+Orlando	Amway Center	400 West Church St
+Philadelphia	Wells Fargo Center	3601 S Broad St
+Phoenix	US Airways Center	201 E Jefferson St
+Portland	Moda Center	1 N Center Ct St
+Sacramento	Sleep Train Arena	One Sports Parkway
+Salt Lake City	EnergySolutions Arena	301 W South Temple
+San Antonio	AT&T Center	1 AT&T Center Pkwy
+Toronto	Air Canada Centre	40 Bay St
+Washington D.C.	Verizon Center	601 F St NW
+Brooklyn	Barclays Center	620ÊAtlantic Avenue

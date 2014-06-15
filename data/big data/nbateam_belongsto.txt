@@ -1,0 +1,31 @@
+abbreviation	city	teamName	divisionName
+ATL	Atlanta	Hawks	Southeast
+BKN	Brooklyn	Nets	Atlantic
+BOS	Boston	Celtics	Atlantic
+CHA	Charlotte	Bobcats	Southeast
+CHI	Chicago	Bulls	Central
+CLE	Cleveland	Cavaliers	Central
+DAL	Dallas	Mavericks	Southwest
+DEN	Denver	Nuggets	Northwest
+DET	Detroit	Pistons	Central
+GSW	Golden State	Warriors	Pacific
+HOU	Houston	Rockets	Southwest
+IND	Indiana	Pacers	Central
+LAC	Los Angeles	Clippers	Pacific
+LAL	Los Angeles	Lakers	Pacific
+MEM	Memphis	Grizzlies	Southwest
+MIA	Miami	Heat	Southeast
+MIL	Milwaukee	Bucks	Central
+MIN	Minnesota	Timberwolves	Northwest
+NOH	New Orleans	Pelicans	Southwest
+NYK	New York	Knicks	Atlantic
+OKC	Oklahoma City	Thunder	Northwest
+ORL	Orlando	Magic	Southeast
+PHI	Philadelphia	76ers	Atlantic
+PHX	Phoenix	Suns	Pacific
+POR	Portland	Trail Blazers	Northwest
+SAC	Sacramento	Kings	Pacific
+SAS	San Antonio	Spurs	Southwest
+TOR	Toronto	Raptors	Atlantic
+UTA	Utah	Jazz	Northwest
+WAS	Washington	Wizards	Southeast

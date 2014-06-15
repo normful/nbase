@@ -1,0 +1,1231 @@
+gameDate	 homeScore	 awayScore	 homeTeam	 awayTeam	venueName	 city
+2013-10-29	97	87	IND	ORL	Bankers Life Fieldhouse	Indianapolis
+2013-10-29	107	95	MIA	CHI	American Airlines Arena	Miami
+2013-10-29	116	103	LAL	LAC	Staples Center	Los Angeles
+2013-10-30	98	94	CLE	BKN	Quicken Loans Arena	Cleveland
+2013-10-30	114	110	PHI	MIA	Wells Fargo Center	Philadelphia
+2013-10-30	93	87	TOR	BOS	Air Canada Centre	Toronto
+2013-10-30	113	102	DET	WAS	The Palace of Auburn Hills	Detroit
+2013-10-30	90	83	NYK	MIL	Madison Square Garden	New York City
+2013-10-30	96	83	HOU	CHA	Toyota Center	Houston
+2013-10-30	120	115	MIN	ORL	Target Center	Minneapolis
+2013-10-30	95	90	IND	NOH	Bankers Life Fieldhouse	Indianapolis
+2013-10-30	118	109	DAL	ATL	American Airlines Center	Dallas
+2013-10-30	101	94	SAS	MEM	AT&T Center	San Antonio
+2013-10-30	101	98	OKC	UTA	Chesapeake Energy Arena	Oklahoma City
+2013-10-30	104	91	PHX	POR	US Airways Center	Phoenix
+2013-10-30	90	88	SAC	DEN	Sleep Train Arena	Sacramento
+2013-10-30	125	94	GSW	LAL	Oracle Arena	Oakland
+2013-10-31	82	81	CHI	NYK	United Center	Chicago
+2013-10-31	126	115	LAC	GSW	Staples Center	Los Angeles
+2013-11-01	90	84	CHA	CLE	Time Warner Cable Arena	Charlotte
+2013-11-01	110	90	ORL	NOH	Amway Center	Orlando
+2013-11-01	109	102	PHI	WAS	Wells Fargo Center	Philadelphia
+2013-11-01	102	95	ATL	TOR	Philips Arena	Atlanta
+2013-11-01	105	98	MIL	BOS	BMO Harris Bradley Center	Milwaukee
+2013-11-01	113	105	HOU	DAL	Toyota Center	Houston
+2013-11-01	111	108	MEM	DET	FedExForum	Memphis
+2013-11-01	100	81	MIN	OKC	Target Center	Minneapolis
+2013-11-01	101	100	BKN	MIA	Barclays Center	Brooklyn
+2013-11-01	113	98	POR	DEN	Moda Center	Portland
+2013-11-01	87	84	PHX	UTA	US Airways Center	Phoenix
+2013-11-01	110	101	LAC	SAC	Staples Center	Los Angeles
+2013-11-01	91	85	SAS	LAL	AT&T Center	San Antonio
+2013-11-02	89	74	IND	CLE	Bankers Life Fieldhouse	Indianapolis
+2013-11-02	107	104	PHI	CHI	Wells Fargo Center	Philadelphia
+2013-11-02	105	84	NOH	CHA	Smoothie King Center	New Orleans
+2013-11-02	111	99	DAL	MEM	American Airlines Center	Dallas
+2013-11-02	97	90	TOR	MIL	Air Canada Centre	Toronto
+2013-11-02	104	93	HOU	UTA	Toyota Center	Houston
+2013-11-02	115	105	POR	SAS	Moda Center	Portland
+2013-11-02	98	87	GSW	SAC	Oracle Arena	Oakland
+2013-11-03	87	77	DET	BOS	The Palace of Auburn Hills	Detroit
+2013-11-03	103	93	MIA	WAS	American Airlines Arena	Miami
+2013-11-03	107	86	ORL	BKN	Amway Center	Orlando
+2013-11-03	103	96	OKC	PHX	Chesapeake Energy Arena	Oklahoma City
+2013-11-03	109	100	MIN	NYK	Target Center	Minneapolis
+2013-11-03	105	103	LAL	ATL	Staples Center	Los Angeles
+2013-11-04	93	92	CLE	MIN	Quicken Loans Arena	Cleveland
+2013-11-04	110	90	GSW	PHI	Oracle Arena	Oakland
+2013-11-04	95	88	MEM	BOS	FedExForum	Memphis
+2013-11-04	137	118	LAC	HOU	Staples Center	Los Angeles
+2013-11-05	104	95	MIA	TOR	American Airlines Arena	Miami
+2013-11-05	104	88	BKN	UTA	Barclays Center	Brooklyn
+2013-11-05	99	91	IND	DET	Bankers Life Fieldhouse	Indianapolis
+2013-11-05	102	97	CHA	NYK	Time Warner Cable Arena	Charlotte
+2013-11-05	104	98	PHX	NOH	US Airways Center	Phoenix
+2013-11-05	123	104	DAL	LAL	American Airlines Center	Dallas
+2013-11-05	102	94	SAS	DEN	AT&T Center	San Antonio
+2013-11-05	116	101	HOU	POR	Toyota Center	Houston
+2013-11-05	105	100	ATL	SAC	Philips Arena	Atlanta
+2013-11-06	92	90	CHA	TOR	Time Warner Cable Arena	Charlotte
+2013-11-06	97	80	IND	CHI	Bankers Life Fieldhouse	Indianapolis
+2013-11-06	98	90	ORL	LAC	Amway Center	Orlando
+2013-11-06	116	102	WAS	PHI	Verizon Center	Washington D.C.
+2013-11-06	97	87	BOS	UTA	TD Garden	Boston
+2013-11-06	99	84	NOH	MEM	Smoothie King Center	New Orleans
+2013-11-06	109	104	MIL	CLE	BMO Harris Bradley Center	Milwaukee
+2013-11-06	106	93	GSW	MIN	Oracle Arena	Oakland
+2013-11-06	99	96	SAS	PHX	AT&T Center	San Antonio
+2013-11-06	107	93	OKC	DAL	Chesapeake Energy Arena	Oklahoma City
+2013-11-07	102	97	MIA	LAC	American Airlines Arena	Miami
+2013-11-07	109	107	DEN	ATL	Pepsi Center	Denver
+2013-11-07	99	98	LAL	HOU	Staples Center	Los Angeles
+2013-11-08	101	91	NYK	CHA	Madison Square Garden	New York City
+2013-11-08	91	84	IND	TOR	Bankers Life Fieldhouse	Indianapolis
+2013-11-08	91	89	BOS	ORL	TD Garden	Boston
+2013-11-08	94	79	PHI	CLE	Wells Fargo Center	Philadelphia
+2013-11-08	112	108	WAS	BKN	Verizon Center	Washington D.C.
+2013-11-08	119	110	OKC	DET	Chesapeake Energy Arena	Oklahoma City
+2013-11-08	97	73	CHI	UTA	United Center	Chicago
+2013-11-08	116	108	MIN	DAL	Target Center	Minneapolis
+2013-11-08	96	85	NOH	LAL	Smoothie King Center	New Orleans
+2013-11-08	76	74	SAS	GSW	AT&T Center	San Antonio
+2013-11-08	114	103	PHX	DEN	US Airways Center	Phoenix
+2013-11-08	104	91	POR	SAC	Moda Center	Portland
+2013-11-09	115	91	TOR	UTA	Air Canada Centre	Toronto
+2013-11-09	104	94	ATL	ORL	Philips Arena	Atlanta
+2013-11-09	96	91	IND	BKN	Bankers Life Fieldhouse	Indianapolis
+2013-11-09	127	125	CLE	PHI	Quicken Loans Arena	Cleveland
+2013-11-09	111	110	BOS	MIA	TD Garden	Boston
+2013-11-09	107	94	LAC	HOU	Staples Center	Los Angeles
+2013-11-09	108	90	MEM	GSW	FedExForum	Memphis
+2013-11-09	91	83	DAL	MIL	American Airlines Center	Dallas
+2013-11-09	96	85	POR	SAC	Moda Center	Portland
+2013-11-10	120	89	SAS	NYK	AT&T Center	San Antonio
+2013-11-10	106	105	OKC	WAS	Chesapeake Energy Arena	Oklahoma City
+2013-11-10	101	94	PHX	NOH	US Airways Center	Phoenix
+2013-11-10	113	90	MIN	LAL	Target Center	Minneapolis
+2013-11-11	103	94	ATL	CHA	Philips Arena	Atlanta
+2013-11-11	95	79	IND	MEM	Bankers Life Fieldhouse	Indianapolis
+2013-11-11	109	85	SAS	PHI	AT&T Center	San Antonio
+2013-11-11	120	105	BOS	ORL	TD Garden	Boston
+2013-11-11	96	81	CHI	CLE	United Center	Chicago
+2013-11-11	110	104	HOU	TOR	Toyota Center	Houston
+2013-11-11	100	81	DEN	UTA	Pepsi Center	Denver
+2013-11-11	109	103	POR	DET	Moda Center	Portland
+2013-11-11	109	107	LAC	MIN	Staples Center	Los Angeles
+2013-11-12	118	95	MIA	MIL	American Airlines Arena	Miami
+2013-11-12	105	95	DAL	WAS	American Airlines Center	Dallas
+2013-11-12	113	95	GSW	DET	Oracle Arena	Oakland
+2013-11-12	116	95	LAL	NOH	Staples Center	Los Angeles
+2013-11-13	94	91	ORL	MIL	Amway Center	Orlando
+2013-11-13	123	117	PHI	HOU	Wells Fargo Center	Philadelphia
+2013-11-13	89	83	CHA	BOS	Time Warner Cable Arena	Charlotte
+2013-11-13	103	87	TOR	MEM	Air Canada Centre	Toronto
+2013-11-13	124	95	MIN	CLE	Target Center	Minneapolis
+2013-11-13	95	91	NYK	ATL	Madison Square Garden	New York City
+2013-11-13	92	79	SAS	WAS	AT&T Center	San Antonio
+2013-11-13	111	99	DEN	LAL	Pepsi Center	Denver
+2013-11-13	111	105	UTA	NOH	EnergySolutions Arena	Salt Lake City
+2013-11-13	90	89	POR	PHX	Moda Center	Portland
+2013-11-13	107	86	SAC	BKN	Sleep Train Arena	Sacramento
+2013-11-13	111	103	LAC	OKC	Staples Center	Los Angeles
+2013-11-14	109	106	HOU	NYK	Toyota Center	Houston
+2013-11-14	116	115	GSW	OKC	Oracle Arena	Oakland
+2013-11-15	104	77	IND	MIL	Bankers Life Fieldhouse	Indianapolis
+2013-11-15	96	80	CHI	TOR	United Center	Chicago
+2013-11-15	113	103	ATL	PHI	Philips Arena	Atlanta
+2013-11-15	109	96	POR	BOS	Moda Center	Portland
+2013-11-15	86	80	CHA	CLE	Time Warner Cable Arena	Charlotte
+2013-11-15	110	104	MIA	DAL	American Airlines Arena	Miami
+2013-11-15	117	113	DEN	MIN	Pepsi Center	Denver
+2013-11-15	100	98	BKN	PHX	Barclays Center	Brooklyn
+2013-11-15	91	82	SAS	UTA	AT&T Center	San Antonio
+2013-11-15	89	86	MEM	LAL	FedExForum	Memphis
+2013-11-15	97	90	DET	SAC	The Palace of Auburn Hills	Detroit
+2013-11-16	97	81	MIA	CHA	American Airlines Arena	Miami
+2013-11-16	108	100	DAL	ORL	American Airlines Center	Dallas
+2013-11-16	103	96	CLE	WAS	Quicken Loans Arena	Cleveland
+2013-11-16	110	90	ATL	NYK	Philips Arena	Atlanta
+2013-11-16	110	94	CHI	IND	United Center	Chicago
+2013-11-16	122	111	HOU	DEN	Toyota Center	Houston
+2013-11-16	106	88	MIN	BOS	Target Center	Minneapolis
+2013-11-16	135	98	NOH	PHI	Smoothie King Center	New Orleans
+2013-11-16	92	79	OKC	MIL	Chesapeake Energy Arena	Oklahoma City
+2013-11-16	102	88	GSW	UTA	Oracle Arena	Oakland
+2013-11-16	110	103	LAC	BKN	Staples Center	Los Angeles
+2013-11-17	118	110	POR	TOR	Moda Center	Portland
+2013-11-17	97	86	MEM	SAC	FedExForum	Memphis
+2013-11-17	114	99	LAL	DET	Staples Center	Los Angeles
+2013-11-18	108	98	POR	BKN	Moda Center	Portland
+2013-11-18	86	81	CHI	CHA	United Center	Chicago
+2013-11-18	115	113	OKC	DEN	Chesapeake Energy Arena	Oklahoma City
+2013-11-18	97	94	DAL	PHI	American Airlines Center	Dallas
+2013-11-18	98	87	GSW	UTA	Oracle Arena	Oakland
+2013-11-18	106	102	MEM	LAC	FedExForum	Memphis
+2013-11-19	104	100	WAS	MIN	Verizon Center	Washington D.C.
+2013-11-19	92	86	DET	NYK	The Palace of Auburn Hills	Detroit
+2013-11-19	104	88	MIA	ATL	American Airlines Arena	Miami
+2013-11-19	109	85	HOU	BOS	Toyota Center	Houston
+2013-11-19	107	104	SAC	PHX	Sleep Train Arena	Sacramento
+2013-11-20	95	91	CHA	BKN	Time Warner Cable Arena	Charlotte
+2013-11-20	98	91	WAS	CLE	Verizon Center	Washington D.C.
+2013-11-20	103	96	IND	NYK	Bankers Life Fieldhouse	Indianapolis
+2013-11-20	120	92	MIA	ORL	American Airlines Arena	Miami
+2013-11-20	108	98	TOR	PHI	Air Canada Centre	Toronto
+2013-11-20	93	85	ATL	DET	Philips Arena	Atlanta
+2013-11-20	91	82	POR	MIL	Moda Center	Portland
+2013-11-20	102	98	LAC	MIN	Staples Center	Los Angeles
+2013-11-20	105	98	NOH	UTA	Smoothie King Center	New Orleans
+2013-11-20	104	93	SAS	BOS	AT&T Center	San Antonio
+2013-11-20	113	106	SAC	PHX	Sleep Train Arena	Sacramento
+2013-11-20	123	120	DAL	HOU	American Airlines Center	Dallas
+2013-11-20	88	81	MEM	GSW	FedExForum	Memphis
+2013-11-21	105	91	OKC	LAC	Chesapeake Energy Arena	Oklahoma City
+2013-11-21	97	87	DEN	CHI	Pepsi Center	Denver
+2013-11-22	98	91	PHX	CHA	US Airways Center	Phoenix
+2013-11-22	115	107	PHI	MIL	Wells Fargo Center	Philadelphia
+2013-11-22	96	88	TOR	WAS	Air Canada Centre	Toronto
+2013-11-22	97	82	IND	BOS	Bankers Life Fieldhouse	Indianapolis
+2013-11-22	96	89	ATL	DET	Philips Arena	Atlanta
+2013-11-22	102	86	SAS	MEM	AT&T Center	San Antonio
+2013-11-22	111	81	MIN	BKN	Target Center	Minneapolis
+2013-11-22	104	100	NOH	CLE	Smoothie King Center	New Orleans
+2013-11-22	103	93	DAL	UTA	American Airlines Center	Dallas
+2013-11-22	98	95	POR	CHI	Moda Center	Portland
+2013-11-22	102	95	LAL	GSW	Staples Center	Los Angeles
+2013-11-23	103	102	LAC	SAC	Staples Center	Los Angeles
+2013-11-23	106	98	IND	PHI	Bankers Life Fieldhouse	Indianapolis
+2013-11-23	98	89	WAS	NYK	Verizon Center	Washington D.C.
+2013-11-23	94	87	BOS	ATL	TD Garden	Boston
+2013-11-23	101	99	MIA	ORL	American Airlines Arena	Miami
+2013-11-23	112	101	HOU	MIN	Toyota Center	Houston
+2013-11-23	96	72	CHA	MIL	Time Warner Cable Arena	Charlotte
+2013-11-23	126	96	SAS	CLE	AT&T Center	San Antonio
+2013-11-23	102	100	DEN	DAL	Pepsi Center	Denver
+2013-11-23	113	101	POR	GSW	Moda Center	Portland
+2013-11-24	109	97	DET	BKN	The Palace of Auburn Hills	Detroit
+2013-11-24	121	82	LAC	CHI	Staples Center	Los Angeles
+2013-11-24	104	96	PHX	ORL	US Airways Center	Phoenix
+2013-11-24	95	73	OKC	UTA	Chesapeake Energy Arena	Oklahoma City
+2013-11-24	100	86	LAL	SAC	Staples Center	Los Angeles
+2013-11-25	96	86	BOS	CHA	TD Garden	Boston
+2013-11-25	98	84	IND	MIN	Bankers Life Fieldhouse	Indianapolis
+2013-11-25	113	94	DET	MIL	The Palace of Auburn Hills	Detroit
+2013-11-25	107	92	MIA	PHX	American Airlines Arena	Miami
+2013-11-25	93	86	HOU	MEM	Toyota Center	Houston
+2013-11-25	110	96	DEN	DAL	Pepsi Center	Denver
+2013-11-25	112	93	SAS	NOH	AT&T Center	San Antonio
+2013-11-25	89	83	UTA	CHI	EnergySolutions Arena	Salt Lake City
+2013-11-25	102	91	POR	NYK	Moda Center	Portland
+2013-11-26	102	100	BKN	TOR	Barclays Center	Brooklyn
+2013-11-26	116	111	WAS	LAL	Verizon Center	Washington D.C.
+2013-11-26	109	92	ORL	ATL	Amway Center	Orlando
+2013-11-26	102	101	GSW	NOH	Oracle Arena	Oakland
+2013-11-27	99	74	IND	CHA	Bankers Life Fieldhouse	Indianapolis
+2013-11-27	105	94	ORL	PHI	Amway Center	Orlando
+2013-11-27	100	93	MEM	BOS	FedExForum	Memphis
+2013-11-27	99	94	LAL	BKN	Staples Center	Los Angeles
+2013-11-27	95	84	MIA	CLE	American Airlines Arena	Miami
+2013-11-27	99	79	CHI	DET	United Center	Chicago
+2013-11-27	113	84	HOU	ATL	Toyota Center	Houston
+2013-11-27	100	92	WAS	MIL	Verizon Center	Washington D.C.
+2013-11-27	117	110	DEN	MIN	Pepsi Center	Denver
+2013-11-27	94	88	OKC	SAS	Chesapeake Energy Arena	Oklahoma City
+2013-11-27	103	99	DAL	GSW	American Airlines Center	Dallas
+2013-11-27	120	106	PHX	POR	US Airways Center	Phoenix
+2013-11-27	93	80	LAC	NYK	Staples Center	Los Angeles
+2013-11-29	92	76	CHA	MIL	Time Warner Cable Arena	Charlotte
+2013-11-29	109	91	SAS	ORL	AT&T Center	San Antonio
+2013-11-29	90	83	MIA	TOR	American Airlines Arena	Miami
+2013-11-29	88	87	ATL	DAL	Philips Arena	Atlanta
+2013-11-29	103	86	BOS	CLE	TD Garden	Boston
+2013-11-29	106	102	LAL	DET	Staples Center	Los Angeles
+2013-11-29	114	95	HOU	BKN	Toyota Center	Houston
+2013-11-29	113	112	OKC	GSW	Chesapeake Energy Arena	Oklahoma City
+2013-11-29	93	73	IND	WAS	Bankers Life Fieldhouse	Indianapolis
+2013-11-29	121	105	NOH	PHI	Smoothie King Center	New Orleans
+2013-11-29	97	95	DEN	NYK	Pepsi Center	Denver
+2013-11-29	112	101	PHX	UTA	US Airways Center	Phoenix
+2013-11-29	104	98	LAC	SAC	Staples Center	Los Angeles
+2013-11-30	108	101	WAS	ATL	Verizon Center	Washington D.C.
+2013-11-30	97	93	CLE	CHI	Quicken Loans Arena	Cleveland
+2013-11-30	97	88	BKN	MEM	Barclays Center	Brooklyn
+2013-11-30	112	106	MIN	DAL	Target Center	Minneapolis
+2013-11-30	112	106	HOU	SAS	Toyota Center	Houston
+2013-11-30	112	104	UTA	PHX	EnergySolutions Arena	Salt Lake City
+2013-11-30	92	85	MIL	BOS	BMO Harris Bradley Center	Milwaukee
+2013-12-01	112	98	DEN	TOR	Pepsi Center	Denver
+2013-12-01	105	100	IND	LAC	Bankers Life Fieldhouse	Indianapolis
+2013-12-01	115	100	DET	PHI	The Palace of Auburn Hills	Detroit
+2013-12-01	115	113	GSW	SAC	Oracle Arena	Oakland
+2013-12-01	99	98	MIA	CHA	American Airlines Arena	Miami
+2013-12-01	113	103	OKC	MIN	Chesapeake Energy Arena	Oklahoma City
+2013-12-01	103	99	NOH	NYK	Smoothie King Center	New Orleans
+2013-12-01	114	108	POR	LAL	Moda Center	Portland
+2013-12-02	98	80	WAS	ORL	Verizon Center	Washington D.C.
+2013-12-02	131	128	NOH	CHI	Smoothie King Center	New Orleans
+2013-12-02	102	100	SAS	ATL	AT&T Center	San Antonio
+2013-12-02	109	103	UTA	HOU	EnergySolutions Arena	Salt Lake City
+2013-12-02	106	102	POR	IND	Moda Center	Portland
+2013-12-03	126	125	PHI	ORL	Wells Fargo Center	Philadelphia
+2013-12-03	108	100	BOS	MIL	TD Garden	Boston
+2013-12-03	111	87	DEN	BKN	Pepsi Center	Denver
+2013-12-03	107	97	DET	MIA	The Palace of Auburn Hills	Detroit
+2013-12-03	110	91	MEM	PHX	FedExForum	Memphis
+2013-12-03	89	82	DAL	CHA	American Airlines Center	Dallas
+2013-12-03	97	95	OKC	SAC	Chesapeake Energy Arena	Oklahoma City
+2013-12-03	112	103	GSW	TOR	Oracle Arena	Oakland
+2013-12-04	98	88	CLE	DEN	Quicken Loans Arena	Cleveland
+2013-12-04	107	97	ATL	LAC	Philips Arena	Atlanta
+2013-12-04	97	88	PHX	HOU	US Airways Center	Phoenix
+2013-12-04	105	98	DET	MIL	The Palace of Auburn Hills	Detroit
+2013-12-04	100	97	DAL	NOH	American Airlines Center	Dallas
+2013-12-04	95	86	IND	UTA	Bankers Life Fieldhouse	Indianapolis
+2013-12-04	111	104	POR	OKC	Moda Center	Portland
+2013-12-05	113	83	NYK	BKN	Madison Square Garden	New York City
+2013-12-05	101	81	LAC	MEM	Staples Center	Los Angeles
+2013-12-05	107	87	CHI	MIA	United Center	Chicago
+2013-12-06	105	88	CHA	PHI	Time Warner Cable Arena	Charlotte
+2013-12-06	109	105	MIL	WAS	BMO Harris Bradley Center	Milwaukee
+2013-12-06	108	89	ATL	CLE	Philips Arena	Atlanta
+2013-12-06	106	98	BOS	DEN	TD Garden	Boston
+2013-12-06	121	83	NYK	ORL	Madison Square Garden	New York City
+2013-12-06	105	83	HOU	GSW	Toyota Center	Houston
+2013-12-06	109	95	OKC	NOH	Chesapeake Energy Arena	Oklahoma City
+2013-12-06	106	97	PHX	TOR	US Airways Center	Phoenix
+2013-12-06	130	98	POR	UTA	Moda Center	Portland
+2013-12-06	106	100	LAL	SAC	Staples Center	Los Angeles
+2013-12-07	103	92	DEN	PHI	Pepsi Center	Denver
+2013-12-07	88	82	CLE	LAC	Quicken Loans Arena	Cleveland
+2013-12-07	92	75	DET	CHI	The Palace of Auburn Hills	Detroit
+2013-12-07	108	82	GSW	MEM	Oracle Arena	Oakland
+2013-12-07	103	82	MIA	MIN	American Airlines Arena	Miami
+2013-12-07	90	82	BKN	MIL	Barclays Center	Brooklyn
+2013-12-07	111	100	IND	SAS	Bankers Life Fieldhouse	Indianapolis
+2013-12-07	112	102	SAC	UTA	Sleep Train Arena	Sacramento
+2013-12-07	108	106	DAL	POR	American Airlines Center	Dallas
+2013-12-08	114	73	BOS	NYK	TD Garden	Boston
+2013-12-08	110	95	MIA	DET	American Airlines Arena	Miami
+2013-12-08	98	88	HOU	ORL	Toyota Center	Houston
+2013-12-08	118	94	OKC	IND	Chesapeake Energy Arena	Oklahoma City
+2013-12-08	106	94	TOR	LAL	Air Canada Centre	Toronto
+2013-12-09	115	111	CHA	GSW	Time Warner Cable Arena	Charlotte
+2013-12-09	94	83	LAC	PHI	Staples Center	Los Angeles
+2013-12-09	75	74	DEN	WAS	Pepsi Center	Denver
+2013-12-09	94	85	MEM	ORL	FedExForum	Memphis
+2013-12-09	105	94	POR	UTA	Moda Center	Portland
+2013-12-09	112	97	SAC	DAL	Sleep Train Arena	Sacramento
+2013-12-10	109	94	CLE	NYK	Quicken Loans Arena	Cleveland
+2013-12-10	90	84	IND	MIA	Bankers Life Fieldhouse	Indianapolis
+2013-12-10	116	103	SAS	TOR	AT&T Center	San Antonio
+2013-12-10	101	92	OKC	ATL	Chesapeake Energy Arena	Oklahoma City
+2013-12-10	104	96	BKN	BOS	Barclays Center	Brooklyn
+2013-12-10	121	94	MIN	DET	Target Center	Minneapolis
+2013-12-10	78	74	MIL	CHI	BMO Harris Bradley Center	Milwaukee
+2013-12-10	114	108	PHX	LAL	US Airways Center	Phoenix
+2013-12-11	92	83	ORL	CHA	Amway Center	Orlando
+2013-12-11	96	88	LAC	BOS	Staples Center	Los Angeles
+2013-12-11	116	100	OKC	MEM	Chesapeake Energy Arena	Oklahoma City
+2013-12-11	109	77	SAS	MIL	AT&T Center	San Antonio
+2013-12-11	106	99	MIN	PHI	Target Center	Minneapolis
+2013-12-11	111	106	NOH	DET	Smoothie King Center	New Orleans
+2013-12-11	83	78	NYK	CHI	Madison Square Garden	New York City
+2013-12-11	122	101	UTA	SAC	EnergySolutions Arena	Salt Lake City
+2013-12-11	95	93	GSW	DAL	Oracle Arena	Oakland
+2013-12-12	102	93	BKN	LAC	Barclays Center	Brooklyn
+2013-12-12	111	104	POR	HOU	Moda Center	Portland
+2013-12-13	99	94	IND	CHA	Bankers Life Fieldhouse	Indianapolis
+2013-12-13	109	100	CLE	ORL	Quicken Loans Arena	Cleveland
+2013-12-13	108	100	TOR	PHI	Air Canada Centre	Toronto
+2013-12-13	101	99	ATL	WAS	Philips Arena	Atlanta
+2013-12-13	90	86	BOS	NYK	TD Garden	Boston
+2013-12-13	103	99	DET	BKN	The Palace of Auburn Hills	Detroit
+2013-12-13	104	98	NOH	MEM	Smoothie King Center	New Orleans
+2013-12-13	122	97	OKC	LAL	Chesapeake Energy Arena	Oklahoma City
+2013-12-13	91	90	CHI	MIL	United Center	Chicago
+2013-12-13	117	110	SAS	MIN	AT&T Center	San Antonio
+2013-12-13	103	93	UTA	DEN	EnergySolutions Arena	Salt Lake City
+2013-12-13	116	107	PHX	SAC	US Airways Center	Phoenix
+2013-12-13	116	112	HOU	GSW	Toyota Center	Houston
+2013-12-14	88	85	LAL	CHA	Staples Center	Los Angeles
+2013-12-14	113	97	LAC	WAS	Staples Center	Los Angeles
+2013-12-14	114	107	MIA	CLE	American Airlines Arena	Miami
+2013-12-14	111	106	NYK	ATL	Madison Square Garden	New York City
+2013-12-14	99	77	TOR	CHI	Air Canada Centre	Toronto
+2013-12-14	139	105	POR	PHI	Moda Center	Portland
+2013-12-14	106	93	DAL	MIL	American Airlines Center	Dallas
+2013-12-14	100	84	SAS	UTA	AT&T Center	San Antonio
+2013-12-15	106	91	SAC	HOU	Sleep Train Arena	Sacramento
+2013-12-15	101	93	MIN	MEM	Target Center	Minneapolis
+2013-12-15	111	109	POR	DET	Moda Center	Portland
+2013-12-15	101	98	OKC	ORL	Chesapeake Energy Arena	Oklahoma City
+2013-12-15	102	93	DEN	NOH	Pepsi Center	Denver
+2013-12-15	106	102	PHX	GSW	US Airways Center	Phoenix
+2013-12-16	101	96	DET	IND	The Palace of Auburn Hills	Detroit
+2013-12-16	114	100	ATL	LAL	Philips Arena	Atlanta
+2013-12-16	101	97	BOS	MIN	TD Garden	Boston
+2013-12-16	130	94	BKN	PHI	Barclays Center	Brooklyn
+2013-12-16	117	94	MIA	UTA	American Airlines Arena	Miami
+2013-12-16	102	101	WAS	NYK	Verizon Center	Washington D.C.
+2013-12-16	83	82	ORL	CHI	Amway Center	Orlando
+2013-12-16	115	92	LAC	SAS	Staples Center	Los Angeles
+2013-12-17	95	87	CHA	SAC	Time Warner Cable Arena	Charlotte
+2013-12-17	119	116	POR	CLE	Moda Center	Portland
+2013-12-17	96	92	LAL	MEM	Staples Center	Los Angeles
+2013-12-17	105	93	OKC	DEN	Chesapeake Energy Arena	Oklahoma City
+2013-12-17	104	93	GSW	NOH	Oracle Arena	Oakland
+2013-12-18	97	94	MIA	IND	American Airlines Arena	Miami
+2013-12-18	86	82	UTA	ORL	EnergySolutions Arena	Salt Lake City
+2013-12-18	104	102	CHA	TOR	Time Warner Cable Arena	Charlotte
+2013-12-18	124	107	ATL	SAC	Philips Arena	Atlanta
+2013-12-18	107	106	DET	BOS	The Palace of Auburn Hills	Detroit
+2013-12-18	113	107	WAS	BKN	Verizon Center	Washington D.C.
+2013-12-18	107	101	NYK	MIL	Madison Square Garden	New York City
+2013-12-18	120	109	MIN	POR	Target Center	Minneapolis
+2013-12-18	105	91	DAL	MEM	American Airlines Center	Dallas
+2013-12-18	108	101	SAS	PHX	AT&T Center	San Antonio
+2013-12-18	109	94	HOU	CHI	Toyota Center	Houston
+2013-12-18	108	95	LAC	NOH	Staples Center	Los Angeles
+2013-12-19	107	95	OKC	CHI	Chesapeake Energy Arena	Oklahoma City
+2013-12-19	104	102	SAS	GSW	AT&T Center	San Antonio
+2013-12-20	121	120	PHI	BKN	Wells Fargo Center	Philadelphia
+2013-12-20	118	85	ATL	UTA	Philips Arena	Atlanta
+2013-12-20	114	111	CLE	MIL	Quicken Loans Arena	Cleveland
+2013-12-20	116	106	CHA	DET	Time Warner Cable Arena	Charlotte
+2013-12-20	122	103	MIA	SAC	American Airlines Arena	Miami
+2013-12-20	114	81	IND	HOU	Bankers Life Fieldhouse	Indianapolis
+2013-12-20	109	108	TOR	DAL	Air Canada Centre	Toronto
+2013-12-20	103	99	PHX	DEN	US Airways Center	Phoenix
+2013-12-20	104	91	LAL	MIN	Staples Center	Los Angeles
+2013-12-21	95	87	MEM	NYK	FedExForum	Memphis
+2013-12-21	106	99	WAS	BOS	Verizon Center	Washington D.C.
+2013-12-21	88	85	UTA	CHA	EnergySolutions Arena	Salt Lake City
+2013-12-21	105	100	SAC	ORL	Sleep Train Arena	Sacramento
+2013-12-21	114	97	HOU	DET	Toyota Center	Houston
+2013-12-21	100	84	CHI	CLE	United Center	Chicago
+2013-12-21	116	106	MIL	PHI	BMO Harris Bradley Center	Milwaukee
+2013-12-21	113	100	OKC	SAS	Chesapeake Energy Arena	Oklahoma City
+2013-12-21	123	108	PHX	DAL	US Airways Center	Phoenix
+2013-12-21	110	107	POR	NOH	Moda Center	Portland
+2013-12-21	102	83	GSW	LAL	Oracle Arena	Oakland
+2013-12-21	112	91	LAC	DEN	Staples Center	Los Angeles
+2013-12-22	106	79	IND	BOS	Bankers Life Fieldhouse	Indianapolis
+2013-12-22	104	98	TOR	OKC	Air Canada Centre	Toronto
+2013-12-22	120	116	LAC	MIN	Staples Center	Los Angeles
+2013-12-23	111	110	CHA	MIL	Time Warner Cable Arena	Charlotte
+2013-12-23	115	92	DET	CLE	The Palace of Auburn Hills	Detroit
+2013-12-23	103	98	NYK	ORL	Madison Square Garden	New York City
+2013-12-23	103	86	IND	BKN	Bankers Life Fieldhouse	Indianapolis
+2013-12-23	121	119	MIA	ATL	American Airlines Arena	Miami
+2013-12-23	111	104	DAL	HOU	American Airlines Center	Dallas
+2013-12-23	104	94	MEM	UTA	FedExForum	Memphis
+2013-12-23	112	99	SAS	TOR	AT&T Center	San Antonio
+2013-12-23	89	81	GSW	DEN	Oracle Arena	Oakland
+2013-12-23	117	90	PHX	LAL	US Airways Center	Phoenix
+2013-12-23	113	100	NOH	SAC	Smoothie King Center	New Orleans
+2013-12-25	95	78	CHI	BKN	United Center	Chicago
+2013-12-25	123	94	OKC	NYK	Chesapeake Energy Arena	Oklahoma City
+2013-12-25	101	95	MIA	LAL	American Airlines Arena	Miami
+2013-12-25	111	98	HOU	SAS	Toyota Center	Houston
+2013-12-25	105	103	GSW	LAC	Oracle Arena	Oakland
+2013-12-26	127	125	ATL	CLE	Philips Arena	Atlanta
+2013-12-26	100	92	HOU	MEM	Toyota Center	Houston
+2013-12-26	116	107	SAS	DAL	AT&T Center	San Antonio
+2013-12-26	116	112	POR	LAC	Moda Center	Portland
+2013-12-27	89	85	OKC	CHA	Chesapeake Energy Arena	Oklahoma City
+2013-12-27	109	92	ORL	DET	Amway Center	Orlando
+2013-12-27	104	93	BKN	MIL	Barclays Center	Brooklyn
+2013-12-27	95	83	TOR	NYK	Air Canada Centre	Toronto
+2013-12-27	120	98	MIN	WAS	Target Center	Minneapolis
+2013-12-27	105	89	NOH	DEN	Smoothie King Center	New Orleans
+2013-12-27	105	103	UTA	LAL	EnergySolutions Arena	Salt Lake City
+2013-12-27	108	103	SAC	MIA	Sleep Train Arena	Sacramento
+2013-12-27	115	86	GSW	PHX	Oracle Arena	Oakland
+2013-12-28	103	100	BOS	CLE	TD Garden	Boston
+2013-12-28	105	91	IND	BKN	Bankers Life Fieldhouse	Indianapolis
+2013-12-28	115	100	TOR	NYK	Air Canada Centre	Toronto
+2013-12-28	106	82	WAS	DET	Verizon Center	Washington D.C.
+2013-12-28	118	116	ATL	CHA	Philips Arena	Atlanta
+2013-12-28	105	83	DAL	CHI	American Airlines Center	Dallas
+2013-12-28	107	98	HOU	NOH	Toyota Center	Houston
+2013-12-28	120	99	MEM	DEN	FedExForum	Memphis
+2013-12-28	117	95	MIN	MIL	Target Center	Minneapolis
+2013-12-28	115	101	PHX	PHI	US Airways Center	Phoenix
+2013-12-28	108	107	MIA	POR	American Airlines Arena	Miami
+2013-12-28	98	90	LAC	UTA	Staples Center	Los Angeles
+2013-12-29	108	104	GSW	CLE	Oracle Arena	Oakland
+2013-12-29	109	102	ORL	ATL	Amway Center	Orlando
+2013-12-29	117	86	OKC	HOU	Chesapeake Energy Arena	Oklahoma City
+2013-12-29	112	104	SAS	SAC	AT&T Center	San Antonio
+2013-12-29	111	104	PHI	LAL	Wells Fargo Center	Philadelphia
+2013-12-30	106	99	WAS	DET	Verizon Center	Washington D.C.
+2013-12-30	95	91	CHI	MEM	United Center	Chicago
+2013-12-30	100	98	DAL	MIN	American Airlines Center	Dallas
+2013-12-30	110	108	NOH	POR	Smoothie King Center	New Orleans
+2013-12-30	97	94	MIA	DEN	American Airlines Arena	Miami
+2013-12-30	83	80	UTA	CHA	EnergySolutions Arena	Salt Lake City
+2013-12-30	107	88	PHX	LAC	US Airways Center	Phoenix
+2013-12-31	92	91	ATL	BOS	Philips Arena	Atlanta
+2013-12-31	91	76	IND	CLE	Bankers Life Fieldhouse	Indianapolis
+2013-12-31	94	81	GSW	ORL	Oracle Arena	Oakland
+2013-12-31	85	79	TOR	CHI	Air Canada Centre	Toronto
+2013-12-31	110	106	SAC	HOU	Sleep Train Arena	Sacramento
+2013-12-31	113	92	SAS	BKN	AT&T Center	San Antonio
+2013-12-31	98	94	POR	OKC	Moda Center	Portland
+2013-12-31	94	79	MIL	LAL	BMO Harris Bradley Center	Milwaukee
+2014-01-01	87	78	DAL	WAS	American Airlines Center	Dallas
+2014-01-01	95	82	TOR	IND	Air Canada Centre	Toronto
+2014-01-01	124	112	MIN	NOH	Target Center	Minneapolis
+2014-01-01	114	102	PHI	DEN	Wells Fargo Center	Philadelphia
+2014-01-01	112	85	LAC	CHA	Staples Center	Los Angeles
+2014-01-02	87	81	CLE	ORL	Quicken Loans Arena	Cleveland
+2014-01-02	123	114	GSW	MIA	Oracle Arena	Oakland
+2014-01-02	94	82	CHI	BOS	United Center	Chicago
+2014-01-02	95	93	BKN	OKC	Barclays Center	Brooklyn
+2014-01-02	105	101	NYK	SAS	Madison Square Garden	New York City
+2014-01-02	99	91	MEM	PHX	FedExForum	Memphis
+2014-01-02	96	87	UTA	MIL	EnergySolutions Arena	Salt Lake City
+2014-01-02	134	104	POR	CHA	Moda Center	Portland
+2014-01-02	113	104	PHI	SAC	Wells Fargo Center	Philadelphia
+2014-01-03	101	88	TOR	WAS	Air Canada Centre	Toronto
+2014-01-03	101	100	GSW	ATL	Oracle Arena	Oakland
+2014-01-03	95	92	NOH	BOS	Smoothie King Center	New Orleans
+2014-01-03	102	100	HOU	NYK	Toyota Center	Houston
+2014-01-03	119	112	LAC	DAL	Staples Center	Los Angeles
+2014-01-03	111	108	DEN	MEM	Pepsi Center	Denver
+2014-01-03	110	99	LAL	UTA	Staples Center	Los Angeles
+2014-01-04	99	82	IND	NOH	Bankers Life Fieldhouse	Indianapolis
+2014-01-04	110	94	MIA	ORL	American Airlines Arena	Miami
+2014-01-04	89	82	BKN	CLE	Barclays Center	Brooklyn
+2014-01-04	91	84	CHI	ATL	United Center	Chicago
+2014-01-04	115	111	OKC	MIN	Chesapeake Energy Arena	Oklahoma City
+2014-01-04	116	92	SAS	LAC	AT&T Center	San Antonio
+2014-01-04	116	100	PHX	MIL	US Airways Center	Phoenix
+2014-01-04	101	99	PHI	POR	Wells Fargo Center	Philadelphia
+2014-01-04	113	103	CHA	SAC	Time Warner Cable Arena	Charlotte
+2014-01-05	112	84	MEM	DET	FedExForum	Memphis
+2014-01-05	82	78	IND	CLE	Bankers Life Fieldhouse	Indianapolis
+2014-01-05	102	97	MIA	TOR	American Airlines Arena	Miami
+2014-01-05	112	96	GSW	WAS	Oracle Arena	Oakland
+2014-01-05	119	96	OKC	BOS	Chesapeake Energy Arena	Oklahoma City
+2014-01-05	92	80	NYK	DAL	Madison Square Garden	New York City
+2014-01-05	137	115	DEN	LAL	Pepsi Center	Denver
+2014-01-06	126	95	MIN	PHI	Target Center	Minneapolis
+2014-01-06	91	86	BKN	ATL	Barclays Center	Brooklyn
+2014-01-06	101	81	LAC	ORL	Staples Center	Los Angeles
+2014-01-07	97	83	WAS	CHA	Verizon Center	Washington D.C.
+2014-01-07	111	93	CLE	PHI	Quicken Loans Arena	Cleveland
+2014-01-07	86	79	IND	TOR	Bankers Life Fieldhouse	Indianapolis
+2014-01-07	107	88	MIA	NOH	American Airlines Arena	Miami
+2014-01-07	89	85	NYK	DET	Madison Square Garden	New York City
+2014-01-07	92	87	CHI	PHX	United Center	Chicago
+2014-01-07	110	108	SAS	MEM	AT&T Center	San Antonio
+2014-01-07	101	80	GSW	MIL	Oracle Arena	Oakland
+2014-01-07	110	97	DAL	LAL	American Airlines Center	Dallas
+2014-01-07	129	98	DEN	BOS	Pepsi Center	Denver
+2014-01-07	112	101	UTA	OKC	EnergySolutions Arena	Salt Lake City
+2014-01-07	123	119	SAC	POR	Sleep Train Arena	Sacramento
+2014-01-08	112	90	SAS	DAL	AT&T Center	San Antonio
+2014-01-08	112	91	TOR	DET	Air Canada Centre	Toronto
+2014-01-08	97	87	ATL	IND	Philips Arena	Atlanta
+2014-01-08	102	98	BKN	GSW	Barclays Center	Brooklyn
+2014-01-08	104	103	PHX	MIN	US Airways Center	Phoenix
+2014-01-08	102	96	WAS	NOH	Verizon Center	Washington D.C.
+2014-01-08	113	99	HOU	LAL	Toyota Center	Houston
+2014-01-08	110	94	POR	ORL	Moda Center	Portland
+2014-01-08	111	105	LAC	BOS	Staples Center	Los Angeles
+2014-01-09	102	92	NYK	MIA	Madison Square Garden	New York City
+2014-01-09	101	88	DEN	OKC	Pepsi Center	Denver
+2014-01-10	93	66	IND	WAS	Bankers Life Fieldhouse	Indianapolis
+2014-01-10	114	104	DET	PHI	The Palace of Auburn Hills	Detroit
+2014-01-10	83	80	ATL	HOU	Philips Arena	Atlanta
+2014-01-10	104	99	MEM	PHX	FedExForum	Memphis
+2014-01-10	119	92	MIN	CHA	Target Center	Minneapolis
+2014-01-10	107	90	DAL	NOH	American Airlines Center	Dallas
+2014-01-10	104	95	BKN	MIA	Barclays Center	Brooklyn
+2014-01-10	81	72	CHI	MIL	United Center	Chicago
+2014-01-10	113	102	CLE	UTA	Quicken Loans Arena	Cleveland
+2014-01-10	103	83	SAC	ORL	Sleep Train Arena	Sacramento
+2014-01-10	99	97	GSW	BOS	Oracle Arena	Oakland
+2014-01-10	123	87	LAC	LAL	Staples Center	Los Angeles
+2014-01-11	96	80	TOR	BKN	Air Canada Centre	Toronto
+2014-01-11	114	107	HOU	WAS	Toyota Center	Houston
+2014-01-11	110	108	DET	PHX	The Palace of Auburn Hills	Detroit
+2014-01-11	102	92	NYK	PHI	Madison Square Garden	New York City
+2014-01-11	103	97	CHI	CHA	United Center	Chicago
+2014-01-11	101	85	OKC	MIL	Chesapeake Energy Arena	Oklahoma City
+2014-01-11	110	107	DAL	NOH	American Airlines Center	Dallas
+2014-01-11	120	94	DEN	ORL	Pepsi Center	Denver
+2014-01-11	112	104	POR	BOS	Moda Center	Portland
+2014-01-12	124	80	SAC	CLE	Sleep Train Arena	Sacramento
+2014-01-12	108	101	MEM	ATL	FedExForum	Memphis
+2014-01-12	104	86	SAS	MIN	AT&T Center	San Antonio
+2014-01-13	116	94	TOR	MIL	Air Canada Centre	Toronto
+2014-01-13	104	92	HOU	BOS	Toyota Center	Houston
+2014-01-13	98	96	NYK	PHX	Madison Square Garden	New York City
+2014-01-13	102	88	WAS	CHI	Verizon Center	Washington D.C.
+2014-01-13	101	95	SAS	NOH	AT&T Center	San Antonio
+2014-01-13	107	88	DAL	ORL	American Airlines Center	Dallas
+2014-01-13	118	103	UTA	DEN	EnergySolutions Arena	Salt Lake City
+2014-01-14	108	98	CHA	NYK	Time Warner Cable Arena	Charlotte
+2014-01-14	116	92	IND	SAC	Bankers Life Fieldhouse	Indianapolis
+2014-01-14	90	87	MEM	OKC	FedExForum	Memphis
+2014-01-14	120	118	CLE	LAL	Quicken Loans Arena	Cleveland
+2014-01-15	128	125	CHI	ORL	United Center	Chicago
+2014-01-15	95	92	PHI	CHA	Wells Fargo Center	Philadelphia
+2014-01-15	114	97	WAS	MIA	Verizon Center	Washington D.C.
+2014-01-15	88	83	BOS	TOR	TD Garden	Boston
+2014-01-15	82	77	MEM	MIL	FedExForum	Memphis
+2014-01-15	111	108	SAC	MIN	Sleep Train Arena	Sacramento
+2014-01-15	103	100	HOU	NOH	Toyota Center	Houston
+2014-01-15	109	105	SAS	UTA	AT&T Center	San Antonio
+2014-01-15	121	114	PHX	LAL	US Airways Center	Phoenix
+2014-01-15	108	96	POR	CLE	Moda Center	Portland
+2014-01-15	123	116	DEN	GSW	Pepsi Center	Denver
+2014-01-15	129	127	LAC	DAL	Staples Center	Los Angeles
+2014-01-16	117	89	IND	NYK	Bankers Life Fieldhouse	Indianapolis
+2014-01-16	127	110	BKN	ATL	Barclays Center	Brooklyn
+2014-01-16	104	92	OKC	HOU	Chesapeake Energy Arena	Oklahoma City
+2014-01-17	109	95	LAC	NYK	Staples Center	Los Angeles
+2014-01-17	111	101	CHA	ORL	Time Warner Cable Arena	Charlotte
+2014-01-17	101	86	MIA	PHI	American Airlines Arena	Miami
+2014-01-17	94	89	TOR	MIN	Air Canada Centre	Toronto
+2014-01-17	96	93	WAS	CHI	Verizon Center	Washington D.C.
+2014-01-17	107	104	LAL	BOS	Staples Center	Los Angeles
+2014-01-17	110	89	UTA	DET	EnergySolutions Arena	Salt Lake City
+2014-01-17	91	90	MEM	SAC	FedExForum	Memphis
+2014-01-17	109	100	POR	SAS	Moda Center	Portland
+2014-01-17	117	109	CLE	DEN	Quicken Loans Arena	Cleveland
+2014-01-17	110	107	DAL	PHX	American Airlines Center	Dallas
+2014-01-17	127	121	OKC	GSW	Chesapeake Energy Arena	Oklahoma City
+2014-01-18	104	96	MIA	CHA	American Airlines Arena	Miami
+2014-01-18	106	92	IND	LAC	Bankers Life Fieldhouse	Indianapolis
+2014-01-18	104	98	DET	WAS	The Palace of Auburn Hills	Detroit
+2014-01-18	103	78	CHI	PHI	United Center	Chicago
+2014-01-18	114	104	HOU	MIL	Toyota Center	Houston
+2014-01-18	98	72	MIN	UTA	Target Center	Minneapolis
+2014-01-18	97	87	GSW	NOH	Oracle Arena	Oakland
+2014-01-18	127	111	POR	DAL	Moda Center	Portland
+2014-01-19	112	106	LAL	TOR	Staples Center	Los Angeles
+2014-01-19	93	91	ORL	BOS	Amway Center	Orlando
+2014-01-19	108	93	OKC	SAC	Chesapeake Energy Arena	Oklahoma City
+2014-01-19	110	82	SAS	MIL	AT&T Center	San Antonio
+2014-01-19	117	103	PHX	DEN	US Airways Center	Phoenix
+2014-01-20	102	97	DAL	CLE	American Airlines Center	Dallas
+2014-01-20	112	103	LAC	DET	Staples Center	Los Angeles
+2014-01-20	100	95	CHA	TOR	Time Warner Cable Arena	Charlotte
+2014-01-20	107	99	WAS	PHI	Verizon Center	Washington D.C.
+2014-01-20	103	80	BKN	NYK	Barclays Center	Brooklyn
+2014-01-20	95	92	NOH	MEM	Smoothie King Center	New Orleans
+2014-01-20	121	114	ATL	MIA	Philips Arena	Atlanta
+2014-01-20	102	100	CHI	LAL	United Center	Chicago
+2014-01-20	126	113	HOU	POR	Toyota Center	Houston
+2014-01-20	102	94	IND	GSW	Bankers Life Fieldhouse	Indianapolis
+2014-01-21	101	90	BKN	ORL	Barclays Center	Brooklyn
+2014-01-21	93	86	MIA	BOS	American Airlines Arena	Miami
+2014-01-21	114	97	SAC	NOH	Sleep Train Arena	Sacramento
+2014-01-21	105	97	OKC	POR	Chesapeake Energy Arena	Oklahoma City
+2014-01-21	112	97	MIN	UTA	Target Center	Minneapolis
+2014-01-22	95	91	CHA	LAC	Time Warner Cable Arena	Charlotte
+2014-01-22	98	87	CHI	CLE	United Center	Chicago
+2014-01-22	112	109	ATL	ORL	Philips Arena	Atlanta
+2014-01-22	93	85	TOR	DAL	Air Canada Centre	Toronto
+2014-01-22	113	111	BOS	WAS	TD Garden	Boston
+2014-01-22	110	106	PHI	NYK	Wells Fargo Center	Philadelphia
+2014-01-22	119	98	HOU	SAC	Toyota Center	Houston
+2014-01-22	104	101	MIL	DET	BMO Harris Bradley Center	Milwaukee
+2014-01-22	124	100	PHX	IND	US Airways Center	Phoenix
+2014-01-22	111	105	OKC	SAS	Chesapeake Energy Arena	Oklahoma City
+2014-01-23	109	102	MIA	LAL	American Airlines Arena	Miami
+2014-01-23	110	105	POR	DEN	Moda Center	Portland
+2014-01-24	114	105	ORL	LAL	Amway Center	Orlando
+2014-01-24	104	95	TOR	PHI	Air Canada Centre	Toronto
+2014-01-24	105	79	SAS	ATL	AT&T Center	San Antonio
+2014-01-24	101	83	OKC	BOS	Chesapeake Energy Arena	Oklahoma City
+2014-01-24	107	106	BKN	DAL	Barclays Center	Brooklyn
+2014-01-24	93	78	CLE	MIL	Quicken Loans Arena	Cleveland
+2014-01-24	103	101	NOH	DET	Smoothie King Center	New Orleans
+2014-01-24	125	96	NYK	CHA	Madison Square Garden	New York City
+2014-01-24	112	95	LAC	CHI	Staples Center	Los Angeles
+2014-01-24	88	87	MEM	HOU	FedExForum	Memphis
+2014-01-24	101	95	WAS	PHX	Verizon Center	Washington D.C.
+2014-01-24	116	111	IND	SAC	Bankers Life Fieldhouse	Indianapolis
+2014-01-24	121	120	MIN	GSW	Target Center	Minneapolis
+2014-01-25	89	87	CHI	CHA	United Center	Chicago
+2014-01-25	126	118	LAC	TOR	Staples Center	Los Angeles
+2014-01-25	103	91	OKC	PHI	Chesapeake Energy Arena	Oklahoma City
+2014-01-25	99	81	MEM	HOU	FedExForum	Memphis
+2014-01-25	112	87	ATL	MIL	Philips Arena	Atlanta
+2014-01-25	109	96	DEN	IND	Pepsi Center	Denver
+2014-01-25	104	101	UTA	WAS	EnergySolutions Arena	Salt Lake City
+2014-01-25	115	104	POR	MIN	Moda Center	Portland
+2014-01-26	113	101	MIA	SAS	American Airlines Arena	Miami
+2014-01-26	110	103	NYK	LAL	Madison Square Garden	New York City
+2014-01-26	100	92	NOH	ORL	Smoothie King Center	New Orleans
+2014-01-26	99	90	PHX	CLE	US Airways Center	Phoenix
+2014-01-26	85	79	BKN	BOS	Barclays Center	Brooklyn
+2014-01-26	116	106	DAL	DET	American Airlines Center	Dallas
+2014-01-26	103	88	GSW	POR	Oracle Arena	Oakland
+2014-01-26	125	117	DEN	SAC	Pepsi Center	Denver
+2014-01-27	124	113	PHX	PHI	US Airways Center	Phoenix
+2014-01-27	104	103	TOR	BKN	Air Canada Centre	Toronto
+2014-01-27	95	86	MIN	CHI	Target Center	Minneapolis
+2014-01-27	114	86	LAC	MIL	Staples Center	Los Angeles
+2014-01-27	111	109	OKC	ATL	Chesapeake Energy Arena	Oklahoma City
+2014-01-27	106	99	UTA	SAC	EnergySolutions Arena	Salt Lake City
+2014-01-28	100	89	NOH	CLE	Smoothie King Center	New Orleans
+2014-01-28	103	87	DET	ORL	The Palace of Auburn Hills	Detroit
+2014-01-28	114	88	NYK	BOS	Madison Square Garden	New York City
+2014-01-28	97	90	HOU	SAS	Toyota Center	Houston
+2014-01-28	98	81	MEM	POR	FedExForum	Memphis
+2014-01-28	88	85	WAS	GSW	Verizon Center	Washington D.C.
+2014-01-28	104	92	IND	LAL	Bankers Life Fieldhouse	Indianapolis
+2014-01-29	112	95	OKC	MIA	Chesapeake Energy Arena	Oklahoma City
+2014-01-29	98	83	TOR	ORL	Air Canada Centre	Toronto
+2014-01-29	95	94	PHI	BOS	Wells Fargo Center	Philadelphia
+2014-01-29	126	117	PHX	MIL	US Airways Center	Phoenix
+2014-01-29	88	77	MIN	NOH	Target Center	Minneapolis
+2014-01-29	117	115	HOU	DAL	Toyota Center	Houston
+2014-01-29	101	98	CHA	DEN	Time Warner Cable Arena	Charlotte
+2014-01-29	96	86	CHI	SAS	United Center	Chicago
+2014-01-29	99	89	MEM	SAC	FedExForum	Memphis
+2014-01-29	110	103	LAC	WAS	Staples Center	Los Angeles
+2014-01-30	102	94	PHX	IND	US Airways Center	Phoenix
+2014-01-30	117	86	NYK	CLE	Madison Square Garden	New York City
+2014-01-30	111	92	GSW	LAC	Oracle Arena	Oakland
+2014-01-31	113	102	ORL	MIL	Amway Center	Orlando
+2014-01-31	125	99	ATL	PHI	Philips Arena	Atlanta
+2014-01-31	94	90	MEM	MIN	FedExForum	Memphis
+2014-01-31	120	95	OKC	BKN	Chesapeake Energy Arena	Oklahoma City
+2014-01-31	107	103	DAL	SAC	American Airlines Center	Dallas
+2014-01-31	100	90	TOR	DEN	Air Canada Centre	Toronto
+2014-01-31	110	100	CHA	LAL	Time Warner Cable Arena	Charlotte
+2014-01-31	95	90	GSW	UTA	Oracle Arena	Oakland
+2014-02-01	97	96	IND	BKN	Bankers Life Fieldhouse	Indianapolis
+2014-02-01	96	81	WAS	OKC	Verizon Center	Washington D.C.
+2014-02-01	120	113	ATL	MIN	Philips Arena	Atlanta
+2014-02-01	113	96	DET	PHI	The Palace of Auburn Hills	Detroit
+2014-02-01	106	92	HOU	CLE	Toyota Center	Houston
+2014-02-01	99	90	MEM	MIL	FedExForum	Memphis
+2014-02-01	88	79	NOH	CHI	Smoothie King Center	New Orleans
+2014-02-01	95	93	SAS	SAC	AT&T Center	San Antonio
+2014-02-01	106	91	MIA	NYK	American Airlines Arena	Miami
+2014-02-01	105	95	PHX	CHA	US Airways Center	Phoenix
+2014-02-01	106	103	POR	TOR	Moda Center	Portland
+2014-02-01	102	87	LAC	UTA	Staples Center	Los Angeles
+2014-02-02	96	89	BOS	ORL	TD Garden	Boston
+2014-02-03	98	79	IND	ORL	Bankers Life Fieldhouse	Indianapolis
+2014-02-03	100	90	WAS	POR	Verizon Center	Washington D.C.
+2014-02-03	108	102	BKN	PHI	Barclays Center	Brooklyn
+2014-02-03	102	96	MIA	DET	American Airlines Arena	Miami
+2014-02-03	101	98	MIL	NYK	BMO Harris Bradley Center	Milwaukee
+2014-02-03	102	95	SAS	NOH	AT&T Center	San Antonio
+2014-02-03	86	77	OKC	MEM	Chesapeake Energy Arena	Oklahoma City
+2014-02-03	124	107	DAL	CLE	American Airlines Center	Dallas
+2014-02-03	116	115	DEN	LAC	Pepsi Center	Denver
+2014-02-03	94	79	TOR	UTA	Air Canada Centre	Toronto
+2014-02-03	99	70	SAC	CHI	Sleep Train Arena	Sacramento
+2014-02-04	89	85	IND	ATL	Bankers Life Fieldhouse	Indianapolis
+2014-02-04	109	99	MIN	LAL	Target Center	Minneapolis
+2014-02-04	101	92	CHI	PHX	United Center	Chicago
+2014-02-04	91	75	CHA	GSW	Time Warner Cable Arena	Charlotte
+2014-02-05	119	108	LAL	CLE	Staples Center	Los Angeles
+2014-02-05	114	108	BOS	PHI	TD Garden	Boston
+2014-02-05	125	118	SAS	WAS	AT&T Center	San Antonio
+2014-02-05	94	90	POR	NYK	Moda Center	Portland
+2014-02-05	122	108	HOU	PHX	Toyota Center	Houston
+2014-02-05	110	96	DAL	MEM	American Airlines Center	Dallas
+2014-02-05	105	100	NOH	ATL	Smoothie King Center	New Orleans
+2014-02-05	106	97	OKC	MIN	Chesapeake Energy Arena	Oklahoma City
+2014-02-05	112	98	ORL	DET	Amway Center	Orlando
+2014-02-05	110	100	DEN	MIL	Pepsi Center	Denver
+2014-02-05	109	101	SAC	TOR	Sleep Train Arena	Sacramento
+2014-02-05	116	112	MIA	LAC	American Airlines Arena	Miami
+2014-02-06	103	89	BKN	SAS	Barclays Center	Brooklyn
+2014-02-06	102	87	GSW	CHI	Oracle Arena	Oakland
+2014-02-07	118	113	IND	POR	Bankers Life Fieldhouse	Indianapolis
+2014-02-07	103	102	ORL	OKC	Amway Center	Orlando
+2014-02-07	112	98	LAL	PHI	Staples Center	Los Angeles
+2014-02-07	115	113	CLE	WAS	Quicken Loans Arena	Cleveland
+2014-02-07	99	89	BOS	SAC	TD Garden	Boston
+2014-02-07	111	95	DET	BKN	The Palace of Auburn Hills	Detroit
+2014-02-07	117	90	NYK	DEN	Madison Square Garden	New York City
+2014-02-07	103	81	DAL	UTA	American Airlines Center	Dallas
+2014-02-07	98	91	NOH	MIN	Smoothie King Center	New Orleans
+2014-02-07	118	105	LAC	TOR	Staples Center	Los Angeles
+2014-02-08	104	100	SAS	CHA	AT&T Center	San Antonio
+2014-02-08	79	76	MEM	ATL	FedExForum	Memphis
+2014-02-08	126	109	DET	DEN	The Palace of Auburn Hills	Detroit
+2014-02-08	117	110	POR	MIN	Moda Center	Portland
+2014-02-08	101	95	HOU	MIL	Toyota Center	Houston
+2014-02-08	122	109	PHX	GSW	US Airways Center	Phoenix
+2014-02-08	94	89	UTA	MIA	EnergySolutions Arena	Salt Lake City
+2014-02-09	112	100	OKC	NYK	Chesapeake Energy Arena	Oklahoma City
+2014-02-09	92	86	CHI	LAL	United Center	Chicago
+2014-02-09	102	91	DAL	BOS	American Airlines Center	Dallas
+2014-02-09	93	81	BKN	NOH	Barclays Center	Brooklyn
+2014-02-09	91	83	CLE	MEM	Quicken Loans Arena	Cleveland
+2014-02-09	93	92	ORL	IND	Amway Center	Orlando
+2014-02-09	93	84	WAS	SAC	Verizon Center	Washington D.C.
+2014-02-09	123	78	LAC	PHI	Staples Center	Los Angeles
+2014-02-10	119	80	IND	DEN	Bankers Life Fieldhouse	Indianapolis
+2014-02-10	108	101	TOR	NOH	Air Canada Centre	Toronto
+2014-02-10	109	100	DET	SAS	The Palace of Auburn Hills	Detroit
+2014-02-10	102	86	BOS	MIL	TD Garden	Boston
+2014-02-10	107	89	HOU	MIN	Toyota Center	Houston
+2014-02-10	123	80	GSW	PHI	Oracle Arena	Oakland
+2014-02-11	114	89	CHA	DAL	Time Warner Cable Arena	Charlotte
+2014-02-11	109	99	CLE	SAC	Quicken Loans Arena	Cleveland
+2014-02-11	100	85	CHI	ATL	United Center	Chicago
+2014-02-11	92	89	MEM	WAS	FedExForum	Memphis
+2014-02-11	103	97	MIA	PHX	American Airlines Arena	Miami
+2014-02-11	98	95	OKC	POR	Chesapeake Energy Arena	Oklahoma City
+2014-02-11	96	79	UTA	LAL	EnergySolutions Arena	Salt Lake City
+2014-02-12	81	73	DAL	IND	American Airlines Center	Dallas
+2014-02-12	86	81	MEM	ORL	FedExForum	Memphis
+2014-02-12	104	83	TOR	ATL	Air Canada Centre	Toronto
+2014-02-12	104	92	SAS	BOS	AT&T Center	San Antonio
+2014-02-12	105	89	BKN	CHA	Barclays Center	Brooklyn
+2014-02-12	93	89	CLE	DET	Quicken Loans Arena	Cleveland
+2014-02-12	106	101	SAC	NYK	Sleep Train Arena	Sacramento
+2014-02-12	113	112	HOU	WAS	Toyota Center	Houston
+2014-02-12	102	98	NOH	MIL	Smoothie King Center	New Orleans
+2014-02-12	117	90	MIN	DEN	Target Center	Minneapolis
+2014-02-12	105	100	UTA	PHI	EnergySolutions Arena	Salt Lake City
+2014-02-12	111	110	MIA	GSW	American Airlines Arena	Miami
+2014-02-12	122	117	LAC	POR	Staples Center	Los Angeles
+2014-02-13	92	76	CHI	BKN	United Center	Chicago
+2014-02-13	107	103	OKC	LAL	Chesapeake Energy Arena	Oklahoma City
+2014-02-18	108	98	IND	ATL	Bankers Life Fieldhouse	Indianapolis
+2014-02-18	114	85	CLE	PHI	Quicken Loans Arena	Cleveland
+2014-02-18	103	93	TOR	WAS	Air Canada Centre	Toronto
+2014-02-18	108	96	CHA	DET	Time Warner Cable Arena	Charlotte
+2014-02-18	98	93	MEM	NYK	FedExForum	Memphis
+2014-02-18	104	100	MIL	ORL	BMO Harris Bradley Center	Milwaukee
+2014-02-18	117	106	MIA	DAL	American Airlines Arena	Miami
+2014-02-18	112	107	PHX	DEN	US Airways Center	Phoenix
+2014-02-18	113	103	SAS	LAC	AT&T Center	San Antonio
+2014-02-19	116	98	CHA	DET	Time Warner Cable Arena	Charlotte
+2014-02-19	101	93	CLE	ORL	Quicken Loans Arena	Cleveland
+2014-02-19	94	92	CHI	TOR	United Center	Chicago
+2014-02-19	114	97	WAS	ATL	Verizon Center	Washington D.C.
+2014-02-19	104	91	MIN	IND	Target Center	Minneapolis
+2014-02-19	98	91	NYK	NOH	Madison Square Garden	New York City
+2014-02-19	100	94	PHX	BOS	US Airways Center	Phoenix
+2014-02-19	105	99	BKN	UTA	Barclays Center	Brooklyn
+2014-02-19	111	109	SAS	POR	AT&T Center	San Antonio
+2014-02-19	101	92	GSW	SAC	Oracle Arena	Oakland
+2014-02-19	134	108	HOU	LAL	Toyota Center	Houston
+2014-02-20	101	90	DEN	MIL	Pepsi Center	Denver
+2014-02-20	103	81	MIA	OKC	American Airlines Arena	Miami
+2014-02-20	102	99	GSW	HOU	Oracle Arena	Oakland
+2014-02-21	90	87	CHA	NOH	Time Warner Cable Arena	Charlotte
+2014-02-21	129	121	ORL	NYK	Amway Center	Orlando
+2014-02-21	124	112	DAL	PHI	American Airlines Center	Dallas
+2014-02-21	98	91	TOR	CLE	Air Canada Centre	Toronto
+2014-02-21	115	107	DET	ATL	The Palace of Auburn Hills	Detroit
+2014-02-21	117	89	CHI	DEN	United Center	Chicago
+2014-02-21	102	96	MEM	LAC	FedExForum	Memphis
+2014-02-21	106	85	PHX	SAS	US Airways Center	Phoenix
+2014-02-21	102	94	POR	UTA	Moda Center	Portland
+2014-02-21	101	92	LAL	BOS	Staples Center	Los Angeles
+2014-02-22	92	89	CHA	MEM	Time Warner Cable Arena	Charlotte
+2014-02-22	94	93	WAS	NOH	Verizon Center	Washington D.C.
+2014-02-22	107	98	ATL	NYK	Philips Arena	Atlanta
+2014-02-22	113	102	DAL	DET	American Airlines Center	Dallas
+2014-02-22	110	100	IND	MIL	Bankers Life Fieldhouse	Indianapolis
+2014-02-22	121	104	MIN	UTA	Target Center	Minneapolis
+2014-02-22	105	98	SAC	BOS	Sleep Train Arena	Sacramento
+2014-02-22	93	86	GSW	BKN	Oracle Arena	Oakland
+2014-02-23	125	117	LAC	OKC	Staples Center	Los Angeles
+2014-02-23	93	79	MIA	CHI	American Airlines Arena	Miami
+2014-02-23	96	83	WAS	CLE	Verizon Center	Washington D.C.
+2014-02-23	105	90	TOR	ORL	Air Canada Centre	Toronto
+2014-02-23	109	95	SAC	DEN	Sleep Train Arena	Sacramento
+2014-02-23	115	112	HOU	PHX	Toyota Center	Houston
+2014-02-23	108	102	BKN	LAL	Barclays Center	Brooklyn
+2014-02-23	108	97	POR	MIN	Moda Center	Portland
+2014-02-24	130	110	MIL	PHI	BMO Harris Bradley Center	Milwaukee
+2014-02-24	104	96	GSW	DET	Oracle Arena	Oakland
+2014-02-24	110	108	DAL	NYK	American Airlines Center	Dallas
+2014-02-24	123	110	LAC	NOH	Staples Center	Los Angeles
+2014-02-24	110	98	UTA	BOS	EnergySolutions Arena	Salt Lake City
+2014-02-25	99	93	TOR	CLE	Air Canada Centre	Toronto
+2014-02-25	118	98	IND	LAL	Bankers Life Fieldhouse	Indianapolis
+2014-02-25	115	106	WAS	ORL	Verizon Center	Washington D.C.
+2014-02-25	107	103	CHI	ATL	United Center	Chicago
+2014-02-25	100	95	POR	DEN	Moda Center	Portland
+2014-02-25	110	101	MIN	PHX	Target Center	Minneapolis
+2014-02-25	129	103	HOU	SAC	Toyota Center	Houston
+2014-02-26	101	90	ORL	PHI	Amway Center	Orlando
+2014-02-26	115	104	BOS	ATL	TD Garden	Boston
+2014-02-26	103	83	CHI	GSW	United Center	Chicago
+2014-02-26	108	89	DAL	NOH	American Airlines Center	Dallas
+2014-02-26	108	103	MEM	LAL	FedExForum	Memphis
+2014-02-26	114	104	CLE	OKC	Quicken Loans Arena	Cleveland
+2014-02-26	120	110	SAS	DET	AT&T Center	San Antonio
+2014-02-26	109	86	UTA	PHX	EnergySolutions Arena	Salt Lake City
+2014-02-26	124	80	POR	BKN	Moda Center	Portland
+2014-02-26	101	93	LAC	HOU	Staples Center	Los Angeles
+2014-02-27	101	96	IND	MIL	Bankers Life Fieldhouse	Indianapolis
+2014-02-27	134	129	WAS	TOR	Verizon Center	Washington D.C.
+2014-02-27	108	82	MIA	NYK	American Airlines Arena	Miami
+2014-02-27	112	89	BKN	DEN	Barclays Center	Brooklyn
+2014-02-28	99	79	CLE	UTA	Quicken Loans Arena	Cleveland
+2014-02-28	113	107	OKC	MEM	Chesapeake Energy Arena	Oklahoma City
+2014-02-28	126	103	GSW	NYK	Oracle Arena	Oakland
+2014-02-28	100	91	CHI	DAL	United Center	Chicago
+2014-02-28	92	82	SAS	CHA	AT&T Center	San Antonio
+2014-02-28	126	122	LAL	SAC	Staples Center	Los Angeles
+2014-02-28	116	104	PHX	NOH	US Airways Center	Phoenix
+2014-03-01	112	98	MIA	ORL	American Airlines Arena	Miami
+2014-03-01	122	103	WAS	PHI	Verizon Center	Washington D.C.
+2014-03-01	118	110	HOU	DET	Toyota Center	Houston
+2014-03-01	102	97	IND	BOS	Bankers Life Fieldhouse	Indianapolis
+2014-03-01	107	98	BKN	MIL	Barclays Center	Brooklyn
+2014-03-01	110	96	MEM	CLE	FedExForum	Memphis
+2014-03-01	102	96	POR	DEN	Moda Center	Portland
+2014-03-01	108	97	MIN	SAC	Target Center	Minneapolis
+2014-03-01	108	76	LAC	NOH	Staples Center	Los Angeles
+2014-03-02	109	90	CHI	NYK	United Center	Chicago
+2014-03-02	104	98	TOR	GSW	Air Canada Centre	Toronto
+2014-03-02	94	91	IND	UTA	Bankers Life Fieldhouse	Indianapolis
+2014-03-02	92	81	ORL	PHI	Amway Center	Orlando
+2014-03-02	116	99	OKC	CHA	Chesapeake Energy Arena	Oklahoma City
+2014-03-02	112	106	SAS	DAL	AT&T Center	San Antonio
+2014-03-02	129	120	PHX	ATL	US Airways Center	Phoenix
+2014-03-03	110	104	MEM	WAS	FedExForum	Memphis
+2014-03-03	96	80	BKN	CHI	Barclays Center	Brooklyn
+2014-03-03	96	85	DET	NYK	The Palace of Auburn Hills	Detroit
+2014-03-03	124	107	MIA	CHA	American Airlines Arena	Miami
+2014-03-03	114	88	MIL	UTA	BMO Harris Bradley Center	Milwaukee
+2014-03-03	132	128	MIN	DEN	Target Center	Minneapolis
+2014-03-03	107	106	LAL	POR	Staples Center	Los Angeles
+2014-03-03	96	89	SAC	NOH	Sleep Train Arena	Sacramento
+2014-03-04	122	101	SAS	CLE	AT&T Center	San Antonio
+2014-03-04	98	96	GSW	IND	Oracle Arena	Oakland
+2014-03-04	106	103	HOU	MIA	Toyota Center	Houston
+2014-03-04	125	92	OKC	PHI	Chesapeake Energy Arena	Oklahoma City
+2014-03-04	104	96	LAC	PHX	Staples Center	Los Angeles
+2014-03-04	132	125	NOH	LAL	Smoothie King Center	New Orleans
+2014-03-05	109	87	CHA	IND	Time Warner Cable Arena	Charlotte
+2014-03-05	101	89	HOU	ORL	Toyota Center	Houston
+2014-03-05	104	91	WAS	UTA	Verizon Center	Washington D.C.
+2014-03-05	108	88	GSW	BOS	Oracle Arena	Oakland
+2014-03-05	103	94	BKN	MEM	Barclays Center	Brooklyn
+2014-03-05	105	94	CHI	DET	United Center	Chicago
+2014-03-05	116	102	SAC	MIL	Sleep Train Arena	Sacramento
+2014-03-05	118	106	NYK	MIN	Madison Square Garden	New York City
+2014-03-05	115	110	DEN	DAL	Pepsi Center	Denver
+2014-03-05	102	78	POR	ATL	Moda Center	Portland
+2014-03-06	111	87	SAS	MIA	AT&T Center	San Antonio
+2014-03-06	128	122	PHX	OKC	US Airways Center	Phoenix
+2014-03-06	142	94	LAC	LAL	Staples Center	Los Angeles
+2014-03-07	85	77	MEM	CHI	FedExForum	Memphis
+2014-03-07	101	92	CHA	CLE	Time Warner Cable Arena	Charlotte
+2014-03-07	99	87	TOR	SAC	Air Canada Centre	Toronto
+2014-03-07	91	84	BOS	BKN	TD Garden	Boston
+2014-03-07	108	81	NYK	UTA	Madison Square Garden	New York City
+2014-03-07	114	101	MIN	DET	Target Center	Minneapolis
+2014-03-07	112	104	NOH	MIL	Smoothie King Center	New Orleans
+2014-03-07	103	98	DAL	POR	American Airlines Center	Dallas
+2014-03-07	134	126	DEN	LAL	Pepsi Center	Denver
+2014-03-07	112	86	HOU	IND	Toyota Center	Houston
+2014-03-07	111	97	GSW	ATL	Oracle Arena	Oakland
+2014-03-08	107	97	NYK	CLE	Madison Square Garden	New York City
+2014-03-08	104	92	UTA	PHI	EnergySolutions Arena	Salt Lake City
+2014-03-08	111	89	MEM	CHA	FedExForum	Memphis
+2014-03-08	114	107	WAS	MIL	Verizon Center	Washington D.C.
+2014-03-08	121	112	SAS	ORL	AT&T Center	San Antonio
+2014-03-08	109	108	LAC	ATL	Staples Center	Los Angeles
+2014-03-09	95	88	CHI	MIA	United Center	Chicago
+2014-03-09	114	110	LAL	OKC	Staples Center	Los Angeles
+2014-03-09	111	107	NOH	DEN	Smoothie King Center	New Orleans
+2014-03-09	118	111	BOS	DET	TD Garden	Boston
+2014-03-09	104	89	BKN	SAC	Barclays Center	Brooklyn
+2014-03-09	118	113	HOU	POR	Toyota Center	Houston
+2014-03-09	111	104	TOR	MIN	Air Canada Centre	Toronto
+2014-03-09	105	94	DAL	IND	American Airlines Center	Dallas
+2014-03-09	113	107	GSW	PHX	Oracle Arena	Oakland
+2014-03-10	105	98	CHA	DEN	Time Warner Cable Arena	Charlotte
+2014-03-10	101	97	BKN	TOR	Barclays Center	Brooklyn
+2014-03-10	99	90	MIA	WAS	American Airlines Arena	Miami
+2014-03-10	123	110	NYK	PHI	Madison Square Garden	New York City
+2014-03-10	105	98	MIL	ORL	BMO Harris Bradley Center	Milwaukee
+2014-03-10	112	110	ATL	UTA	Philips Arena	Atlanta
+2014-03-10	112	105	LAC	PHX	Staples Center	Los Angeles
+2014-03-11	94	83	IND	BOS	Bankers Life Fieldhouse	Indianapolis
+2014-03-11	99	89	DET	SAC	The Palace of Auburn Hills	Detroit
+2014-03-11	104	96	SAS	CHI	AT&T Center	San Antonio
+2014-03-11	109	99	MEM	POR	FedExForum	Memphis
+2014-03-11	112	101	MIN	MIL	Target Center	Minneapolis
+2014-03-11	106	98	OKC	HOU	Chesapeake Energy Arena	Oklahoma City
+2014-03-11	108	85	GSW	DAL	Oracle Arena	Oakland
+2014-03-12	96	95	BKN	MIA	Barclays Center	Brooklyn
+2014-03-12	120	112	DEN	ORL	Pepsi Center	Denver
+2014-03-12	115	98	SAC	PHI	Sleep Train Arena	Sacramento
+2014-03-12	101	87	TOR	DET	Air Canada Centre	Toronto
+2014-03-12	98	85	CHA	WAS	Time Warner Cable Arena	Charlotte
+2014-03-12	116	92	NYK	BOS	Madison Square Garden	New York City
+2014-03-12	90	88	MEM	NOH	FedExForum	Memphis
+2014-03-12	108	101	DAL	UTA	American Airlines Center	Dallas
+2014-03-12	103	90	SAS	POR	AT&T Center	San Antonio
+2014-03-12	110	101	CLE	PHX	Quicken Loans Arena	Cleveland
+2014-03-12	111	98	LAC	GSW	Staples Center	Los Angeles
+2014-03-13	111	87	CHI	HOU	United Center	Chicago
+2014-03-13	102	97	ATL	MIL	Philips Arena	Atlanta
+2014-03-13	131	102	OKC	LAL	Chesapeake Energy Arena	Oklahoma City
+2014-03-14	105	93	CHA	MIN	Time Warner Cable Arena	Charlotte
+2014-03-14	105	101	WAS	ORL	Verizon Center	Washington D.C.
+2014-03-14	101	94	IND	PHI	Bankers Life Fieldhouse	Indianapolis
+2014-03-14	99	86	TOR	MEM	Air Canada Centre	Toronto
+2014-03-14	87	80	PHX	BOS	US Airways Center	Phoenix
+2014-03-14	111	107	DEN	MIA	Pepsi Center	Denver
+2014-03-14	111	103	POR	NOH	Moda Center	Portland
+2014-03-14	119	85	SAS	LAL	AT&T Center	San Antonio
+2014-03-14	96	87	LAC	UTA	Staples Center	Los Angeles
+2014-03-14	103	94	CLE	GSW	Quicken Loans Arena	Cleveland
+2014-03-15	115	94	NYK	MIL	Madison Square Garden	New York City
+2014-03-15	101	94	WAS	BKN	Verizon Center	Washington D.C.
+2014-03-15	97	92	ATL	DEN	Philips Arena	Atlanta
+2014-03-15	112	104	IND	DET	Bankers Life Fieldhouse	Indianapolis
+2014-03-15	103	77	MEM	PHI	FedExForum	Memphis
+2014-03-15	94	87	CHI	SAC	United Center	Chicago
+2014-03-16	101	92	CHA	MIL	Time Warner Cable Arena	Charlotte
+2014-03-16	121	113	PHX	TOR	US Airways Center	Phoenix
+2014-03-16	113	104	MIA	HOU	American Airlines Arena	Miami
+2014-03-16	121	120	NOH	BOS	Smoothie King Center	New Orleans
+2014-03-16	104	102	MIN	SAC	Target Center	Minneapolis
+2014-03-16	109	86	DAL	OKC	American Airlines Center	Dallas
+2014-03-16	122	104	SAS	UTA	AT&T Center	San Antonio
+2014-03-16	113	112	GSW	POR	Oracle Arena	Oakland
+2014-03-16	102	80	LAC	CLE	Staples Center	Los Angeles
+2014-03-17	97	83	ATL	CHA	Philips Arena	Atlanta
+2014-03-17	99	90	IND	PHI	Bankers Life Fieldhouse	Indianapolis
+2014-03-17	108	95	BKN	PHX	Barclays Center	Brooklyn
+2014-03-17	97	85	OKC	CHI	Chesapeake Energy Arena	Oklahoma City
+2014-03-17	124	86	HOU	UTA	Toyota Center	Houston
+2014-03-17	94	89	DAL	BOS	American Airlines Center	Dallas
+2014-03-17	110	100	DEN	LAC	Pepsi Center	Denver
+2014-03-18	100	96	MIA	CLE	American Airlines Arena	Miami
+2014-03-18	118	113	ATL	TOR	Philips Arena	Atlanta
+2014-03-18	120	115	POR	MIL	Moda Center	Portland
+2014-03-18	117	111	SAC	WAS	Sleep Train Arena	Sacramento
+2014-03-18	103	89	GSW	ORL	Oracle Arena	Oakland
+2014-03-19	102	94	CHI	PHI	United Center	Chicago
+2014-03-19	101	96	BOS	MIA	TD Garden	Boston
+2014-03-19	104	99	BKN	CHA	Barclays Center	Brooklyn
+2014-03-19	96	86	MEM	UTA	FedExForum	Memphis
+2014-03-19	107	100	TOR	NOH	Air Canada Centre	Toronto
+2014-03-19	92	86	NYK	IND	Madison Square Garden	New York City
+2014-03-19	123	122	MIN	DAL	Target Center	Minneapolis
+2014-03-19	118	109	DEN	DET	Pepsi Center	Denver
+2014-03-19	109	93	PHX	ORL	US Airways Center	Phoenix
+2014-03-19	125	109	SAS	LAL	AT&T Center	San Antonio
+2014-03-20	102	95	OKC	CLE	Chesapeake Energy Arena	Oklahoma City
+2014-03-20	129	106	HOU	MIN	Toyota Center	Houston
+2014-03-20	116	103	POR	WAS	Moda Center	Portland
+2014-03-20	115	110	GSW	MIL	Oracle Arena	Oakland
+2014-03-21	91	79	IND	CHI	Bankers Life Fieldhouse	Indianapolis
+2014-03-21	93	92	NYK	PHI	Madison Square Garden	New York City
+2014-03-21	119	118	OKC	TOR	Chesapeake Energy Arena	Oklahoma City
+2014-03-21	111	105	NOH	ATL	Smoothie King Center	New Orleans
+2014-03-21	114	98	BKN	BOS	Barclays Center	Brooklyn
+2014-03-21	91	86	MIA	MEM	American Airlines Arena	Miami
+2014-03-21	122	106	DAL	DEN	American Airlines Center	Dallas
+2014-03-21	98	92	PHX	DET	US Airways Center	Phoenix
+2014-03-21	99	79	SAS	SAC	AT&T Center	San Antonio
+2014-03-21	117	107	WAS	LAL	Verizon Center	Washington D.C.
+2014-03-22	124	94	CHA	POR	Time Warner Cable Arena	Charlotte
+2014-03-22	118	111	HOU	CLE	Toyota Center	Houston
+2014-03-22	91	81	CHI	PHI	United Center	Chicago
+2014-03-22	82	71	MEM	IND	FedExForum	Memphis
+2014-03-22	105	95	NOH	MIA	Smoothie King Center	New Orleans
+2014-03-22	89	88	UTA	ORL	EnergySolutions Arena	Salt Lake City
+2014-03-22	99	90	SAS	GSW	AT&T Center	San Antonio
+2014-03-22	112	103	LAC	DET	Staples Center	Los Angeles
+2014-03-23	96	86	TOR	ATL	Air Canada Centre	Toronto
+2014-03-23	127	120	PHX	MIN	US Airways Center	Phoenix
+2014-03-23	105	102	DEN	WAS	Pepsi Center	Denver
+2014-03-23	124	107	SAC	MIL	Sleep Train Arena	Sacramento
+2014-03-23	107	104	BKN	DAL	Barclays Center	Brooklyn
+2014-03-23	106	100	CLE	NYK	Quicken Loans Arena	Cleveland
+2014-03-23	103	94	LAL	ORL	Staples Center	Los Angeles
+2014-03-24	100	89	HOU	CHA	Toyota Center	Houston
+2014-03-24	102	95	PHX	ATL	US Airways Center	Phoenix
+2014-03-24	93	91	MIA	POR	American Airlines Arena	Miami
+2014-03-24	89	77	CHI	IND	United Center	Chicago
+2014-03-24	109	92	MEM	MIN	FedExForum	Memphis
+2014-03-24	109	104	NOH	BKN	Smoothie King Center	New Orleans
+2014-03-24	117	96	OKC	DEN	Chesapeake Energy Arena	Oklahoma City
+2014-03-24	113	91	SAS	PHI	AT&T Center	San Antonio
+2014-03-24	114	94	DET	UTA	The Palace of Auburn Hills	Detroit
+2014-03-24	106	98	LAC	MIL	Staples Center	Los Angeles
+2014-03-25	102	100	CLE	TOR	Quicken Loans Arena	Cleveland
+2014-03-25	95	85	ORL	POR	Amway Center	Orlando
+2014-03-25	128	119	DAL	OKC	American Airlines Center	Dallas
+2014-03-25	127	96	LAL	NYK	Staples Center	Los Angeles
+2014-03-26	116	111	CHA	BKN	Time Warner Cable Arena	Charlotte
+2014-03-26	99	93	PHX	WAS	US Airways Center	Phoenix
+2014-03-26	99	90	TOR	BOS	Air Canada Centre	Toronto
+2014-03-26	97	96	CLE	DET	Quicken Loans Arena	Cleveland
+2014-03-26	107	83	MIN	ATL	Target Center	Minneapolis
+2014-03-26	98	96	NOH	LAC	Smoothie King Center	New Orleans
+2014-03-26	84	83	IND	MIA	Bankers Life Fieldhouse	Indianapolis
+2014-03-26	108	103	SAS	DEN	AT&T Center	San Antonio
+2014-03-26	107	99	NYK	SAC	Madison Square Garden	New York City
+2014-03-26	91	87	MEM	UTA	FedExForum	Memphis
+2014-03-27	100	85	POR	ATL	Moda Center	Portland
+2014-03-27	120	98	HOU	PHI	Toyota Center	Houston
+2014-03-27	108	105	MIL	LAL	BMO Harris Bradley Center	Milwaukee
+2014-03-27	109	103	LAC	DAL	Staples Center	Los Angeles
+2014-03-28	110	105	ORL	CHA	Amway Center	Orlando
+2014-03-28	105	103	TOR	BOS	Air Canada Centre	Toronto
+2014-03-28	91	78	WAS	IND	Verizon Center	Washington D.C.
+2014-03-28	108	97	BKN	CLE	Barclays Center	Brooklyn
+2014-03-28	110	78	MIA	DET	American Airlines Arena	Miami
+2014-03-28	91	74	POR	CHI	Moda Center	Portland
+2014-03-28	143	107	MIN	LAL	Target Center	Minneapolis
+2014-03-28	102	95	NOH	UTA	Smoothie King Center	New Orleans
+2014-03-28	94	81	OKC	SAC	Chesapeake Energy Arena	Oklahoma City
+2014-03-28	133	102	SAS	DEN	AT&T Center	San Antonio
+2014-03-28	112	88	PHX	NYK	US Airways Center	Phoenix
+2014-03-28	100	93	GSW	MEM	Oracle Arena	Oakland
+2014-03-29	123	98	PHI	DET	Wells Fargo Center	Philadelphia
+2014-03-29	118	107	LAC	HOU	Staples Center	Los Angeles
+2014-03-29	101	97	WAS	ATL	Verizon Center	Washington D.C.
+2014-03-29	103	100	DAL	SAC	American Airlines Center	Dallas
+2014-03-29	88	67	MIA	MIL	American Airlines Arena	Miami
+2014-03-29	96	80	SAS	NOH	AT&T Center	San Antonio
+2014-03-30	116	96	OKC	UTA	Chesapeake Energy Arena	Oklahoma City
+2014-03-30	90	76	CLE	IND	Quicken Loans Arena	Cleveland
+2014-03-30	114	99	BKN	MIN	Barclays Center	Brooklyn
+2014-03-30	98	93	TOR	ORL	Air Canada Centre	Toronto
+2014-03-30	107	102	CHI	BOS	United Center	Chicago
+2014-03-30	89	84	NYK	GSW	Madison Square Garden	New York City
+2014-03-30	105	98	POR	MEM	Moda Center	Portland
+2014-03-30	115	99	LAL	PHX	Staples Center	Los Angeles
+2014-03-31	100	94	CHA	WAS	Time Warner Cable Arena	Charlotte
+2014-03-31	103	77	SAS	IND	AT&T Center	San Antonio
+2014-03-31	103	95	ATL	PHI	Philips Arena	Atlanta
+2014-03-31	116	111	DET	MIL	The Palace of Auburn Hills	Detroit
+2014-03-31	93	83	MIA	TOR	American Airlines Arena	Miami
+2014-03-31	94	80	CHI	BOS	United Center	Chicago
+2014-03-31	114	104	LAC	MIN	Staples Center	Los Angeles
+2014-03-31	102	97	SAC	NOH	Sleep Train Arena	Sacramento
+2014-03-31	94	92	MEM	DEN	FedExForum	Memphis
+2014-03-31	92	83	NYK	UTA	Madison Square Garden	New York City
+2014-04-01	105	96	BKN	HOU	Barclays Center	Brooklyn
+2014-04-01	122	120	GSW	DAL	Oracle Arena	Oakland
+2014-04-01	124	112	POR	LAL	Moda Center	Portland
+2014-04-02	101	94	IND	DET	Bankers Life Fieldhouse	Indianapolis
+2014-04-02	110	81	NYK	BKN	Madison Square Garden	New York City
+2014-04-02	119	98	CLE	ORL	Quicken Loans Arena	Cleveland
+2014-04-02	123	93	CHA	PHI	Time Warner Cable Arena	Charlotte
+2014-04-02	107	103	TOR	HOU	Air Canada Centre	Toronto
+2014-04-02	118	92	WAS	BOS	Verizon Center	Washington D.C.
+2014-04-02	105	92	CHI	ATL	United Center	Chicago
+2014-04-02	96	77	MIA	MIL	American Airlines Arena	Miami
+2014-04-02	102	88	MIN	MEM	Target Center	Minneapolis
+2014-04-02	111	90	SAS	GSW	AT&T Center	San Antonio
+2014-04-02	137	107	DEN	NOH	Pepsi Center	Denver
+2014-04-02	112	108	LAC	PHX	Staples Center	Los Angeles
+2014-04-02	107	102	SAC	LAL	Sleep Train Arena	Sacramento
+2014-04-03	106	94	OKC	SAS	Chesapeake Energy Arena	Oklahoma City
+2014-04-03	113	107	DAL	LAC	American Airlines Center	Dallas
+2014-04-04	100	92	MEM	DEN	FedExForum	Memphis
+2014-04-04	91	80	CHA	ORL	Time Warner Cable Arena	Charlotte
+2014-04-04	102	94	TOR	IND	Air Canada Centre	Toronto
+2014-04-04	117	98	ATL	CLE	Philips Arena	Atlanta
+2014-04-04	111	102	PHI	BOS	Wells Fargo Center	Philadelphia
+2014-04-04	116	104	BKN	DET	Barclays Center	Brooklyn
+2014-04-04	122	121	MIN	MIA	Target Center	Minneapolis
+2014-04-04	90	89	WAS	NYK	Verizon Center	Washington D.C.
+2014-04-04	102	90	CHI	MIL	United Center	Chicago
+2014-04-04	100	96	UTA	NOH	EnergySolutions Arena	Salt Lake City
+2014-04-04	111	107	HOU	OKC	Toyota Center	Houston
+2014-04-04	109	93	PHX	POR	US Airways Center	Phoenix
+2014-04-04	102	69	GSW	SAC	Oracle Arena	Oakland
+2014-04-04	107	95	DAL	LAL	American Airlines Center	Dallas
+2014-04-05	100	92	ORL	MIN	Amway Center	Orlando
+2014-04-05	96	78	CHI	WAS	United Center	Chicago
+2014-04-05	96	94	CHA	CLE	Time Warner Cable Arena	Charlotte
+2014-04-05	115	111	DET	BOS	The Palace of Auburn Hills	Detroit
+2014-04-05	105	101	BKN	PHI	Barclays Center	Brooklyn
+2014-04-05	102	98	TOR	MIL	Air Canada Centre	Toronto
+2014-04-06	102	91	MIA	NYK	American Airlines Arena	Miami
+2014-04-06	120	97	LAC	LAL	Staples Center	Los Angeles
+2014-04-06	93	91	DAL	SAC	American Airlines Center	Dallas
+2014-04-06	107	88	ATL	IND	Philips Arena	Atlanta
+2014-04-06	130	125	HOU	DEN	Toyota Center	Houston
+2014-04-06	112	92	SAS	MEM	AT&T Center	San Antonio
+2014-04-06	130	102	GSW	UTA	Oracle Arena	Oakland
+2014-04-06	122	115	PHX	OKC	US Airways Center	Phoenix
+2014-04-06	100	94	POR	NOH	Moda Center	Portland
+2014-04-08	110	91	MIN	SAS	Target Center	Minneapolis
+2014-04-08	102	95	DET	ATL	The Palace of Auburn Hills	Detroit
+2014-04-08	88	87	BKN	MIA	Barclays Center	Brooklyn
+2014-04-08	95	83	DAL	UTA	American Airlines Center	Dallas
+2014-04-08	107	92	OKC	SAC	Chesapeake Energy Arena	Oklahoma City
+2014-04-08	145	130	HOU	LAL	Toyota Center	Houston
+2014-04-09	122	100	CLE	DET	Quicken Loans Arena	Cleveland
+2014-04-09	115	111	ORL	BKN	Amway Center	Orlando
+2014-04-09	125	114	TOR	PHI	Air Canada Centre	Toronto
+2014-04-09	94	88	CHA	WAS	Time Warner Cable Arena	Charlotte
+2014-04-09	105	97	ATL	BOS	Philips Arena	Atlanta
+2014-04-09	107	102	MEM	MIA	FedExForum	Memphis
+2014-04-09	104	102	IND	MIL	Bankers Life Fieldhouse	Indianapolis
+2014-04-09	102	87	CHI	MIN	United Center	Chicago
+2014-04-09	94	88	PHX	NOH	US Airways Center	Phoenix
+2014-04-09	123	116	DEN	HOU	Pepsi Center	Denver
+2014-04-09	100	99	POR	SAC	Moda Center	Portland
+2014-04-09	107	101	OKC	LAC	Chesapeake Energy Arena	Oklahoma City
+2014-04-10	109	100	SAS	DAL	AT&T Center	San Antonio
+2014-04-10	100	99	DEN	GSW	Pepsi Center	Denver
+2014-04-11	96	86	WAS	ORL	Verizon Center	Washington D.C.
+2014-04-11	108	100	NYK	TOR	Madison Square Garden	New York City
+2014-04-11	106	103	BOS	CHA	TD Garden	Boston
+2014-04-11	93	88	ATL	BKN	Philips Arena	Atlanta
+2014-04-11	98	86	MIA	IND	American Airlines Arena	Miami
+2014-04-11	106	98	CHI	DET	United Center	Chicago
+2014-04-11	117	95	MEM	PHI	FedExForum	Memphis
+2014-04-11	112	110	MIN	HOU	Target Center	Minneapolis
+2014-04-11	116	94	OKC	NOH	Chesapeake Energy Arena	Oklahoma City
+2014-04-11	119	116	MIL	CLE	BMO Harris Bradley Center	Milwaukee
+2014-04-11	112	104	SAS	PHX	AT&T Center	San Antonio
+2014-04-11	111	99	POR	UTA	Moda Center	Portland
+2014-04-11	112	95	GSW	LAL	Oracle Arena	Oakland
+2014-04-12	117	101	LAC	SAC	Staples Center	Los Angeles
+2014-04-12	111	105	CHA	PHI	Time Warner Cable Arena	Charlotte
+2014-04-12	104	91	WAS	MIL	Verizon Center	Washington D.C.
+2014-04-12	98	85	ATL	MIA	Philips Arena	Atlanta
+2014-04-12	111	99	BOS	CLE	TD Garden	Boston
+2014-04-12	111	104	HOU	NOH	Toyota Center	Houston
+2014-04-12	101	98	DAL	PHX	American Airlines Center	Dallas
+2014-04-12	101	94	DEN	UTA	Pepsi Center	Denver
+2014-04-13	100	89	NYK	CHI	Madison Square Garden	New York City
+2014-04-13	116	107	TOR	DET	Air Canada Centre	Toronto
+2014-04-13	97	88	BKN	ORL	Barclays Center	Brooklyn
+2014-04-13	102	97	IND	OKC	Bankers Life Fieldhouse	Indianapolis
+2014-04-13	119	117	POR	GSW	Moda Center	Portland
+2014-04-13	106	103	SAC	MIN	Sleep Train Arena	Sacramento
+2014-04-13	102	90	MEM	LAL	FedExForum	Memphis
+2014-04-14	113	108	PHI	BOS	Wells Fargo Center	Philadelphia
+2014-04-14	110	100	TOR	MIL	Air Canada Centre	Toronto
+2014-04-14	114	93	WAS	MIA	Verizon Center	Washington D.C.
+2014-04-14	95	93	CHA	ATL	Time Warner Cable Arena	Charlotte
+2014-04-14	108	95	CHI	ORL	United Center	Chicago
+2014-04-14	104	98	HOU	SAS	Toyota Center	Houston
+2014-04-14	101	89	NOH	OKC	Smoothie King Center	New Orleans
+2014-04-14	119	104	LAL	UTA	Staples Center	Los Angeles
+2014-04-14	97	91	MEM	PHX	FedExForum	Memphis
+2014-04-14	130	120	GSW	MIN	Oracle Arena	Oakland
+2014-04-15	109	98	NYK	BKN	Madison Square Garden	New York City
+2014-04-15	117	105	LAC	DEN	Staples Center	Los Angeles
+2014-04-16	106	105	MEM	DAL	FedExForum	Memphis
+2014-04-16	111	103	ATL	MIL	Philips Arena	Atlanta
+2014-04-16	136	130	UTA	MIN	EnergySolutions Arena	Salt Lake City
+2014-04-16	105	100	NOH	HOU	Smoothie King Center	New Orleans
+2014-04-16	112	111	OKC	DET	Chesapeake Energy Arena	Oklahoma City
+2014-04-16	113	100	LAL	SAS	Staples Center	Los Angeles
+2014-04-16	118	102	WAS	BOS	Verizon Center	Washington D.C.
+2014-04-16	91	86	CHA	CHI	Time Warner Cable Arena	Charlotte
+2014-04-16	114	85	CLE	BKN	Quicken Loans Arena	Cleveland
+2014-04-16	100	87	PHI	MIA	Wells Fargo Center	Philadelphia
+2014-04-16	95	92	NYK	TOR	Madison Square Garden	New York City
+2014-04-16	101	86	IND	ORL	Bankers Life Fieldhouse	Indianapolis
+2014-04-16	110	104	POR	LAC	Moda Center	Portland
+2014-04-16	104	99	PHX	SAC	US Airways Center	Phoenix
+2014-04-16	116	112	GSW	DEN	Oracle Arena	Oakland
