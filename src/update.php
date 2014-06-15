@@ -1,8 +1,6 @@
 <?php
 
-require "header.php"; 
-
-// any functions you write should go in functions.php unless they are highly specific to what you're doing in this file
+require "header.php";
 require "functions.php";
 
 try {
@@ -22,27 +20,48 @@ This is more of a concern for real world projects (so you should know it anyway)
 */
 
 // WRITE YOUR SQL QUERIES HERE
-$query = <<<SQL
-SELECT attribute(s)
-FROM table(s)
-WHERE condition(s)
+$allPlayers = <<<SQL
+SELECT firstName, lastName, number, team
+FROM nbaplayer_playsfor;
 SQL;
 
-// Uncomment the following two lines after you've written your SQL queries
-// $result = $dbh->query($query);
-// $result->setFetchMode(PDO::FETCH_ASSOC);
+$allPlayersResult = $dbh->query($allPlayers);
+$allPlayersResult->setFetchMode(PDO::FETCH_ASSOC);
 
 ?>
 
 <!-- CONTENT -->
 <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-	<h1 class="page-header">Update Players</h1>
-	<!-- All your html code you be AFTER this line -->
+    <h1 class="page-header">Update Players</h1>
+    <!-- Player Selection -->
+    <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                    Select a Player
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <form method="POST" action="profiles.php">
+                        <select name="params" onchange="this.form.submit()">
+                            <option value="" selected disabled>Select a Player</option>
+                        <?php while ($row = $allPlayersResult->fetch()): ?>
+                            <option value="<?php echo $row['team'] . "," . $row['number']; ?>">
+                                <?php echo $row['firstName'] . " " . $row['lastName'] . " (" . $row['team'] . ")"; ?>
+                            </option>
+                        <?php endwhile; ?>
+                        </select>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
-	<!-- Look in player.php for how to iterate over the rows of your query -->
 
-	<!-- All your html code you be BEFORE this line -->
-</div>         
+</div>
 <!-- END CONTENT -->
 
 <?php require "footer.php"; ?>
