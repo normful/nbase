@@ -66,7 +66,7 @@ SQL;
     $currPlayerResult->setFetchMode(PDO::FETCH_ASSOC);
 
     $currTeam = <<<SQL
-SELECT teamName, abbreviation
+SELECT *
 FROM nbateam_belongsto
 WHERE abbreviation = '{$_GET['team']}'
 SQL;
@@ -123,6 +123,7 @@ SQL;
 
         $oldTeamName = $team['teamName'];
         $oldAbbreviation = $team['abbreviation'];
+        $oldCity = $team['city'];
 
         require "forms/update_player.php";
     endif;

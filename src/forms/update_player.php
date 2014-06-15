@@ -20,12 +20,12 @@
             <div class="col-xs-5">
                 <select name="newTeam" class="form-control">
                     <option value="<?php echo $oldAbbreviation; ?>">
-                        <?php echo $oldTeamName . " (" . $oldAbbreviation . ")"; ?>
+                        <?php echo explode(",", $oldCity)[0] . " " . $oldTeamName . " (" . $oldAbbreviation . ")"; ?></option>
                     </option>
                     <?php while ($row = $allTeamsResult->fetch()):
                         if (strcmp($row['teamName'], $oldTeamName) != 0): ?>
                             <option value="<?php echo $row['abbreviation']; ?>">
-                                <?php echo $row['teamName'] . " (" . $row['abbreviation'] . ")"; ?>
+                                <?php echo explode(",", $row['city'])[0] . " " . $row['teamName'] . " (" . $row['abbreviation'] . ")"; ?>
                             </option>
                     <?php endif;
                           endwhile; ?>
