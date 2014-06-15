@@ -11,12 +11,12 @@ if (isset($_POST['params'])) {
 }
 
 try {
-	// connect to the Amazon EC2 MySQL database with PDO
-  	$dbh = new PDO("mysql:host=54.86.9.29;dbname=nba", 'jacob', 'jacob');
+    // connect to the Amazon EC2 MySQL database with PDO
+    $dbh = new PDO("mysql:host=54.86.9.29;dbname=nba", 'jacob', 'jacob');
 } catch(PDOException $e) {
-	// use the error() function I wrote whenever you want to signal that an error has occured
-	error($e->getMessage());
-	exit();
+    // use the error() function I wrote whenever you want to signal that an error has occured
+    error($e->getMessage());
+    exit();
 }
 
 // Get all players
@@ -108,38 +108,53 @@ SQL;
             }
         ?>
 
-        <h2 class="sub-header"><?php echo $name ?></h2>
-        <table>
-            <tr>
-                <td width="300px" style="vertical-align:top;">
-                    <img src="<?php echo $imgurl; ?>" class="roundrect" width="300"><p>
-                    <table class="table table-striped">
-                        <tr>
+        <img src="<?php echo $imgurl; ?>" class="roundrect" width="300">
 
-                            <td><?php echo '<span class="playerstat">Current Team</span>'; ?></td>
-                            <td><?php echo $row['team']; ?></td>
-                        </tr>
-                        <tr>
-                            <td><?php echo '<span class="playerstat">Number</span>'; ?></td>
-                            <td><?php echo $row['number']; ?></td>
-                        </tr>
+        <!--
+        $row['firstName']
+        $row['lastName']
 
-                            $row['firstName']
-                            $row['lastName']
+        $row['team']
+        $row['number']
 
-                            $row['team']
-                            $row['number']
+        $row['position']
+        $row['height']
+        $row['weight']
+        $row['draftYear']
+        -->
 
-                            $row['position']
-                            $row['height']
-                            $row['weight']
-                            $row['draftYear']
+        <form class="navbar-form navbar-left">
+        <fieldset>
 
-                        </tr>
-                    </table></p>
-                </td>
-            </tr>
-        </table>
+        <!-- Form Name -->
+        <legend>Edit Player</legend>
+
+        <!-- Text input-->
+        <div class="control-group">
+            <label class="control-label" for="newFirstName">First Name</label>
+            <div class="controls">
+                <input id="newFirstName" name="newFirstName" type="text" placeholder="<?php echo $row['firstName']; ?>" class="input-xlarge">
+            </div>
+        </div>
+
+        <!-- Select Basic -->
+        <div class="control-group">
+            <label class="control-label" for="newPosition">Position</label>
+            <div class="controls">
+                <select id="newPosition" name="newPosition" class="input-xlarge">
+                    <option>PG</option>
+                    <option>PF</option>
+                    <option>SG</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Button -->
+        <button type="submit" class="btn btn-default">Submit</button>
+
+        </fieldset>
+        </form>
+
     <?php endif; ?>
 
 
