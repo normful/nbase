@@ -18,14 +18,18 @@ $allTeamsResult->setFetchMode(PDO::FETCH_ASSOC);
         </div>
     </div>
 
-    <select name="newPosition">
-        <option value="PG">PG</option>
-        <option value="SG">SG</option>
-        <option value="SF">SF</option>
-        <option value="PF">PF</option>
-        <option value="C">C</option>
-    </select>
+    <div class="form-group">
+        <label for="newPosition" class="control-label col-xs-2">Position</label>
+        <select name="newPosition">
+            <option value="PG">PG</option>
+            <option value="SG">SG</option>
+            <option value="SF">SF</option>
+            <option value="PF">PF</option>
+            <option value="C">C</option>
+        </select>
+    </div>
 
+<!--
     <select name="newTeamName">
         <?php while ($row = $allTeamsResult ->fetch()): ?>
         <option value="<?php echo $row['abbreviation']; ?>">
@@ -33,6 +37,7 @@ $allTeamsResult->setFetchMode(PDO::FETCH_ASSOC);
         </option>
         <?php endwhile; ?>
     <select>
+-->
 
     <div class="form-group">
         <div class="col-xs-offset-2 col-xs-10">

@@ -107,8 +107,18 @@ SQL;
                 }
             }
         ?>
-        <img src="<?php echo $imgurl; ?>" class="roundrect" width="300"><br />
-        <?php require "forms/update_player.php"; ?>
+        <table>
+            <tr>
+                <td>
+                    <img src="<?php echo $imgurl; ?>" class="roundrect" width="300">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <?php require "forms/update_player.php"; ?>
+                </td>
+            </tr>
+        </table>
     <?php endif; ?>
 
 </div>
