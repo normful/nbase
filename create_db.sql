@@ -98,6 +98,7 @@ CREATE TABLE `Referees` (
     FOREIGN KEY (`refNumber`) REFERENCES `NBAReferee` (`number`),
     FOREIGN KEY (`gameDate`, `homeTeam`, `awayTeam`)
         REFERENCES `NBAGame_Plays_PlayedAt` (`gameDate`, `homeTeam`, `awayTeam`)
+        ON DELETE CASCADE
 );
 
 SET FOREIGN_KEY_CHECKS = 1;
