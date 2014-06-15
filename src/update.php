@@ -22,15 +22,22 @@ try {
 // Get all players
 $allPlayers = <<<SQL
 SELECT firstName, lastName, number, team
-FROM nbaplayer_playsfor;
+FROM nbaplayer_playsfor
 SQL;
-
 $allPlayersResult = $dbh->query($allPlayers);
 $allPlayersResult->setFetchMode(PDO::FETCH_ASSOC);
 
+// Get all teams
+$allTeams = <<<SQL
+SELECT *
+FROM nbateam_belongsto
+SQL;
+$allTeamsResult = $dbh->query($allTeams);
+$allTeamsResult->setFetchMode(PDO::FETCH_ASSOC);
+
 // Build where clause from http get parameters
 $where = "";
-$displayPlayer = FALSE;
+$displayUpdateForm = FALSE;
 if (isset($_GET['number']) && isset($_GET['team'])) {
     $where .= "WHERE";
     if (is_numeric($_GET['number'])) {
@@ -46,16 +53,15 @@ if (isset($_GET['number']) && isset($_GET['team'])) {
         error("Invalid team");
         exit();
     }
-    $displayPlayer = TRUE;
+    $displayUpdateForm = TRUE;
 }
 
-if ($displayPlayer) {
+if ($displayUpdateForm) {
     $currPlayer = <<<SQL
 SELECT *
 FROM nbaplayer_playsfor
 {$where};
 SQL;
-
     $currPlayerResult = $dbh->query($currPlayer);
     $currPlayerResult->setFetchMode(PDO::FETCH_ASSOC);
 }
@@ -92,34 +98,79 @@ SQL;
         </div>
     </div>
 
-    <!-- Display player profile -->
-    <?php if ($displayPlayer): ?>
-        <?php
-            $row = $currPlayerResult->fetch();
-            $namequery = $row['firstName'] . "+" . $row['lastName'];
-            $name = $row['firstName'] . " " . $row['lastName'];
-            $json = get_url_contents("http://ajax.googleapis.com/ajax/services/search/images?v=1.0&q={$namequery}");
-            $data = json_decode($json);
-            foreach ($data->responseData->results as $result) {
-                if (@getimagesize($result->url) !== false) {
-                    $imgurl = $result->url;
-                    break;
-                }
-            }
-        ?>
-        <table>
-            <tr>
-                <td>
-                    <img src="<?php echo $imgurl; ?>" class="roundrect" width="300">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <?php require "forms/update_player.php"; ?>
-                </td>
-            </tr>
-        </table>
-    <?php endif; ?>
+    <!-- Display update form -->
+    <?php
+    if ($displayUpdateForm):
+        $player = $currPlayerResult->fetch();
+
+        $oldFirstName = $player['firstName'];
+        $oldLastName = $player['lastName'];
+        $oldTeam = $player['team'];
+        $oldNumber = $player['number'];
+        $oldPosition = $player['position'];
+        $oldWeight =  $player['weight'];
+        $oldHeight = $player['height'];
+        $oldDraftYear =  $player['draftYear'];
+
+        require "forms/update_player.php";
+    endif;
+    ?>
+
+    <!-- Update database -->
+    <?php if (isset($_POST['newFirstName']) &&
+          isset($_POST['newLastName']) &&
+          isset($_POST['newTeam']) &&
+          isset($_POST['newNumber']) &&
+          isset($_POST['newPosition']) &&
+          isset($_POST['newWeight']) &&
+          isset($_POST['newHeight']) &&
+          isset($_POST['newDraftYear'])): ?>
+
+    <?php
+    $newFirstName = $_POST['newFirstName'];
+    $newLastName = $_POST['newLastName'];
+    $newTeam = $_POST['newTeam'];
+    $newNumber = $_POST['newNumber'];
+    $newPosition = $_POST['newPosition'];
+    $newWeight = $_POST['newWeight'];
+    $newHeight = $_POST['newHeight'];
+    $newDraftYear = $_POST['newDraftYear'];
+
+    echo "New entered values";
+    echo $newFirstName;
+    echo $newLastName;
+    echo $newTeam;
+    echo $newNumber;
+    echo $newPosition;
+    echo $newWeight;
+    echo $newHeight;
+    echo $newDraftYear;
+
+    $updateQuery = <<<SQL
+UPDATE nbaplayer_playsfor
+SET
+firstName = {$newFirstName},
+lastName = {$newLastName},
+team = {$newTeam},
+number = {$newNumber},
+position = {$newPosition},
+weight = {$newWeight},
+draftYear = {$newDraftYear}
+WHERE team = {$oldTeam} AND number = {$oldNumber};
+SQL;
+
+	$updateResult = $dbh->query($updateQuery);
+
+	if (!$updateResult) {
+		error("ERROR: Cannot update player {$oldNumber} of team {$oldTeam}. Returning to edit page.");
+		echo '<meta http-equiv="refresh" content="0;update.php">';
+	} else {
+		alert("SUCCESS: Player {$oldNumber} of team {$oldTeam} was successfully updated. Returning to players page.");
+		echo '<meta http-equiv="refresh" content="0;players.php">';
+    }
+?>
+<?php endif; ?>
+
 
 </div>
 <!-- END CONTENT -->
