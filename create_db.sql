@@ -82,7 +82,7 @@ CREATE TABLE `NBAGame_Plays_PlayedAt` (
         ON DELETE CASCADE,
     FOREIGN KEY (`awayTeam`) REFERENCES `NBATeam_BelongsTo` (`abbreviation`)
         ON DELETE CASCADE,
-    FOREIGN KEY (`venueName`, `city`) REFERENCES `Venue` (`venueName`,`city`),
+    FOREIGN KEY (`venueName`, `city`) REFERENCES `Venue` (`venueName`, `city`),
     CHECK (`gameDate` >= '1946-01-11' AND `gameDate` <= CURDATE() AND
         `homeScore` >= 0 AND `awayScore` >= 0)
 );
