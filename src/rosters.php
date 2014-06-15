@@ -20,7 +20,7 @@ if (isset($_GET['team']) && preg_match("/^[a-z]{3}$/", strtolower($_GET['team'])
 	$query = <<<SQL
 SELECT *
 FROM nbaplayer_playsfor
-WHERE team = {$team}
+WHERE team = {$team};
 SQL;
 	$result = $dbh->query($query);
 	$result->setFetchMode(PDO::FETCH_ASSOC);
@@ -29,6 +29,7 @@ SQL;
 SELECT *
 FROM nbastaff_worksfor
 WHERE team = {$team}
+ORDER BY job DESC;
 SQL;
 	$staffResult = $dbh->query($staffQuery);
 	$staffResult->setFetchMode(PDO::FETCH_ASSOC);
@@ -36,7 +37,7 @@ SQL;
 	$sponsorsQuery = <<<SQL
 SELECT company
 FROM nbateam_belongsto n, sponsor_endorses s 
-WHERE n.abbreviation = s.team AND team = {$team}
+WHERE n.abbreviation = s.team AND team = {$team};
 SQL;
 	$sponsorsResult = $dbh->query($sponsorsQuery);
 	$sponsorsResult->setFetchMode(PDO::FETCH_ASSOC);
