@@ -27,4 +27,4 @@ Salt Lake City	EnergySolutions Arena	301 W South Temple
 San Antonio	AT&T Center	1 AT&T Center Pkwy
 Toronto	Air Canada Centre	40 Bay St
 Washington D.C.	Verizon Center	601 F St NW
-Brooklyn	Barclays Center	620ÊAtlantic Avenue
+Brooklyn	Barclays Center	620	Atlantic Avenue
