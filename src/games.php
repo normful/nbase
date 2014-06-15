@@ -68,6 +68,15 @@ $result->setFetchMode(PDO::FETCH_ASSOC);
         </div>
     </div>
 
+    <!-- Date Range Message -->
+    <?php
+    if ($fromValid && $toValid) {
+		echo "<p>Showing games between {$from} and {$to}.</p>";
+	} else {
+		echo "<p>Showing all games.</p>";
+	}
+	?>
+
 	<div class="table-responsive">
 		<table class="table table-striped">
 			<thead>
