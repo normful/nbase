@@ -108,7 +108,7 @@ SQL;
             }
         ?>
 
-        <img src="<?php echo $imgurl; ?>" class="roundrect" width="300">
+        <img src="<?php echo $imgurl; ?>" class="roundrect" width="300"><br />
 
         <!--
         $row['firstName']
@@ -125,9 +125,6 @@ SQL;
 
         <form class="navbar-form navbar-left">
         <fieldset>
-
-        <!-- Form Name -->
-        <legend>Edit Player</legend>
 
         <!-- Text input-->
         <div class="control-group">
