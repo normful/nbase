@@ -44,11 +44,18 @@
             <label class="control-label col-xs-2">Position</label>
             <div class="col-xs-5">
                 <select name="newPosition" class="form-control">
-                    <option value="PG">PG</option>
-                    <option value="SG">SG</option>
-                    <option value="SF">SF</option>
-                    <option value="PF">PF</option>
-                    <option value="C">C</option>
+                    <option value="<?php echo $oldPosition; ?>">
+                        <?php echo $oldPosition; ?>
+                    </option>
+                    <?php $positionArray = array("PG", "SG", "PF", "SF", "C");
+                        foreach ($positionArray as $position) {
+                            if (strcmp($position, $oldPosition) != 0):
+                    ?>
+                            <option value="<?php echo $position; ?>">
+                                <?php echo $position; ?>
+                            </option>
+                    <?php endif; }
+                    ?>
                 </select>
             </div>
         </div>
