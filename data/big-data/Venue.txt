@@ -1,6 +1,7 @@
 city	venueName	address
 Atlanta	Philips Arena	1 Philips Dr
 Boston	TD Garden	100 Legends Way
+Brooklyn	Barclays Center	620 Atlantic Avenue
 Charlotte	Time Warner Cable Arena	333 E Trade St
 Chicago	United Center	1901 W Madison St
 Cleveland	Quicken Loans Arena	1 Center Ct
@@ -27,4 +28,3 @@ Salt Lake City	EnergySolutions Arena	301 W South Temple
 San Antonio	AT&T Center	1 AT&T Center Pkwy
 Toronto	Air Canada Centre	40 Bay St
 Washington D.C.	Verizon Center	601 F St NW
-Brooklyn	Barclays Center	620	Atlantic Avenue
