@@ -41,8 +41,8 @@ $result->setFetchMode(PDO::FETCH_ASSOC);
 		<table class="table table-striped table-hover hoverTable">
 			<thead>
 				<tr>
-					<th>City</th>
 					<th>Abbreviation</th>
+					<th>City</th>
 					<th>Team Name</th>
 					<th>Division</th>					
 					<th></th> <!-- this is for the delete -->
@@ -51,8 +51,8 @@ $result->setFetchMode(PDO::FETCH_ASSOC);
 			<tbody>
 				<?php while ($row = $result->fetch()): ?>
 					<tr onclick="document.location = 'rosters.php?team=<?php echo $row['abbreviation']; ?>';">
-						<td><?php echo $row['city']?></td>
-						<td><?php echo $row['abbreviation']; ?></td>
+						<td><?php echo $row['abbreviation']?></td>
+						<td><?php echo $row['city']; ?></td>
 						<td><?php echo $row['teamName']; ?></td>
 						<td><?php echo $row['divisionName']?></td>						
 						<td>
