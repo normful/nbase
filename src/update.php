@@ -127,24 +127,17 @@ SQL;
           isset($_POST['newDraftYear'])): ?>
 
     <?php
-    $newFirstName = $_POST['newFirstName'];
-    $newLastName = $_POST['newLastName'];
-    $newTeam = $_POST['newTeam'];
+    $newFirstName = $dbh->quote($_POST['newFirstName']);
+    $newLastName = $dbh->quote($_POST['newLastName']);
+    $newTeam = $dbh->quote($_POST['newTeam']);
     $newNumber = $_POST['newNumber'];
-    $newPosition = $_POST['newPosition'];
+    $newPosition = $dbh->quote($_POST['newPosition']);
     $newWeight = $_POST['newWeight'];
     $newHeight = $_POST['newHeight'];
     $newDraftYear = $_POST['newDraftYear'];
 
-    echo "New entered values";
-    echo $newFirstName;
-    echo $newLastName;
-    echo $newTeam;
-    echo $newNumber;
-    echo $newPosition;
-    echo $newWeight;
-    echo $newHeight;
-    echo $newDraftYear;
+    $oldTeam = $dbh->quote($_POST['oldTeam']);
+    $oldNumber = $_POST['oldNumber'];
 
     $updateQuery = <<<SQL
 UPDATE nbaplayer_playsfor
@@ -155,11 +148,16 @@ team = {$newTeam},
 number = {$newNumber},
 position = {$newPosition},
 weight = {$newWeight},
+height = {$newHeight},
 draftYear = {$newDraftYear}
 WHERE team = {$oldTeam} AND number = {$oldNumber};
 SQL;
 
-	$updateResult = $dbh->query($updateQuery);
+    echo $updateQuery;
+
+    $updateResult = $dbh->query($updateQuery);
+
+    $oldTeam = trim($oldTeam, "'");
 
 	if (!$updateResult) {
 		error("ERROR: Cannot update player {$oldNumber} of team {$oldTeam}. Returning to edit page.");

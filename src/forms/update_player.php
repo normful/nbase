@@ -75,5 +75,8 @@
             </div>
         </div>
 
+		<input type="hidden" name="oldTeam" value="<?php echo $oldTeam; ?>">
+		<input type="hidden" name="oldNumber" value="<?php echo $oldNumber; ?>">
+
     </form>
 </div>
