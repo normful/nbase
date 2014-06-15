@@ -160,7 +160,7 @@ CREATE TABLE `NBAReferee` (
 Referees(***refNumber***: INT, ***gameDate***: DATE, ***homeTeam***: CHAR(3), ***awayTeam***: CHAR(3))
 
 - ***refNumber*** `REFERENCES` NBAReferee(**number**)
-- ***gameDate***, ***homeTeam***, ***awayTeam*** `REFERENCES` NBAGame_Plays_PlayedAt(**gameDate**, ***homeTeam***, ***awayTeam***) `ON DELETE CASCADE`
+- ***gameDate***, ***homeTeam***, ***awayTeam*** `REFERENCES` NBAGame_Plays_PlayedAt(**gameDate**, ***homeTeam***, ***awayTeam***)
 
 ```sqlmysql
 CREATE TABLE `Referees` (
