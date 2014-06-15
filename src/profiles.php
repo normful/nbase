@@ -129,7 +129,7 @@ SQL;
                         </tr>
                         <tr>
                             <td><?php echo '<span class="playerstat">Weight (lbs)</span>'; ?></td>
-                            <td><?php echo $row['number']; ?></td>
+                            <td><?php echo $row['weight']; ?></td>
                         </tr>
                         <tr>
                             <td><?php echo '<span class="playerstat">Year Drafted</span>'; ?></td>
