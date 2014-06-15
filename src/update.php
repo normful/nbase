@@ -107,53 +107,9 @@ SQL;
                 }
             }
         ?>
-
         <img src="<?php echo $imgurl; ?>" class="roundrect" width="300"><br />
-
-        <!--
-        $row['firstName']
-        $row['lastName']
-
-        $row['team']
-        $row['number']
-
-        $row['position']
-        $row['height']
-        $row['weight']
-        $row['draftYear']
-        -->
-
-        <form class="navbar-form navbar-left">
-        <fieldset>
-
-        <!-- Text input-->
-        <div class="control-group">
-            <label class="control-label" for="newFirstName">First Name</label>
-            <div class="controls">
-                <input id="newFirstName" name="newFirstName" type="text" placeholder="<?php echo $row['firstName']; ?>" class="input-xlarge">
-            </div>
-        </div>
-
-        <!-- Select Basic -->
-        <div class="control-group">
-            <label class="control-label" for="newPosition">Position</label>
-            <div class="controls">
-                <select id="newPosition" name="newPosition" class="input-xlarge">
-                    <option>PG</option>
-                    <option>PF</option>
-                    <option>SG</option>
-                </select>
-            </div>
-        </div>
-
-        <!-- Button -->
-        <button type="submit" class="btn btn-default">Submit</button>
-
-        </fieldset>
-        </form>
-
+        <?php require "forms/update_input.php"; ?>
     <?php endif; ?>
-
 
 </div>
 <!-- END CONTENT -->
