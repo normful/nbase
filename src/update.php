@@ -23,6 +23,7 @@ try {
 $allPlayers = <<<SQL
 SELECT firstName, lastName, number, team
 FROM nbaplayer_playsfor
+ORDER BY firstName, lastName
 SQL;
 $allPlayersResult = $dbh->query($allPlayers);
 $allPlayersResult->setFetchMode(PDO::FETCH_ASSOC);
