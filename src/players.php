@@ -136,6 +136,7 @@ $result->setFetchMode(PDO::FETCH_ASSOC);
 					<th>Draft Year</th>
 					<th>Team</th>
 					<th></th>
+					<th></th>
 				</tr>
 			</thead>
 			<tbody>
@@ -150,6 +151,11 @@ $result->setFetchMode(PDO::FETCH_ASSOC);
 						<td><?php echo $row['weight']; ?></td>
 						<td><?php echo $row['draftYear']?></td>
 						<td><?php echo $row['team']; ?></td>
+						<td>
+							<a href="update.php?<?php echo $playerKey; ?>">
+								<span class="glyphicon glyphicon-pencil" ></span>
+							</a>
+						</td>
 						<td>
 							<a href="delete_player.php?<?php echo $playerKey; ?>">
 								<span class="glyphicon glyphicon-remove" ></span>
