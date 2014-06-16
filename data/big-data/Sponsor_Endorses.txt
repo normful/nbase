@@ -59,16 +59,6 @@ Comcast	LAL
 Comcast	OKC
 Comcast	PHX
 Comcast	POR
-company	ATL
-company	BOS
-company	CHA
-company	CLE
-company	DAL
-company	GSW
-company	IND
-company	PHX
-company	SAC
-company	TOR
 Devon Energy	CHA
 Devon Energy	CHI
 Devon Energy	CLE
