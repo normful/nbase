@@ -22,7 +22,7 @@
 ### Join Query (2 minutes)
 
 * Navigate to **Games** page
-  1. Show TA that data has been joined from 4 tables: `nbagame_plays_playedat`, `nbareferee`, `referees`, and `venue`
+  1. Show TA that data has been joined from 4 tables: `nbagame_plays_playedat`, `nbareferee`, and `referees`
   2. If necessary to show a second example, navigate to **Rosters** page and show the list of sponsors for any team
     * This query joins data from 2 tables: `nbateam_belongsto` and `sponsor_endorses`
 
