@@ -24,18 +24,15 @@ if (isset($_POST['from_date']) && isset($_POST['to_date'])) {
 
 $query = <<<SQL
 SELECT *
-FROM nbagame_plays_playedat npp, nbareferee nr, referees r, venue v
+FROM nbagame_plays_playedat npp, nbareferee nr, referees r
 WHERE 
-npp.venueName = v.venueName AND 
-npp.city = v.city AND 
 nr.number = r.refNumber AND 
 r.gameDate = npp.gameDate AND 
 r.homeTeam = npp.homeTeam AND 
 r.awayTeam = npp.awayTeam
-{$where};
+{$where}
+ORDER BY npp.gameDate;
 SQL;
-
-alert($query);
 
 $result = $dbh->query($query);
 $result->setFetchMode(PDO::FETCH_ASSOC);
