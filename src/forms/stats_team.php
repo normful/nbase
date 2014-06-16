@@ -1,7 +1,7 @@
 <?php
 
 $sponsorsQuery = <<<SQL
-SELECT company
+SELECT DISTINCT company
 FROM sponsor_endorses
 SQL;
 
