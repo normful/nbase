@@ -134,7 +134,7 @@ SQL;
 		<h2 class="sub-header">Sponsors of team <strong><?php echo strtoupper(trim($team, "'")); ?></strong></h2>
 		<ul>
 		<?php while ($row = $sponsorsResult->fetch()): ?>
-			<li><?php echo ucwords(strtolower($row['company'])); ?></li>
+			<li><?php echo $row['company']; ?></li>
 		<?php endwhile; ?>
 		</ul>
 	<?php endif; ?>
