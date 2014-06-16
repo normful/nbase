@@ -1,34 +1,269 @@
 company	team
-H-E-B	SAS
+American Airlines	GSW
+American Airlines	NOH
+American Airlines	OKC
+American Airlines	TOR
+American Airlines	WAS
+Anheuser-Busch	BKN
+Anheuser-Busch	BOS
+Anheuser-Busch	DEN
+Anheuser-Busch	GSW
+Anheuser-Busch	LAC
+Anheuser-Busch	MEM
+Anheuser-Busch	MIN
+Anheuser-Busch	WAS
+AT&T	CHI
+AT&T	CLE
+AT&T	DET
+AT&T	LAC
+AT&T	ORL
+Audi	BKN
+Audi	BOS
+Audi	CHI
+Audi	LAC
+Audi	MIA
+Audi	NYK
+Audi	UTA
+Brown Auto Group	CHA
+Brown Auto Group	CHI
+Brown Auto Group	DAL
+Brown Auto Group	DEN
+Brown Auto Group	GSW
+Brown Auto Group	HOU
+Brown Auto Group	LAC
+Brown Auto Group	PHI
+Brown Auto Group	SAC
+Brown Auto Group	TOR
+Brown Auto Group	UTA
+Chesapeake Energy	BKN
+Chesapeake Energy	DEN
+Chesapeake Energy	HOU
+Chesapeake Energy	LAC
+Chesapeake Energy	MIL
+Chesapeake Energy	NYK
+Chesapeake Energy	OKC
+Chesapeake Energy	UTA
+Coca-Cola	BOS
+Coca-Cola	CHI
+Coca-Cola	DET
+Coca-Cola	MIA
+Coca-Cola	NOH
+Coca-Cola	PHI
+Coca-Cola	POR
+Coca-Cola	SAS
+Coca-Cola	WAS
+Comcast	BKN
+Comcast	DET
+Comcast	GSW
+Comcast	LAL
+Comcast	OKC
+Comcast	PHX
+Comcast	POR
+company	ATL
+company	BOS
+company	CHA
+company	CLE
+company	DAL
+company	GSW
+company	IND
+company	PHX
+company	SAC
+company	TOR
+Devon Energy	CHA
+Devon Energy	CHI
+Devon Energy	CLE
+Devon Energy	GSW
+Devon Energy	LAL
+Devon Energy	MEM
+Devon Energy	MIA
+Devon Energy	OKC
+Devon Energy	UTA
+Devon Energy	WAS
+Dodge	DEN
+Dodge	HOU
+Dodge	IND
+Dodge	LAL
+Dodge	MEM
+Dodge	MIN
+Dodge	OKC
+Dodge	POR
+Dodge	SAS
+Dodge	TOR
+Dr Pepper Snapple Group	BOS
+Dr Pepper Snapple Group	CHI
+Dr Pepper Snapple Group	DET
+Dr Pepper Snapple Group	GSW
+Dr Pepper Snapple Group	MIN
+Dr Pepper Snapple Group	NYK
+Dr Pepper Snapple Group	OKC
+Dr Pepper Snapple Group	PHI
+Dr Pepper Snapple Group	PHX
+H-E-B	LAL
+H-E-B	UTA
+H-E-B	WAS
+Hertz	ATL
+Hertz	BKN
+Hertz	BOS
+Hertz	DAL
+Hertz	GSW
+Hertz	LAL
+Hertz	MEM
+Hertz	MIA
+Hertz	OKC
+Hertz	ORL
+Hertz	PHI
+Kia	BKN
+Kia	DEN
+Kia	GSW
+Kia	MIN
+Kia	ORL
+Kia	PHI
+Kia	PHX
+Kia	TOR
+Kia	UTA
+Love's Country's	ATL
+Love's Country's	BOS
+Love's Country's	DAL
+Love's Country's	GSW
+Love's Country's	IND
+Love's Country's	MIN
+Love's Country's	NYK
+Love's Country's	ORL
+Love's Country's	PHI
+Love's Country's	SAC
+Love's Country's	TOR
+Love's Country's	UTA
+Mercedez Benz	ATL
+Mercedez Benz	DET
+Mercedez Benz	LAC
+Mercedez Benz	NYK
+Midfirst Bank	BKN
+Midfirst Bank	DEN
+Midfirst Bank	GSW
+Midfirst Bank	LAC
+Midfirst Bank	ORL
+Midfirst Bank	POR
+Midfirst Bank	SAS
+Millercoors	CHA
+Millercoors	CHI
+Millercoors	DET
+Millercoors	IND
+Millercoors	LAC
+Millercoors	MIL
+Millercoors	OKC
+Millercoors	ORL
+Millercoors	PHI
+Millercoors	WAS
+Northwest Ford Stores	ATL
+Northwest Ford Stores	BOS
+Northwest Ford Stores	CLE
+Northwest Ford Stores	GSW
+Northwest Ford Stores	MIN
+Northwest Ford Stores	OKC
+Northwest Ford Stores	ORL
+Northwest Ford Stores	PHI
+Northwest Ford Stores	SAS
+Northwest Ford Stores	WAS
+Plains Capital Bank	BKN
+Plains Capital Bank	BOS
+Plains Capital Bank	CHI
+Plains Capital Bank	CLE
+Plains Capital Bank	DAL
+Plains Capital Bank	NOH
+Plains Capital Bank	OKC
+Plains Capital Bank	PHX
+Plains Capital Bank	POR
+Plains Capital Bank	WAS
+Riverwind	CHI
+Riverwind	DAL
+Riverwind	IND
+Riverwind	LAC
+Riverwind	LAL
+Riverwind	MIN
+Riverwind	NYK
+Riverwind	ORL
+Riverwind	SAS
+Riverwind	TOR
+Riverwind	UTA
+Sandridge Energy	ATL
+Sandridge Energy	CLE
+Sandridge Energy	LAL
+Sandridge Energy	MEM
+Sandridge Energy	MIL
+Sandridge Energy	ORL
+Sandridge Energy	PHX
+Sandridge Energy	SAC
+Sandridge Energy	SAS
+Silver Eagle Distributor	DEN
+Silver Eagle Distributor	NOH
+Silver Eagle Distributor	PHX
+Silver Eagle Distributor	POR
+Silver Eagle Distributor	SAS
+Silver Eagle Distributor	TOR
+Silver Eagle Distributor	WAS
+Spirit Mountain Casino	CHI
+Spirit Mountain Casino	CLE
+Spirit Mountain Casino	DEN
+Spirit Mountain Casino	HOU
+Spirit Mountain Casino	LAC
+Spirit Mountain Casino	MIL
+Spirit Mountain Casino	NYK
+Spirit Mountain Casino	OKC
+State Farm Insurance	ATL
+State Farm Insurance	BKN
+State Farm Insurance	CHI
+State Farm Insurance	LAL
+State Farm Insurance	MIN
+State Farm Insurance	PHX
+SWBC	ATL
+SWBC	DET
+SWBC	HOU
+SWBC	OKC
+SWBC	ORL
+SWBC	PHI
+SWBC	SAC
 SWBC	SAS
-USAA	SAS
-VALERO	SAS
-SILVER EAGLE DISTRIBUTOR	SAS
-BROWN AUTO GROUP	SAS
-AMERICAN AIRLINES	DAL
-ANHEUSER-BUSCH	DAL
-AT&T	DAL
-AUDI	DAL
-COCA-COLA	DAL
-MILLERCOORS	DAL
-DR PEPPER SNAPPLE GROUP	DAL
-PLAINS CAPITAL BANK	DAL
-TEXAS FORD DEALERS	DAL
-TXU	DAL
-DODGE	LAC
-STATE FARM INSURANCE	LAC
-KIA	LAC
-MERCEDEZ BENZ	LAC
-AMERICAN AIRLINES	OKC
-MIDFIRST BANK	OKC
-CHESAPEAKE ENERGY	OKC
-SANDRIDGE ENERGY	OKC
-DEVON ENERGY	OKC
-LOVE'S COUNTRY'S	OKC
-RIVERWIND CASINO	OKC
-HERTZ	OKC
-WELLS FARGO	POR
-SPIRIT MOUNTAIN CASINO	POR
-NORTHWEST FORD STORES	POR
-KIA	POR
-COMCAST	POR
+SWBC	TOR
+SWBC	UTA
+SWBC	WAS
+Texas Ford Dealers	ATL
+Texas Ford Dealers	BKN
+Texas Ford Dealers	DAL
+Texas Ford Dealers	DEN
+Texas Ford Dealers	DET
+Texas Ford Dealers	HOU
+Texas Ford Dealers	IND
+Texas Ford Dealers	NOH
+Texas Ford Dealers	POR
+TXU	CHI
+TXU	DET
+TXU	GSW
+TXU	HOU
+TXU	ORL
+USAA	BKN
+USAA	DAL
+USAA	DEN
+USAA	HOU
+USAA	LAL
+USAA	MIA
+USAA	MIL
+USAA	MIN
+USAA	NYK
+USAA	PHI
+USAA	SAC
+Valero	BKN
+Valero	GSW
+Valero	MIL
+Valero	MIN
+Valero	NOH
+Valero	OKC
+Valero	PHX
+Valero	POR
+Valero	TOR
+Valero	UTA
+Valero	WAS
+Wells Fargo	BKN
+Wells Fargo	CHA
+Wells Fargo	CHI
+Wells Fargo	MEM
+Wells Fargo	PHI
