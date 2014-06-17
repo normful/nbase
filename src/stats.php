@@ -63,7 +63,7 @@ SQL;
 			<div class="panel-heading">
 				<h4 class="panel-title">
 					<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-					League-Wide
+					League Stats
 					</a>
 				</h4>
 			</div>
@@ -77,7 +77,7 @@ SQL;
 			<div class="panel-heading">
 				<h4 class="panel-title">
 					<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-					Team-Wide
+					Team Stats
 					</a>
 				</h4>
 			</div>
@@ -93,17 +93,17 @@ SQL;
 	<?php if ($_POST['mode'] == "all"): ?>
 
 		<?php $row = $result->fetch() ?>
-		<h3>The <?php echo $opstr . " " . $attribute; ?> for all players is <strong><?php echo round($row['result'], 0) . " " . $units.; ?></strong></h3>
+		<h3>The <?php echo $opstr . " " . $attribute; ?> for all players is <?php echo round($row['result'], 0) . " " . $units; ?>.</h3>
 	
 	<?php elseif ($_POST['mode'] == "team"): ?>
 		
-		<h3>Showing the <?php echo $opstr . " " . $attribute ?> for each team that is sponsored by <?php echo $sponsor ?></h3>
+		<h3>Showing the <?php echo $opstr . " " . $attribute ?> for each team that is sponsored by <?php echo $sponsor ?>.</h3>
 		<div class="table-responsive">
 			<table class="table table-striped table-hover hoverTable">
 				<thead>
 					<tr>
 						<th>Team</th>
-						<th><?php echo ucwords($operator . " " . $attribute . " (" . $units . ")") ?></th>
+						<th><?php echo ucwords($operator . " " . $attribute) . " (" . $units . ")"; ?></th>
 					</tr>
 				</thead>
 				<tbody>
