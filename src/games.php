@@ -11,6 +11,7 @@ try {
 	exit();
 }
 
+// Specify date range for queried games
 $where = "";
 if (isset($_POST['from_date']) && isset($_POST['to_date'])) {
 	$fromValid = preg_match("/^[0-9]{4}-[0-9]{2}-[0-9]{2}$/", $_POST['from_date']);
@@ -22,6 +23,7 @@ if (isset($_POST['from_date']) && isset($_POST['to_date'])) {
 	}
 }
 
+// Query database for all refereed games
 $query = <<<SQL
 SELECT *
 FROM nbagame_plays_playedat npp, nbareferee nr, referees r

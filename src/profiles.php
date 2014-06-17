@@ -3,6 +3,7 @@
 require "header.php"; 
 require "functions.php";
 
+// Refresh with correct parameters
 if (isset($_POST['params'])) {
     $params = explode(",", $_POST['params']);
     $team = $params[0];
@@ -18,7 +19,7 @@ try {
 	exit();
 }
 
-// Build where clause from http get parameters
+// Build where clause from http GET parameters
 $where = "";
 $displayPlayer = FALSE;
 if (isset($_GET['number']) && isset($_GET['team'])) {
@@ -39,6 +40,7 @@ if (isset($_GET['number']) && isset($_GET['team'])) {
     $displayPlayer = TRUE;
 }
 
+// Query for names all players
 $allPlayers = <<<SQL
 SELECT firstName, lastName, number, team
 FROM nbaplayer_playsfor
@@ -48,6 +50,7 @@ SQL;
 $allPlayersResult = $dbh->query($allPlayers);
 $allPlayersResult->setFetchMode(PDO::FETCH_ASSOC);
 
+// Query for information about current player
 if ($displayPlayer) {
     $currPlayer = <<<SQL
 SELECT *
@@ -64,6 +67,7 @@ SQL;
 <!-- CONTENT -->
 <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 	<h1 class="page-header">Profiles</h1>
+
     <!-- Player Selection -->   
     <div class="panel-group" id="accordion">
         <div class="panel panel-default">
@@ -93,6 +97,7 @@ SQL;
 
     <!-- Display player profile -->
     <?php if ($displayPlayer): ?>
+        <!-- Get the profile image for the current player -->
         <?php 
             $row = $currPlayerResult->fetch();
             $namequery = $row['firstName'] . "+" . $row['lastName'];
@@ -106,9 +111,11 @@ SQL;
                 }
             }
         ?>
+
         <h2 class="sub-header"><?php echo $name ?></h2>
         <table>
             <tr>
+                <!-- Display information about the current player -->
                 <td width="300px" style="vertical-align:top;">
                     <img src="<?php echo $imgurl; ?>" class="roundrect" width="300"><p>
                     <table class="table table-striped">
@@ -138,6 +145,8 @@ SQL;
                         </tr>
                     </table></p>
                 </td>
+
+                <!-- Display latest news about the current player -->
                 <td style="vertical-align:top;">
                     <div class="playernews">
                         <h3>Latest News on <?php echo $name; ?></h3>
@@ -146,12 +155,14 @@ SQL;
                 </td>
             </tr>
         </table>
+
+        <!-- Display image gallery for current player -->
         <h2 class="sub-header">Gallery</h2>
         <p class="gallery">
             <?php printImageGallery($namequery, 9); ?>
         </p>
-    <?php endif; ?>
 
+    <?php endif; ?>
 </div>         
 <!-- END CONTENT -->
 

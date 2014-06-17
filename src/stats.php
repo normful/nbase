@@ -20,7 +20,7 @@ if (isset($_POST['mode'])) {
 		$from = " nbaplayer_playsfor";
 		$where = " WHERE team IN (SELECT abbreviation FROM nbateam_belongsto n, sponsor_endorses s WHERE n.abbreviation = s.team AND s.company = {$sponsor})";
 		$groupby = " GROUP BY team";
-	}  else {
+	}  else if ($_POST['mode'] == "all") {
 		$select = $operator . "(" . $attribute . ") as result";
 		$from = " nbaplayer_playsfor";
 		$where = "";
@@ -35,6 +35,20 @@ SQL;
 
 	$result = $dbh->query($query);
 	$result->setFetchMode(PDO::FETCH_ASSOC);
+
+	// string of units for selected attribute
+	if ($attribute == "height") $units = "in";
+	else if ($attribute == "weight") $units = "lbs";
+	else $units = "";
+
+	// string of selected aggregate operator
+	if ($operator == "max") $opstr = "maximum";
+	else if ($operator = "min") $opstr = "minimum";
+	else if ($operator = "avg") $opstr = "average";
+	else $opstr = "";
+
+	// string of attribute
+	$attribute = strtolower(trim(preg_replace('/(?<=\\w)(?=[A-Z])/'," $1", $attribute)));
 }
 
 ?>
@@ -43,7 +57,8 @@ SQL;
 <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 	<h1 class="page-header">Statistics</h1>
 
-		<div class="panel-group" id="accordion">
+	<!-- Forms -->
+	<div class="panel-group" id="accordion">
 		<div class="panel panel-default">
 			<div class="panel-heading">
 				<h4 class="panel-title">
@@ -73,18 +88,22 @@ SQL;
 			</div>
 		</div>
 	</div>
-	<?php $attribute = strtolower(trim(preg_replace('/(?<=\\w)(?=[A-Z])/'," $1", $attribute))); ?>
+
+	<!-- Display result -->
 	<?php if ($_POST['mode'] == "all"): ?>
+
 		<?php $row = $result->fetch() ?>
-		<h3>The <?php echo $operator . " " . $attribute; ?> for all players is <strong><?php echo round($row['result'], 0); ?></strong></h3>
+		<h3>The <?php echo $opstr . " " . $attribute; ?> for all players is <strong><?php echo round($row['result'], 0) . " " . $units.; ?></strong></h3>
+	
 	<?php elseif ($_POST['mode'] == "team"): ?>
-		<h3>Showing the <?php echo $operator . " " . $attribute ?> for each team that is sponsored by <?php echo $sponsor ?></h3>
+		
+		<h3>Showing the <?php echo $opstr . " " . $attribute ?> for each team that is sponsored by <?php echo $sponsor ?></h3>
 		<div class="table-responsive">
 			<table class="table table-striped table-hover hoverTable">
 				<thead>
 					<tr>
 						<th>Team</th>
-						<th><?php echo ucwords($operator . " " . $attribute) ?></th>
+						<th><?php echo ucwords($operator . " " . $attribute . " (" . $units . ")") ?></th>
 					</tr>
 				</thead>
 				<tbody>
@@ -97,6 +116,7 @@ SQL;
 				</tbody>
 			</table>
 		</div>
+
 	<?php endif; ?>
 
 </div>         

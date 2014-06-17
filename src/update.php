@@ -14,7 +14,6 @@ try {
     // connect to the Amazon EC2 MySQL database with PDO
     $dbh = new PDO("mysql:host=54.86.9.29;dbname=nba", 'jacob', 'jacob');
 } catch(PDOException $e) {
-    // use the error() function I wrote whenever you want to signal that an error has occured
     error($e->getMessage());
     exit();
 }

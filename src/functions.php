@@ -1,13 +1,13 @@
 <?php
 
-// Generate a pop up error message with message $errorStr
-function error($errorStr) {
-	echo '<script>alert("' .  $errorStr . '")</script>';
-}
-
 // Generate a pop up alert
 function alert($alertStr) {
 	echo '<script>alert("' .  $alertStr . '")</script>';
+}
+
+// Generate a pop up error message with message $errorStr
+function error($errorStr) {
+	alert($errorStr);
 }
 
 // Generate current url keeping only parameters specified in array $names
@@ -77,23 +77,24 @@ function printProfileNews($searchQuery, $max) {
 
 // Print the html code to display $max images on $searchQuery from Google images
 function printImageGallery($searchQuery, $max) {
-            $count = 0;
-            $i = 1;
-            while (true) {
-                $i += 5;
-                if ($count > $max-1) break;
-                $json = get_url_contents("http://ajax.googleapis.com/ajax/services/search/images?v=1.0&q={$searchQuery}&start={$i}&imgsz=medium");
-                $data = json_decode($json);
-                foreach ($data->responseData->results as $result) {
-                        if (@getimagesize($result->url) != false) {
-                            $count++;
-                            echo '<img style="margin:5px; background:#eeeeee;" height="200" src="'. $result->url . '">&nbsp';
-                        }
-                        if ($count > $max-1) break;
+    $count = 0;
+    $i = 1;
+    while (true) {
+        $i += 5;
+        if ($count > $max-1) break;
+        $json = get_url_contents("http://ajax.googleapis.com/ajax/services/search/images?v=1.0&q={$searchQuery}&start={$i}&imgsz=medium");
+        $data = json_decode($json);
+        foreach ($data->responseData->results as $result) {
+                if (@getimagesize($result->url) != false) {
+                    $count++;
+                    echo '<img style="margin:5px; background:#eeeeee;" height="200" src="'. $result->url . '">&nbsp';
                 }
-            }
+                if ($count > $max-1) break;
+        }
+    }
 }
 
+// Format table entry for games.php
 function printScore($t1, $s1, $t2, $s2) {
 	if (intval($s1) > intval($s2)) {
 		echo "<strong>" . $t1 . ": " . $s1 . "</strong>&nbsp";

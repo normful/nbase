@@ -77,8 +77,9 @@ $result->setFetchMode(PDO::FETCH_ASSOC);
 <!-- CONTENT -->
 <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 	<h1 class="page-header">Players</h1>
-          
+     
 	<div class="panel-group" id="accordion">
+		<!-- Form to specify selection constraint -->
 		<div class="panel panel-default">
 			<div class="panel-heading">
 				<h4 class="panel-title">
@@ -93,6 +94,7 @@ $result->setFetchMode(PDO::FETCH_ASSOC);
 				</div>
 			</div>
 		</div>
+		<!-- Form to specify ordering -->
 		<div class="panel panel-default">
 			<div class="panel-heading">
 				<h4 class="panel-title">
@@ -107,6 +109,7 @@ $result->setFetchMode(PDO::FETCH_ASSOC);
 				</div>
 			</div>
 		</div>
+		<!-- Form to specify projection -->
 		<div class="panel panel-default">
 			<div class="panel-heading">
 				<h4 class="panel-title">
@@ -122,7 +125,8 @@ $result->setFetchMode(PDO::FETCH_ASSOC);
 			</div>
 		</div>
 	</div>
-                    
+
+    <!-- Display players -->                
 	<div class="table-responsive">
 		<table class="table table-striped table-hover hoverTable">
 			<thead>

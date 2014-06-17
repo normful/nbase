@@ -17,6 +17,7 @@ if (isset($_GET['team']) && preg_match("/^[a-z]{3}$/", strtolower($_GET['team'])
 	$displayRoster = true;
 	$team = $dbh->quote($_GET['team']);
 
+	// Query database for players on current team
 	$query = <<<SQL
 SELECT *
 FROM nbaplayer_playsfor
@@ -25,6 +26,7 @@ SQL;
 	$result = $dbh->query($query);
 	$result->setFetchMode(PDO::FETCH_ASSOC);
 
+	// Query database for staff on current team
 	$staffQuery = <<<SQL
 SELECT *
 FROM nbastaff_worksfor
@@ -34,6 +36,7 @@ SQL;
 	$staffResult = $dbh->query($staffQuery);
 	$staffResult->setFetchMode(PDO::FETCH_ASSOC);
 
+	// Query database for sponsors of current team
 	$sponsorsQuery = <<<SQL
 SELECT company
 FROM nbateam_belongsto n, sponsor_endorses s 
@@ -49,6 +52,7 @@ SQL;
 <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 	<h1 class="page-header">Rosters</h1>
 
+	<!-- Form for selecting a team -->
 	<div class="panel-group" id="accordion">
 		<div class="panel panel-default">
 			<div class="panel-heading">
@@ -66,7 +70,7 @@ SQL;
 		</div>
 	</div>
 
-
+	<!-- Display players, staff, and sponsors of current team -->
 	<?php if ($displayRoster): ?>
 		<h2 class="sub-header">Players on team <strong><?php echo strtoupper(trim($team, "'")); ?></strong></h2>
 		
