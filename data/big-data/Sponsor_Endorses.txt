@@ -123,10 +123,10 @@ Love's Country's	PHI
 Love's Country's	SAC
 Love's Country's	TOR
 Love's Country's	UTA
-Mercedez Benz	ATL
-Mercedez Benz	DET
-Mercedez Benz	LAC
-Mercedez Benz	NYK
+Mercedes Benz	ATL
+Mercedes Benz	DET
+Mercedes Benz	LAC
+Mercedes Benz	NYK
 Midfirst Bank	BKN
 Midfirst Bank	DEN
 Midfirst Bank	GSW
