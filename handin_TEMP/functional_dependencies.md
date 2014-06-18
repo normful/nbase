@@ -28,4 +28,3 @@
 
 ## Venue
 * venueName, city -> address
-* address -> venueName, city
