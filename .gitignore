@@ -1,5 +1,6 @@
 # pandoc script
 pandoc-all-md-in-this-folder.sh
+pandoc-all-md-in-this-folder-with-toc-and-chapters.sh
 
 # cover page
 coverpage.docx
