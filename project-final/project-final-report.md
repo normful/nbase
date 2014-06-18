@@ -67,7 +67,7 @@ Below is a listing of the specific functionalities we implemented in each of our
 
 # Entity-Relationship Diagram
 
-The only change in our ER diagram (shown in figure \ref{ERdiagram}) since the second project submission was relaxing a full participation constraint on NBAGame and the Referees relationship so that we could demonstrate both a situation where a cascading delete works and one where it doesn't (for the purposes of meeting project demo requirements).
+The only change in our ER diagram since the second project submission was relaxing a full participation constraint on NBAGame and the Referees relationship so that we could demonstrate both a situation where a cascading delete works and one where it doesn't (for the purposes of meeting project demo requirements).
 
 ![Entity-relationship diagram](ERdiagram.png)
 
@@ -75,7 +75,7 @@ The only change in our ER diagram (shown in figure \ref{ERdiagram}) since the se
 
 No changes were made to the schemas of our SQL tables, which are repeated below for convenience. Only additional `CHECK` constraints were added to the `CREATE TABLE` commands in the included `create_db.sql` script.
 
-Our tables capture all aspects of our ER diagram except for the full participation constraints on NBATeam for the PlaysFor and WorksFor relationships. Furthermore, all tables are in BCNF because no functional dependencies violate BCNF.
+Our tables capture all aspects of our ER diagram except for the full participation constraints on NBATeam for the PlaysFor and WorksFor relationships.
 
 ## Legend
 
@@ -449,7 +449,11 @@ FROM Sponsor_Endorses
 
 # Functional Dependencies
 
-All tables are in BCNF because there are no functional dependencies that violate BCNF.
+`NBATeam_BelongsTo` is not in BCNF because teamName -> abbreviation, city, divisionName violates BCNF since teamName is not a superkey of the table.
+
+`NBAGame_Plays_PlayedAt` is not in BCNF because venueName, city, gameDate -> homeTeam, awayTeam, homeScore, awayScore violates BCNF since venueName, city, gameDate is a superkey of the table.
+
+All other tables are in BCNF because all of their non-trivial functional dependencies have attributes on the LHS that are superkeys of the table.
 
 ## Division
 
@@ -498,6 +502,198 @@ No non-trivial functional dependencies were contained in the `Sponsor_Endorses` 
 ## Referees
 
 No non-trivial functional dependencies were contained in the `Referees` table.
+
+# SQL Table Contents
+
+The first 10 rows of each SQL table is included below for convenience.
+
+## Division
+
+```
+mysql> select * from division limit 10;
++--------------+
+| divisionName |
++--------------+
+| Atlantic     |
+| Central      |
+| Northwest    |
+| Pacific      |
+| Southeast    |
+| Southwest    |
++--------------+
+6 rows in set (0.00 sec)
+```
+
+## Venue
+
+```
+mysql> select * from venue limit 10;   
++---------------------------+----------------+-----------------------+
+| venueName                 | city           | address               |
++---------------------------+----------------+-----------------------+
+| Air Canada Centre         | Toronto        | 40 Bay St             |
+| American Airlines Arena   | Miami          | 601 Biscayne Blvd     |
+| American Airlines Center  | Dallas         | 2500 Victory Ave      |
+| Amway Center              | Orlando        | 400 West Church St    |
+| AT&T Center               | San Antonio    | 1 AT&T Center Pkwy    |
+| Bankers Life Fieldhouse   | Indianapolis   | 125 S Pennsylvania St |
+| Barclays Center           | Brooklyn       | 620 Atlantic Avenue   |
+| BMO Harris Bradley Center | Milwaukee      | 1001 N 4th St         |
+| Chesapeake Energy Arena   | Oklahoma City  | 100 W Reno Ave        |
+| EnergySolutions Arena     | Salt Lake City | 301 W South Temple    |
++---------------------------+----------------+-----------------------+
+10 rows in set (0.00 sec)
+```
+
+## NBATeam_BelongsTo
+
+```
+mysql> select * from nbateam_belongsto limit 10;
++--------------+--------------+-----------+--------------+
+| abbreviation | city         | teamName  | divisionName |
++--------------+--------------+-----------+--------------+
+| ATL          | Atlanta      | Hawks     | Southeast    |
+| BKN          | Brooklyn     | Nets      | Atlantic     |
+| BOS          | Boston       | Celtics   | Atlantic     |
+| CHA          | Charlotte    | Bobcats   | Southeast    |
+| CHI          | Chicago      | Bulls     | Central      |
+| CLE          | Cleveland    | Cavaliers | Central      |
+| DAL          | Dallas       | Mavericks | Southwest    |
+| DEN          | Denver       | Nuggets   | Northwest    |
+| DET          | Detroit      | Pistons   | Central      |
+| GSW          | Golden State | Warriors  | Pacific      |
++--------------+--------------+-----------+--------------+
+10 rows in set (0.00 sec)
+```
+
+## NBAPlayer_PlaysFor
+
+```
+mysql> select * from nbaplayer_playsfor limit 10;                                                                                             
++--------+----------+-----------+----------+--------+--------+-----------+------+
+| number | position | firstName | lastName | height | weight | draftYear | team |
++--------+----------+-----------+----------+--------+--------+-----------+------+
+|      0 | PG       | Jeff      | Teague   |     74 |    181 |      1995 | ATL  |
+|      0 | C        | Andray    | Blatche  |     83 |    260 |      2010 | BKN  |
+|      0 | PG       | Avery     | Bradley  |     74 |    180 |      1993 | BOS  |
+|      0 | C        | Bismack   | Biyombo  |     81 |    245 |      1992 | CHA  |
+|      0 | SG       | C.J.      | Miles    |     78 |    231 |      2012 | CLE  |
+|      0 | SF       | Shawn     | Marion   |     79 |    228 |      2007 | DAL  |
+|      0 | PG       | Aaron     | Brooks   |     84 |    161 |      2012 | DEN  |
+|      0 | C        | Andre     | Drummond |     82 |    270 |      1998 | DET  |
+|      0 | PF       | Glen      | Davis    |     81 |    289 |      1999 | LAC  |
+|      0 | SF       | Nick      | Young    |     79 |    210 |      1992 | LAL  |
++--------+----------+-----------+----------+--------+--------+-----------+------+
+10 rows in set (0.00 sec)
+```
+
+## NBAStaff_WorksFor
+
+```
+mysql> select * from nbastaff_worksfor limit 10;                      
++-----------+-------------+-----------------+------+
+| firstName | lastName    | job             | team |
++-----------+-------------+-----------------+------+
+| Adrian    | Griffin     | Assistant Coach | CHI  |
+| Alex      | McKechnie   | Assistant Coach | TOR  |
+| Alvin     | Gentry      | Assistant Coach | LAC  |
+| Andy      | Greer       | Assistant Coach | CHI  |
+| Armond    | Hill        | Assistant Coach | LAC  |
+| Bernie    | Bickerstaff | Assistant Coach | CLE  |
+| Bill      | Bayno       | Assistant Coach | TOR  |
+| Bob       | Bender      | Assistant Coach | MIL  |
+| Bob       | Beyer       | Assistant Coach | CHA  |
+| Bob       | Beyer       | Assistant Coach | DET  |
++-----------+-------------+-----------------+------+
+10 rows in set (0.00 sec)
+```
+
+## Sponsor_Endorses
+
+```
+mysql> select * from sponsor_endorses limit 10; 
++-----------------------+------+
+| company               | team |
++-----------------------+------+
+| Hertz                 | ATL  |
+| Love's Country's      | ATL  |
+| Mercedes Benz         | ATL  |
+| Northwest Ford Stores | ATL  |
+| Sandridge Energy      | ATL  |
+| State Farm Insurance  | ATL  |
+| SWBC                  | ATL  |
+| Texas Ford Dealers    | ATL  |
+| Anheuser-Busch        | BKN  |
+| Audi                  | BKN  |
++-----------------------+------+
+10 rows in set (0.00 sec)
+```
+
+## NBAGame_Plays_PlayedAt
+
+\begingroup
+\fontsize{8pt}{8pt}\selectfont
+\begin{verbatim}
+mysql> select * from nbagame_plays_playedat limit 10;                                                                                         
++------------+-----------+-----------+----------+----------+----------------------------+--------------+
+| gameDate   | homeScore | awayScore | homeTeam | awayTeam | venueName                  | city         |
++------------+-----------+-----------+----------+----------+----------------------------+--------------+
+| 2013-10-29 |        97 |        87 | IND      | ORL      | Bankers Life Fieldhouse    | Indianapolis |
+| 2013-10-29 |       116 |       103 | LAL      | LAC      | Staples Center             | Los Angeles  |
+| 2013-10-29 |       107 |        95 | MIA      | CHI      | American Airlines Arena    | Miami        |
+| 2013-10-30 |        98 |        94 | CLE      | BKN      | Quicken Loans Arena        | Cleveland    |
+| 2013-10-30 |       118 |       109 | DAL      | ATL      | American Airlines Center   | Dallas       |
+| 2013-10-30 |       113 |       102 | DET      | WAS      | The Palace of Auburn Hills | Detroit      |
+| 2013-10-30 |       125 |        94 | GSW      | LAL      | Oracle Arena               | Oakland      |
+| 2013-10-30 |        96 |        83 | HOU      | CHA      | Toyota Center              | Houston      |
+| 2013-10-30 |       120 |       115 | MIN      | ORL      | Target Center              | Minneapolis  |
+| 2013-10-30 |        90 |        95 | NOH      | IND      | Smoothie King Center       | New Orleans  |
++------------+-----------+-----------+----------+----------+----------------------------+--------------+
+10 rows in set (0.00 sec)
+\end{verbatim}
+\endgroup
+
+## NBAReferee
+
+```
+mysql> select * from nbareferee limit 10;                                                                                                     
++--------+-----------+-----------+
+| number | firstName | lastName  |
++--------+-----------+-----------+
+|      6 | Tony      | Brown     |
+|      7 | Derrick   | Stafford  |
+|      8 | Marc      | Davis     |
+|     10 | Ron       | Garretson |
+|     11 | Derrick   | Collins   |
+|     12 | Violet    | Palmer    |
+|     13 | Monty     | McCutchen |
+|     14 | Ed        | Malloy    |
+|     15 | Bennett   | Salvatore |
+|     16 | David     | Guthrie   |
++--------+-----------+-----------+
+10 rows in set (0.00 sec)
+```
+
+## Referees
+
+```
+mysql> select * from referees limit 10;                               
++-----------+------------+----------+----------+
+| refNumber | gameDate   | homeTeam | awayTeam |
++-----------+------------+----------+----------+
+|        45 | 2013-10-29 | IND      | ORL      |
+|         8 | 2013-10-29 | LAL      | LAC      |
+|        73 | 2013-10-29 | MIA      | CHI      |
+|        68 | 2013-10-30 | CLE      | BKN      |
+|        37 | 2013-10-30 | DAL      | ATL      |
+|        30 | 2013-10-30 | DET      | WAS      |
+|        20 | 2013-10-30 | GSW      | LAL      |
+|        14 | 2013-10-30 | HOU      | CHA      |
+|        44 | 2013-10-30 | MIN      | ORL      |
+|         8 | 2013-10-30 | NOH      | IND      |
++-----------+------------+----------+----------+
+10 rows in set (0.00 sec)
+```
 
 # Demo Script
 
