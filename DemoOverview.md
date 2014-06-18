@@ -3,7 +3,20 @@
 
 ### Before the demo
 
-* Prepare printouts of ER diagram, relation instances (table of data), SQL for all queries used in demo, and SQL for creating tables
+* For Norman: Print 3 copies of `project-final-report` which should contain:
+    - ER diagram
+    - relation instances (table of data)
+    - SQL for all queries used in demo
+    - SQL for creating tables
+- For Norman: Have windows on your laptop open with:
+    - Amazon EC2 dashboard
+    - Apache HTTP Server config file: `/opt/bitnami/apache2/conf/httpd.cnf`
+    - Apache HTTP Server config file: `/opt/bitnami/apache2/conf/bitnami/bitnami.cnf`
+    - MySQL config file: `/opt/bitnami/mysql/my.cnf`
+    - Terminal to restart `apache` and/or `mysql` with commands:
+
+        sudo bash ctlscript.sh restart apache
+        sudo bash ctlscript.sh restart mysql
 
 ### Setup (2 minutes)
 
