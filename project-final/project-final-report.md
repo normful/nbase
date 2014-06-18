@@ -4,9 +4,9 @@
 
 # Project Description
 
-We are modeled the 2013-2014 NBA league using real data for the most part, and randomly generated data for certain data that we could not easily find.
+We modelled the 2013-2014 NBA league using real data for the most part, and randomly generated data for certain data that we could not easily find.
 
-We are modelled NBA players that play for Teams, along with NBA Staff that work for Teams. Each Team belongs to a Division. Each Team plays a game refereed by an NBA Referee against another Team at a Venue on a particular date. Each Team's Sponsor is also modeled.
+We modelled NBA players that play for Teams, along with NBA Staff that work for Teams. Each Team belongs to a Division. Each Team plays a game refereed by an NBA Referee against another Team at a Venue on a particular date. Each Team's Sponsor is also modeled.
 
 User classes include NBA Staff and normal users. Only NBA Staff can modify database information. All other users can only view database information. We did not actually implement any user access control, but included functionality for both user classes in our UI.
 
@@ -449,11 +449,7 @@ FROM Sponsor_Endorses
 
 # Functional Dependencies
 
-`NBATeam_BelongsTo` is not in BCNF because teamName -> abbreviation, city, divisionName violates BCNF since teamName is not a superkey of the table.
-
-`NBAGame_Plays_PlayedAt` is not in BCNF because venueName, city, gameDate -> homeTeam, awayTeam, homeScore, awayScore violates BCNF since venueName, city, gameDate is a superkey of the table.
-
-All other tables are in BCNF because all of their non-trivial functional dependencies have attributes on the LHS that are superkeys of the table.
+All tables are in BCNF because all of their non-trivial functional dependencies have attributes on the LHS that are superkeys of their respective tables.
 
 ## Division
 
