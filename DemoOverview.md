@@ -14,9 +14,8 @@
     - Apache HTTP Server config file: `/opt/bitnami/apache2/conf/bitnami/bitnami.cnf`
     - MySQL config file: `/opt/bitnami/mysql/my.cnf`
     - Terminal to restart `apache` and/or `mysql` with commands:
-
-        sudo bash ctlscript.sh restart apache
-        sudo bash ctlscript.sh restart mysql
+        - sudo bash ctlscript.sh restart apache
+        - sudo bash ctlscript.sh restart mysql
 
 ### Setup (2 minutes)
 
