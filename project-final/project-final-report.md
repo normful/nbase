@@ -1,10 +1,10 @@
 % CPSC 304 Final Project Report
-% Jacob Lee; Norman Sue; Daniel Tsang; Marvin Cadano
-% Project hosted at [http://54.86.9.29/](http://54.86.9.29/)
+% Team 5:; Jacob Lee; Norman Sue; Daniel Tsang; Marvin Cadano
+% Project hosted at [http://54.86.9.29/](http://54.86.9.29/) with source at [https://github.com/nsue/cpsc304](https://github.com/nsue/cpsc304)
 
 # Project Description
 
-Our project can be found online at [http://54.86.9.29/](http://54.86.9.29/)
+Our project can be found online at [http://54.86.9.29/](http://54.86.9.29/) with the source at [https://github.com/nsue/cpsc304](https://github.com/nsue/cpsc304).
 
 We modelled the 2013-2014 NBA league using real data for the most part, and randomly generated data for certain data that we could not easily find.
 
