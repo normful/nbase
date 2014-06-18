@@ -17,12 +17,10 @@ if (isset($_POST['mode'])) {
 	if ($_POST['mode'] == "team") {
 		$sponsor = $dbh->quote($_POST['sponsor']);
 		$select = " team, " . $operator . "(" . $attribute . ") as result";
-		$from = " nbaplayer_playsfor";
 		$where = " WHERE team IN (SELECT abbreviation FROM nbateam_belongsto n, sponsor_endorses s WHERE n.abbreviation = s.team AND s.company = {$sponsor})";
 		$groupby = " GROUP BY team";
 	}  else if ($_POST['mode'] == "all") {
 		$select = $operator . "(" . $attribute . ") as result";
-		$from = " nbaplayer_playsfor";
 		$where = "";
 		$groupby = "";
 	}
