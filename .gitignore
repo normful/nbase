@@ -4,6 +4,7 @@ pandoc-all-md-in-this-folder-with-toc-and-chapters.sh
 
 # cover page
 coverpage.docx
+coverpage.pdf
 
 # tags file and associated .srclist
 .srclist
