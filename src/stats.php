@@ -41,8 +41,8 @@ SQL;
 
 	// string of selected aggregate operator
 	if ($operator == "max") $opstr = "maximum";
-	else if ($operator = "min") $opstr = "minimum";
-	else if ($operator = "avg") $opstr = "average";
+	else if ($operator == "min") $opstr = "minimum";
+	else if ($operator == "avg") $opstr = "average";
 	else $opstr = "";
 
 	// string of attribute
@@ -101,7 +101,7 @@ SQL;
 				<thead>
 					<tr>
 						<th>Team</th>
-						<th><?php echo ucwords($operator . " " . $attribute) . " (" . $units . ")"; ?></th>
+						<th><?php echo ucwords($opstr . " " . $attribute) . " (" . $units . ")"; ?></th>
 					</tr>
 				</thead>
 				<tbody>
