@@ -1,4 +1,4 @@
-# UBC CPSC 304 Database Project Description
+# UBC CPSC 304 Database Project
 
 This web application models the 2013-2014 NBA league and can currently be viewed at http://54.86.9.29/
 
