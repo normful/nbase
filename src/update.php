@@ -12,7 +12,7 @@ if (isset($_POST['params'])) {
 
 try {
     // connect to the Amazon EC2 MySQL database with PDO
-    $dbh = new PDO("mysql:host=54.191.180.156;dbname=NBA", 'root', 'ubuntu');
+    $dbh = new PDO("mysql:host=54.186.234.91;dbname=NBA", 'root', 'ubuntu');
 } catch(PDOException $e) {
     error($e->getMessage());
     exit();
