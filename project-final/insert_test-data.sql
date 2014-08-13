@@ -1,27 +1,27 @@
-LOAD DATA INFILE '/home/project/cpsc304/data/Division.txt' 
-    INTO TABLE nba.division
+LOAD DATA INFILE '/home/ubuntu/nbase/data/Division.txt' 
+    INTO TABLE NBA.Division
     IGNORE 1 LINES;
-LOAD DATA INFILE '/home/project/cpsc304/data/Venue.txt'
-    INTO TABLE nba.venue
+LOAD DATA INFILE '/home/ubuntu/nbase/data/Venue.txt'
+    INTO TABLE NBA.Venue
     IGNORE 1 LINES;
-LOAD DATA INFILE '/home/project/cpsc304/data/NBATeam_BelongsTo.txt'
-    INTO TABLE nba.nbateam_belongsto
+LOAD DATA INFILE '/home/ubuntu/nbase/data/NBATeam_BelongsTo.txt'
+    INTO TABLE NBA.NBATeam_BelongsTo
     IGNORE 1 LINES;
-LOAD DATA INFILE '/home/project/cpsc304/data/NBAPlayer_PlaysFor.txt'
-    INTO TABLE nba.nbaplayer_playsfor
+LOAD DATA INFILE '/home/ubuntu/nbase/data/NBAPlayer_PlaysFor.txt'
+    INTO TABLE NBA.NBAPlayer_PlaysFor
     IGNORE 1 LINES;
-LOAD DATA INFILE '/home/project/cpsc304/data/NBAStaff_WorksFor.txt'
-    INTO TABLE nba.nbastaff_worksfor
+LOAD DATA INFILE '/home/ubuntu/nbase/data/NBAStaff_WorksFor.txt'
+    INTO TABLE NBA.NBAStaff_WorksFor
     IGNORE 1 LINES;
-LOAD DATA INFILE '/home/project/cpsc304/data/Sponsor_Endorses.txt'
-    INTO TABLE nba.sponsor_endorses
+LOAD DATA INFILE '/home/ubuntu/nbase/data/Sponsor_Endorses.txt'
+INTO TABLE NBA.Sponsor_Endorses
     IGNORE 1 LINES;
-LOAD DATA INFILE '/home/project/cpsc304/data/NBAGame_Plays_PlayedAt.txt'
-    INTO TABLE nba.nbagame_plays_playedat
+LOAD DATA INFILE '/home/ubuntu/nbase/data/NBAGame_Plays_PlayedAt.txt'
+    INTO TABLE NBA.NBAGame_Plays_PlayedAt
     IGNORE 1 LINES;
-LOAD DATA INFILE '/home/project/cpsc304/data/NBAReferee.txt'
-    INTO TABLE nba.nbareferee
+LOAD DATA INFILE '/home/ubuntu/nbase/data/NBAReferee.txt'
+    INTO TABLE NBA.NBAReferee
     IGNORE 1 LINES;
-LOAD DATA INFILE '/home/project/cpsc304/data/Referees.txt'
-    INTO TABLE nba.referees
+LOAD DATA INFILE '/home/ubuntu/nbase/data/Referees.txt'
+    INTO TABLE NBA.Referees
     IGNORE 1 LINES;
